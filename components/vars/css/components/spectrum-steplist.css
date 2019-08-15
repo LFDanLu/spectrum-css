@@ -1,0 +1,5 @@
+:root {
+  --spectrum-steplist-incomplete-marker-color: var(--spectrum-global-color-gray-700);
+  --spectrum-steplist-incomplete-segment-color: var(--spectrum-global-color-gray-300);
+  --spectrum-steplist-incomplete-label-text-color: var(--spectrum-global-color-gray-600);
+}

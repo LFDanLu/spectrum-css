@@ -1,0 +1,19 @@
+:root {
+  --spectrum-colorslider-vertical-border-color: var(--spectrum-global-color-gray-300);
+  --spectrum-colorslider-vertical-fill-color: var(--spectrum-global-color-gray-300);
+  --spectrum-colorslider-vertical-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-colorslider-vertical-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-colorslider-vertical-colorhandle-cursor-hit-border-radius: var(--spectrum-global-dimension-size-0);
+  --spectrum-colorslider-vertical-colorhandle-touch-hit-width: var(--spectrum-global-dimension-size-600);
+  --spectrum-colorslider-vertical-colorhandle-touch-hit-height: var(--spectrum-global-dimension-size-600);
+  --spectrum-colorslider-vertical-colorhandle-touch-hit-border-radius: var(--spectrum-global-dimension-size-0);
+  --spectrum-colorslider-vertical-width: var(--spectrum-global-dimension-size-300);
+  --spectrum-colorslider-vertical-default-height: var(--spectrum-global-dimension-size-2400);
+  --spectrum-colorslider-vertical-min-height: var(--spectrum-global-dimension-size-1000);
+  --spectrum-colorslider-vertical-cursor-hit-x: var(--spectrum-global-dimension-size-0);
+  --spectrum-colorslider-vertical-cursor-hit-y: var(--spectrum-global-dimension-size-100);
+  --spectrum-colorslider-vertical-touch-hit-x: var(--spectrum-global-dimension-size-150);
+  --spectrum-colorslider-vertical-touch-hit-y: var(--spectrum-global-dimension-size-100);
+  --spectrum-colorslider-vertical-colorhandle-cursor-hit-width: var(--spectrum-global-dimension-size-300);
+  --spectrum-colorslider-vertical-colorhandle-cursor-hit-height: var(--spectrum-global-dimension-size-200);
+}

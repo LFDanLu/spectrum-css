@@ -1,0 +1,13 @@
+:root {
+  --spectrum-link-quiet-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-link-quiet-underline-color: var(--spectrum-alias-border-color-transparent);
+  --spectrum-link-quiet-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-link-quiet-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-link-quiet-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-link-quiet-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-link-quiet-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-link-quiet-text-transform: none;
+  --spectrum-link-quiet-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-link-quiet-underline-gap: var(--spectrum-global-dimension-size-10);
+  --spectrum-link-quiet-underline-size: var(--spectrum-alias-border-size-thin);
+}

@@ -1,0 +1,12 @@
+const medium = require('../medium.js');
+const staticAliases = require('../staticAliases.js');
+const card = exports;
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["border-size"] = staticAliases["border-size-thin"];
+exports["body-header-height"] = medium["size-150"];
+exports["body-margin-top"] = medium["size-100"];
+exports["preview-padding"] = medium["size-150"];
+exports["checkbox-margin"] = medium["size-125"];
+exports["min-size"] = medium["size-900"];
+exports["title-text-size"] = medium["font-size-100"];
+exports["body-header-margin-top"] = medium["size-175"];

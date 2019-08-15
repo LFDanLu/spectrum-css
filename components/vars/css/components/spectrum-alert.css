@@ -1,0 +1,11 @@
+:root {
+  --spectrum-alert-warning-background-color: var(--spectrum-global-color-gray-50);
+  --spectrum-alert-warning-title-text-color: var(--spectrum-global-color-gray-900);
+  --spectrum-alert-warning-text-color: var(--spectrum-global-color-gray-700);
+  --spectrum-alert-warning-border-color: var(--spectrum-global-color-orange-400);
+  --spectrum-alert-warning-icon-color: var(--spectrum-global-color-orange-600);
+  --spectrum-alert-warning-padding-x: var(--spectrum-global-dimension-size-250);
+  --spectrum-alert-warning-padding-y: var(--spectrum-global-dimension-size-250);
+  --spectrum-alert-warning-min-width: var(--spectrum-global-dimension-size-4600);
+  --spectrum-alert-warning-content-margin-top: var(--spectrum-global-dimension-size-100);
+}

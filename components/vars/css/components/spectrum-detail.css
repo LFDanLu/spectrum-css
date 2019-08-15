@@ -1,0 +1,12 @@
+:root {
+  --spectrum-detail-han-strong-text-font-family: var(--spectrum-alias-font-family-zh);
+  --spectrum-detail-han-strong-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-detail-han-strong-text-font-weight: var(--spectrum-alias-han-detail-text-font-weight-strong);
+  --spectrum-detail-han-strong-text-line-height: var(--spectrum-alias-body-han-text-line-height);
+  --spectrum-detail-han-strong-text-letter-spacing: var(--spectrum-global-font-letter-spacing-han);
+  --spectrum-detail-han-strong-text-transform: none;
+  --spectrum-detail-han-strong-margin-top: 0px;
+  --spectrum-detail-han-strong-margin-bottom-multiplier: var(--spectrum-alias-body-margin-bottom);
+  --spectrum-detail-han-strong-text-size: var(--spectrum-global-dimension-font-size-50);
+  --spectrum-detail-han-strong-margin-bottom: var(--spectrum-global-dimension-size-100);
+}

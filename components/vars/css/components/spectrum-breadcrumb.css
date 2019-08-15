@@ -1,0 +1,6 @@
+:root {
+  --spectrum-breadcrumb-title-margin: 0.3em 0;
+  --spectrum-breadcrumb-title-active-text-size: 28px;
+  --spectrum-breadcrumb-title-active-text-font-weight: 300;
+  --spectrum-breadcrumb-title-active-text-line-height: 32px;
+}

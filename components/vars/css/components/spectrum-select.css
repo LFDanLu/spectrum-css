@@ -1,0 +1,31 @@
+:root {
+  --spectrum-selectlist-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-selectlist-option-background-color: var(--spectrum-alias-background-color-hover-overlay);
+  --spectrum-selectlist-option-text-color: var(--spectrum-alias-text-color-selected);
+  --spectrum-selectlist-option-icon-color: var(--spectrum-alias-icon-color-selected);
+  --spectrum-selectlist-divider-color: var(--spectrum-alias-border-color-extralight);
+  --spectrum-selectlist-option-border-color: var(--spectrum-global-color-blue-400);
+  --spectrum-selectlist-border-size: var(--spectrum-global-dimension-size-25);
+  --spectrum-selectlist-option-border-size: var(--spectrum-global-dimension-size-25);
+  --spectrum-selectlist-icon-size: var(--spectrum-alias-workflow-icon-size);
+  --spectrum-selectlist-divider-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-selectlist-divider-padding: 3px;
+  --spectrum-selectlist-option-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-selectlist-option-padding: var(--spectrum-global-dimension-size-150);
+  --spectrum-selectlist-option-padding-y: var(--spectrum-global-dimension-size-85);
+  --spectrum-selectlist-option-icon-height: var(--spectrum-global-dimension-size-150);
+  --spectrum-selectlist-option-icon-width: var(--spectrum-global-dimension-size-150);
+  --spectrum-selectlist-icon-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-selectlist-option-icon-size: var(--spectrum-global-dimension-size-150);
+  --spectrum-selectlist-option-icon-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-selectlist-option-text-font-weight: var(--spectrum-global-font-weight-regular);
+  --spectrum-selectlist-option-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-selectlist-option-focus-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-selectlist-padding-left: var(--spectrum-global-dimension-size-150);
+  --spectrum-selectlist-padding-right: var(--spectrum-global-dimension-size-450);
+  --spectrum-selectlist-option-icon-padding-x: var(--spectrum-global-dimension-size-150);
+  --spectrum-selectlist-option-icon-padding-y: var(--spectrum-global-dimension-size-125);
+  --spectrum-selectlist-option-icon-margin-top: var(--spectrum-global-dimension-size-65);
+  --spectrum-selectlist-option-height: var(--spectrum-global-dimension-size-400);
+  --spectrum-selectlist-option-baseline: var(--spectrum-global-dimension-font-size-75);
+}

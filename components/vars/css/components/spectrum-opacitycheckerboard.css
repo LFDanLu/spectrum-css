@@ -1,0 +1,4 @@
+:root {
+  --spectrum-opacitycheckerboard-box-height: var(--spectrum-global-dimension-size-100);
+  --spectrum-opacitycheckerboard-box-width: var(--spectrum-global-dimension-size-100);
+}

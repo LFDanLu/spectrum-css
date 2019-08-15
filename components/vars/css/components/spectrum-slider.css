@@ -1,0 +1,7 @@
+:root {
+  --spectrum-slider-tick-mark-color: var(--spectrum-alias-track-color-default);
+  --spectrum-slider-tick-mark-margin-x: 1px;
+  --spectrum-slider-tick-mark-height: 10px;
+  --spectrum-slider-tick-mark-width: var(--spectrum-alias-border-size-thick);
+  --spectrum-slider-tick-mark-border-radius: var(--spectrum-alias-border-radius-xsmall);
+}

@@ -111,7 +111,7 @@ function getVariableMappings(themes) {
   return {mapping, vars, static};
 }
 
-let themes = getVariableMappings(['dark', 'darkest', 'light', 'lightest', 'middark', 'midlight']);
+let themes = getVariableMappings(['dark', 'darkest', 'light', 'lightest']);
 let scales = getVariableMappings(['large', 'medium']);
 let globals = getVars('css/spectrum-global.css');
 

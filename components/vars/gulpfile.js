@@ -13,6 +13,8 @@ governing permissions and limitations under the License.
 const gulp = require('gulp');
 const logger = require('gulplog');
 const fs = require('fs');
+const concat = require('gulp-concat');
+const replace = require('gulp-replace');
 const del = require('del');
 const path = require('path');
 
@@ -28,35 +30,53 @@ function prepareBuild(cb) {
   cb();
 }
 
-// Builds a list of unique variables from DNA for each theme and scale.
-function buildVars(cb) {
-  let vars = require('./generate');
-  for (let theme in vars.themes) {
-    fs.writeFileSync(`dist/spectrum-${theme}.css`, vars.generate(theme, vars.themes[theme]));
-  }
 
-  for (let scale in vars.scales) {
-    fs.writeFileSync(`dist/spectrum-${scale}.css`, vars.generate(scale, vars.scales[scale]));
-  }
+function concatGlobals() {
+  let globals = [
+    'spectrum-animationGlobals.css',
+    'spectrum-colorGlobals.css',
+    'spectrum-dimensionGlobals.css',
+    'spectrum-fontGlobals.css',
+    'spectrum-global.css',
+    'spectrum-staticAliases.css'
+  ];
 
-  cb();
+  return gulp.src(globals.map(fileName => `css/${fileName}`))
+    .pipe(replace(':root', function (match){
+      return '.spectrum';
+    }))
+    .pipe(concat('spectrum-global.css'))
+    .pipe(gulp.dest('dist/'));
 }
 
 function copySources() {
-  return gulp.src([
-    'css/spectrum-metadata.json',
-    'css/spectrum-global.css'
-  ])
-    .pipe(gulp.dest('dist/'))
+  let classMap = {
+    'spectrum-darkest.css': '.spectrum--darkest',
+    'spectrum-dark.css': '.spectrum--dark',
+    'spectrum-large.css': '.spectrum--large',
+    'spectrum-light.css': '.spectrum--light',
+    'spectrum-lightest.css': '.spectrum--lightest',
+    'spectrum-medium.css': '.spectrum--medium'
+  };
+
+  return gulp.src(Object.keys(classMap).map(fileName => `css/${fileName}`))
+    .pipe(replace(':root', function (match){
+      return classMap[path.basename(this.file.path)];
+    }))
+    .pipe(gulp.dest('dist/'));
+}
+
+function copyMetadata() {
+  return gulp.src('css/spectrum-metadata.json')
+    .pipe(gulp.dest('dist/'));
 }
 
 let build = gulp.series(
   clean,
   prepareBuild,
-  gulp.parallel(
-    buildVars,
-    copySources
-  )
+  concatGlobals,
+  copyMetadata,
+  copySources
 );
 
 exports.clean = clean;

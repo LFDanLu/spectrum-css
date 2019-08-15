@@ -1,0 +1,8 @@
+:root {
+  --spectrum-loader-circle-small-over-background-text-color: var(--spectrum-global-color-static-white);
+  --spectrum-loader-circle-small-over-background-track-color: var(--spectrum-alias-track-color-over-background);
+  --spectrum-loader-circle-small-over-background-track-fill-color: var(--spectrum-alias-background-color-transparent);
+  --spectrum-loader-circle-small-over-background-height: var(--spectrum-global-dimension-size-200);
+  --spectrum-loader-circle-small-over-background-width: var(--spectrum-global-dimension-size-200);
+  --spectrum-loader-circle-small-over-background-border-size: var(--spectrum-global-dimension-size-25);
+}

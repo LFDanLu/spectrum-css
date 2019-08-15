@@ -1,0 +1,8 @@
+:root {
+  --spectrum-scrollbar-quiet-bar-color: var(--spectrum-global-color-gray-600);
+  --spectrum-scrollbar-quiet-track-color: var(--spectrum-alias-background-color-transparent);
+  --spectrum-scrollbar-quiet-bar-width: var(--spectrum-global-dimension-size-50);
+  --spectrum-scrollbar-quiet-bar-border-radius: var(--spectrum-alias-border-radius-small);
+  --spectrum-scrollbar-quiet-track-width: var(--spectrum-global-dimension-size-50);
+  --spectrum-scrollbar-quiet-track-border-radius: var(--spectrum-alias-border-radius-small);
+}

@@ -1,0 +1,7 @@
+:root {
+  --spectrum-clearbutton-small-background-color: var(--spectrum-alias-background-color-transparent);
+  --spectrum-clearbutton-small-icon-color: var(--spectrum-global-color-gray-500);
+  --spectrum-clearbutton-small-icon-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-clearbutton-small-width: var(--spectrum-global-dimension-size-300);
+  --spectrum-clearbutton-small-height: var(--spectrum-global-dimension-size-300);
+}

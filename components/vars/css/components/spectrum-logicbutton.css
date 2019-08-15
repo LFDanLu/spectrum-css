@@ -1,0 +1,11 @@
+:root {
+  --spectrum-logicbutton-or-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-logicbutton-or-background-color: var(--spectrum-global-color-magenta-700);
+  --spectrum-logicbutton-or-border-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-logicbutton-or-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-logicbutton-or-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-logicbutton-or-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-logicbutton-or-text-font-weight: var(--spectrum-global-font-weight-bold);
+  --spectrum-logicbutton-or-height: 24px;
+  --spectrum-logicbutton-or-padding-x: var(--spectrum-global-dimension-size-100);
+}

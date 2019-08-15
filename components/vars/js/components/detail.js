@@ -1,0 +1,14 @@
+const staticAliases = require('../staticAliases.js');
+const fontGlobals = require('../fontGlobals.js');
+const medium = require('../medium.js');
+const detail = exports;
+exports["text-font-family"] = staticAliases["font-family-zh"];
+exports["text-font-style"] = fontGlobals["style-regular"];
+exports["text-font-weight"] = staticAliases["han-detail-text-font-weight-strong"];
+exports["text-line-height"] = staticAliases["body-han-text-line-height"];
+exports["text-letter-spacing"] = fontGlobals["letter-spacing-han"];
+exports["text-transform"] = "none";
+exports["margin-top"] = "0px";
+exports["margin-bottom-multiplier"] = staticAliases["body-margin-bottom"];
+exports["text-size"] = medium["font-size-50"];
+exports["margin-bottom"] = medium["size-100"];

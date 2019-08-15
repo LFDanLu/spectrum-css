@@ -1,0 +1,5 @@
+:root {
+  --spectrum-dropindicator-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-dropindicator-circle-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-dropindicator-circle-size: var(--spectrum-global-dimension-size-150);
+}

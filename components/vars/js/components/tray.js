@@ -1,0 +1,10 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const medium = require('../medium.js');
+const tray = exports;
+exports["padding-x"] = dimensionGlobals["size-100"];
+exports["padding-y"] = "0";
+exports["width"] = "100%";
+exports["max-width"] = "375px";
+exports["min-height"] = dimensionGlobals["size-800"];
+exports["border-radius"] = "0px";
+exports["full-width-border-radius"] = medium["dimensionAliases"].["border-radius-regular"];

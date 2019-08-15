@@ -1,0 +1,21 @@
+:root {
+  --spectrum-tooltip-positive-text-color: var(--spectrum-global-color-static-white);
+  --spectrum-tooltip-positive-icon-color: var(--spectrum-global-color-static-white);
+  --spectrum-tooltip-positive-background-color: var(--spectrum-global-color-static-green-700);
+  --spectrum-tooltip-positive-tip-color: var(--spectrum-global-color-static-green-700);
+  --spectrum-tooltip-positive-text-font-weight: var(--spectrum-global-font-weight-regular);
+  --spectrum-tooltip-positive-min-height: var(--spectrum-global-dimension-size-300);
+  --spectrum-tooltip-positive-padding-x: var(--spectrum-global-dimension-size-125);
+  --spectrum-tooltip-positive-padding-top: var(--spectrum-global-dimension-size-50);
+  --spectrum-tooltip-positive-padding-bottom: 5px;
+  --spectrum-tooltip-positive-content-max-width: 101px;
+  --spectrum-tooltip-positive-icon-size: var(--spectrum-global-dimension-size-175);
+  --spectrum-tooltip-positive-icon-margin-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-tooltip-positive-tip-height: var(--spectrum-global-dimension-size-50);
+  --spectrum-tooltip-positive-tip-width: var(--spectrum-global-dimension-size-100);
+  --spectrum-tooltip-positive-tip-margin: var(--spectrum-global-dimension-size-100);
+  --spectrum-tooltip-positive-border-radius: var(--spectrum-global-dimension-size-50);
+  --spectrum-tooltip-positive-text-baseline: var(--spectrum-global-dimension-size-100);
+  --spectrum-tooltip-positive-text-size: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-tooltip-positive-text-line-height: var(--spectrum-global-dimension-font-size-200);
+}

@@ -1,0 +1,12 @@
+const medium = require('../medium.js');
+const quickactions = exports;
+exports["button-gap-y"] = medium["size-100"];
+exports["button-gap-x"] = medium["size-100"];
+exports["icon-button-gap-y"] = medium["size-100"];
+exports["icon-button-gap-x"] = medium["size-100"];
+exports["text-button-gap-y"] = medium["size-50"];
+exports["text-button-gap-x"] = medium["size-50"];
+exports["padding-x"] = medium["size-50"];
+exports["padding-y"] = medium["size-50"];
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["height"] = medium["size-500"];

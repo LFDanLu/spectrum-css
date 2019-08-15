@@ -1,0 +1,14 @@
+const medium = require('../medium.js');
+const dimensionGlobals = require('../dimensionGlobals.js');
+const colorhandle = exports;
+exports["size"] = medium["size-200"];
+exports["inner-border-size"] = dimensionGlobals["size-25"];
+exports["outer-border-size"] = dimensionGlobals["size-10"];
+exports["size-focus"] = medium["size-400"];
+exports["loupe-width"] = dimensionGlobals["size-600"];
+exports["loupe-height"] = dimensionGlobals["size-800"];
+exports["loupe-inner-border-size"] = dimensionGlobals["size-25"];
+exports["loupe-outer-border-size"] = dimensionGlobals["size-10"];
+exports["loupe-shadow-offset-y"] = medium["size-10"];
+exports["loupe-shadow-blur"] = medium["size-50"];
+exports["loupe-margin"] = dimensionGlobals["size-125"];

@@ -1,0 +1,11 @@
+:root {
+  --spectrum-body-small-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-body-small-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-body-small-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-body-small-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-body-small-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-body-small-text-transform: none;
+  --spectrum-body-small-font-line-height: var(--spectrum-alias-line-height-small);
+  --spectrum-body-small-text-size: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-body-small-margin-bottom: var(--spectrum-global-dimension-size-100);
+}

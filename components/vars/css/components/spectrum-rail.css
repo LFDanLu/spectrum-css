@@ -1,0 +1,11 @@
+:root {
+  --spectrum-rail-content-background-color: var(--spectrum-global-color-gray-100);
+  --spectrum-rail-handle-background-color: var(--spectrum-global-color-gray-800);
+  --spectrum-rail-content-width: 304px;
+  --spectrum-rail-handle-width: var(--spectrum-global-dimension-size-25);
+  --spectrum-rail-gripper-width: var(--spectrum-global-dimension-size-50);
+  --spectrum-rail-gripper-height: var(--spectrum-global-dimension-size-200);
+  --spectrum-rail-gripper-border-width-vertical: 4px;
+  --spectrum-rail-gripper-border-width-horizontal: 3px;
+  --spectrum-rail-gripper-border-radius: var(--spectrum-alias-border-radius-small);
+}

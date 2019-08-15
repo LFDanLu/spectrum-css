@@ -1,0 +1,23 @@
+:root {
+  --spectrum-checkbox-quiet-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-checkbox-quiet-box-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-checkbox-quiet-box-border-radius: var(--spectrum-alias-border-radius-small);
+  --spectrum-checkbox-quiet-text-gap: var(--spectrum-global-dimension-size-125);
+  --spectrum-checkbox-quiet-box-background-color: var(--spectrum-global-color-gray-400);
+  --spectrum-checkbox-quiet-box-border-color: var(--spectrum-global-color-gray-400);
+  --spectrum-checkbox-quiet-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-checkbox-quiet-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-checkbox-quiet-text-font-weight: var(--spectrum-global-font-weight-regular);
+  --spectrum-checkbox-quiet-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-checkbox-quiet-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-checkbox-quiet-text-transform: none;
+  --spectrum-checkbox-quiet-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-checkbox-quiet-checkmark-size: var(--spectrum-global-dimension-size-125);
+  --spectrum-checkbox-quiet-box-size: var(--spectrum-global-dimension-size-175);
+  --spectrum-checkbox-quiet-margin-bottom: 0px;
+  --spectrum-checkbox-quiet-height: var(--spectrum-global-dimension-size-400);
+  --spectrum-checkbox-quiet-cursor-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-checkbox-quiet-touch-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-checkbox-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
+  --spectrum-checkbox-quiet-text-baseline: var(--spectrum-global-dimension-size-150);
+}

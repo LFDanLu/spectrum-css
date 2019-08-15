@@ -1,0 +1,12 @@
+const staticAliases = require('../staticAliases.js');
+const medium = require('../medium.js');
+const colorwheel = exports;
+exports["border-size"] = staticAliases["border-size-thin"];
+exports["default-size"] = medium["size-2400"];
+exports["track-width"] = medium["size-300"];
+exports["colorarea-margin"] = medium["size-150"];
+exports["min-size"] = medium["size-2400"];
+exports["cursor-hit-outer"] = medium["size-0"];
+exports["cursor-hit-inner"] = medium["size-0"];
+exports["touch-hit-outer"] = medium["size-150"];
+exports["touch-hit-inner"] = medium["size-150"];

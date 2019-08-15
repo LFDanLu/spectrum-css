@@ -1,0 +1,13 @@
+:root {
+  --spectrum-heading-subtitle3-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-heading-subtitle3-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-heading-subtitle3-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
+  --spectrum-heading-subtitle3-text-line-height: var(--spectrum-alias-heading-text-line-height);
+  --spectrum-heading-subtitle3-text-letter-spacing: var(--spectrum-global-font-letter-spacing-medium);
+  --spectrum-heading-subtitle3-text-transform: uppercase;
+  --spectrum-heading-subtitle3-margin-bottom-multiplier: var(--spectrum-alias-heading-margin-bottom);
+  --spectrum-heading-subtitle3-font-line-height: var(--spectrum-global-font-line-height-small);
+  --spectrum-heading-subtitle3-text-size: var(--spectrum-global-dimension-font-size-50);
+  --spectrum-heading-subtitle3-margin-top: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-heading-subtitle3-margin-bottom: var(--spectrum-global-dimension-size-40);
+}

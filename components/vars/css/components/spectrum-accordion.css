@@ -1,0 +1,20 @@
+:root {
+  --spectrum-accordion-border-color: var(--spectrum-global-color-gray-300);
+  --spectrum-accordion-icon-color: var(--spectrum-global-color-gray-400);
+  --spectrum-accordion-text-color: var(--spectrum-global-color-gray-500);
+  --spectrum-accordion-background-color: var(--spectrum-global-color-gray-200);
+  --spectrum-accordion-item-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-accordion-item-border-left-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-accordion-border-left-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-accordion-item-border-left-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-accordion-item-height: 40px;
+  --spectrum-accordion-item-padding: 16px;
+  --spectrum-accordion-item-padding-x: var(--spectrum-global-dimension-size-225);
+  --spectrum-accordion-icon-spacing: 16px;
+  --spectrum-accordion-icon-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-accordion-icon-width: var(--spectrum-global-dimension-size-75);
+  --spectrum-accordion-icon-height: var(--spectrum-global-dimension-size-125);
+  --spectrum-accordion-item-title-text-size: var(--spectrum-global-dimension-font-size-50);
+  --spectrum-accordion-item-title-tracking: var(--spectrum-global-font-letter-spacing-medium);
+  --spectrum-accordion-item-content-padding: var(--spectrum-global-dimension-size-200);
+}

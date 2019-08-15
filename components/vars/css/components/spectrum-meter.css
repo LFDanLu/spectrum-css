@@ -1,0 +1,14 @@
+:root {
+  --spectrum-meter-small-text-color: var(--spectrum-alias-text-color);
+  --spectrum-meter-small-track-color: var(--spectrum-alias-track-color-disabled);
+  --spectrum-meter-small-track-fill-color: var(--spectrum-alias-track-color-disabled);
+  --spectrum-meter-small-track-color-positive: var(--spectrum-global-color-green-400);
+  --spectrum-meter-small-track-color-warning: var(--spectrum-global-color-orange-400);
+  --spectrum-meter-small-track-color-critical: var(--spectrum-global-color-red-400);
+  --spectrum-meter-small-width: var(--spectrum-global-dimension-size-2400);
+  --spectrum-meter-small-label-gap-x: var(--spectrum-global-dimension-size-150);
+  --spectrum-meter-small-height: var(--spectrum-global-dimension-size-50);
+  --spectrum-meter-small-border-radius: var(--spectrum-global-dimension-size-25);
+  --spectrum-meter-small-fill-border-radius: 0;
+  --spectrum-meter-small-label-gap-y: var(--spectrum-global-dimension-size-115);
+}

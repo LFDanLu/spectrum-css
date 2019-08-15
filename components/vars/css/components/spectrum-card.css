@@ -1,0 +1,11 @@
+:root {
+  --spectrum-card-quiet-small-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-card-quiet-small-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-card-quiet-small-body-header-height: var(--spectrum-global-dimension-size-150);
+  --spectrum-card-quiet-small-body-margin-top: var(--spectrum-global-dimension-size-100);
+  --spectrum-card-quiet-small-preview-padding: var(--spectrum-global-dimension-size-150);
+  --spectrum-card-quiet-small-checkbox-margin: var(--spectrum-global-dimension-size-125);
+  --spectrum-card-quiet-small-min-size: var(--spectrum-global-dimension-size-900);
+  --spectrum-card-quiet-small-title-text-size: var(--spectrum-global-dimension-font-size-100);
+  --spectrum-card-quiet-small-body-header-margin-top: var(--spectrum-global-dimension-size-175);
+}

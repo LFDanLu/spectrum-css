@@ -1,0 +1,21 @@
+:root {
+  --spectrum-button-warning-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-button-warning-background-color: var(--spectrum-global-color-gray-200);
+  --spectrum-button-warning-border-color: var(--spectrum-global-color-gray-200);
+  --spectrum-button-warning-text-color: var(--spectrum-global-color-gray-500);
+  --spectrum-button-warning-border-size-increase: 1px;
+  --spectrum-button-warning-height: var(--spectrum-alias-single-line-height);
+  --spectrum-button-warning-padding-x: var(--spectrum-global-dimension-size-200);
+  --spectrum-button-warning-text-padding-x: var(--spectrum-global-dimension-size-200);
+  --spectrum-button-warning-icon-padding-left: var(--spectrum-global-dimension-size-175);
+  --spectrum-button-warning-icon-padding-right: var(--spectrum-global-dimension-size-100);
+  --spectrum-button-warning-border-radius: var(--spectrum-alias-border-radius-large);
+  --spectrum-button-warning-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-button-warning-text-font-weight: var(--spectrum-global-font-weight-bold);
+  --spectrum-button-warning-text-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-button-warning-text-size: var(--spectrum-alias-pill-button-text-size);
+  --spectrum-button-warning-text-baseline: var(--spectrum-alias-pill-button-text-baseline);
+  --spectrum-button-warning-min-width: var(--spectrum-global-dimension-size-900);
+  --spectrum-button-warning-touch-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-button-warning-touch-hit-y: var(--spectrum-global-dimension-size-100);
+}

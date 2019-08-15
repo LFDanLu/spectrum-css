@@ -1,0 +1,12 @@
+:root {
+  --spectrum-display-strong-han-2-strong-text-font-family: var(--spectrum-alias-font-family-zh);
+  --spectrum-display-strong-han-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-display-strong-han-2-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong-strong);
+  --spectrum-display-strong-han-2-strong-text-line-height: var(--spectrum-alias-heading-han-text-line-height);
+  --spectrum-display-strong-han-2-strong-text-letter-spacing: var(--spectrum-global-font-letter-spacing-han);
+  --spectrum-display-strong-han-2-strong-text-transform: none;
+  --spectrum-display-strong-han-2-strong-margin-bottom-multiplier: var(--spectrum-alias-heading-margin-bottom);
+  --spectrum-display-strong-han-2-strong-text-size: var(--spectrum-alias-heading-han-display2-text-size);
+  --spectrum-display-strong-han-2-strong-margin-top: var(--spectrum-alias-heading-han-display2-margin-top);
+  --spectrum-display-strong-han-2-strong-margin-bottom: var(--spectrum-global-dimension-size-115);
+}

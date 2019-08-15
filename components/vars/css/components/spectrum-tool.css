@@ -1,0 +1,29 @@
+:root {
+  --spectrum-tool-high-emphasis-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-tool-high-emphasis-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-tool-high-emphasis-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-tool-high-emphasis-background-color: var(--spectrum-alias-background-color-transparent);
+  --spectrum-tool-high-emphasis-border-color: var(--spectrum-alias-border-color-transparent);
+  --spectrum-tool-high-emphasis-hold-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-tool-high-emphasis-border-offset: var(--spectrum-alias-border-size-thick);
+  --spectrum-tool-high-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-tool-high-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-tool-high-emphasis-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-tool-high-emphasis-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-tool-high-emphasis-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-tool-high-emphasis-text-transform: none;
+  --spectrum-tool-high-emphasis-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-tool-high-emphasis-icon-size: var(--spectrum-alias-workflow-icon-size);
+  --spectrum-tool-high-emphasis-text-baseline: var(--spectrum-global-dimension-size-150);
+  --spectrum-tool-high-emphasis-height: var(--spectrum-alias-single-line-height);
+  --spectrum-tool-high-emphasis-min-width: var(--spectrum-global-dimension-size-400);
+  --spectrum-tool-high-emphasis-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-tool-high-emphasis-text-padding-x: var(--spectrum-global-dimension-size-150);
+  --spectrum-tool-high-emphasis-icon-padding-x: var(--spectrum-global-dimension-size-85);
+  --spectrum-tool-high-emphasis-icon-padding-y: var(--spectrum-global-dimension-size-85);
+  --spectrum-tool-high-emphasis-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-tool-high-emphasis-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
+  --spectrum-tool-high-emphasis-hold-icon-size: var(--spectrum-global-dimension-size-65);
+  --spectrum-tool-high-emphasis-touch-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-tool-high-emphasis-touch-hit-y: var(--spectrum-global-dimension-size-100);
+}

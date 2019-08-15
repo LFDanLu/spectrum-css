@@ -1,0 +1,12 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const medium = require('../medium.js');
+const staticAliases = require('../staticAliases.js');
+const dial = exports;
+exports["height"] = dimensionGlobals["size-300"];
+exports["width"] = dimensionGlobals["size-300"];
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-large"];
+exports["margin-right"] = dimensionGlobals["size-300"];
+exports["min-max-tick-angles"] = "45deg";
+exports["handle-marker-width"] = "12px";
+exports["handle-marker-height"] = staticAliases["border-size-thick"];
+exports["handle-marker-border-radius"] = medium["dimensionAliases"].["border-radius-xsmall"];

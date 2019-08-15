@@ -1,0 +1,14 @@
+:root {
+  --spectrum-statuslight-positive-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-statuslight-positive-dot-color: var(--spectrum-global-color-gray-400);
+  --spectrum-statuslight-positive-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-statuslight-positive-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-statuslight-positive-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-statuslight-positive-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-statuslight-positive-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-statuslight-positive-text-transform: none;
+  --spectrum-statuslight-positive-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-statuslight-positive-height: var(--spectrum-alias-single-line-height);
+  --spectrum-statuslight-positive-text-gap: var(--spectrum-global-dimension-size-150);
+  --spectrum-statuslight-positive-dot-size: var(--spectrum-global-dimension-size-100);
+}

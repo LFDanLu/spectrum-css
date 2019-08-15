@@ -1,0 +1,15 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const medium = require('../medium.js');
+const column = exports;
+exports["item-height"] = dimensionGlobals["size-500"];
+exports["ui-icon-width"] = medium["size-75"];
+exports["ui-icon-height"] = medium["size-125"];
+exports["thumbnail-width"] = dimensionGlobals["size-300"];
+exports["thumbnail-height"] = dimensionGlobals["size-300"];
+exports["thumbnail-margin-left"] = dimensionGlobals["size-100"];
+exports["item-label-padding-left"] = dimensionGlobals["size-100"];
+exports["item-margin-bottom"] = dimensionGlobals["size-50"];
+exports["width"] = dimensionGlobals["size-3400"];
+exports["item-border-radius"] = dimensionGlobals["size-50"];
+exports["item-padding-left"] = dimensionGlobals["size-200"];
+exports["item-padding-right"] = dimensionGlobals["size-200"];

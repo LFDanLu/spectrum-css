@@ -1,0 +1,18 @@
+:root {
+  --spectrum-rating-quiet-border-color: var(--spectrum-alias-border-color-transparent);
+  --spectrum-rating-quiet-icon-color: var(--spectrum-global-color-gray-400);
+  --spectrum-rating-quiet-focus-ring-color: var(--spectrum-alias-focus-color);
+  --spectrum-rating-quiet-height: var(--spectrum-alias-single-line-height);
+  --spectrum-rating-quiet-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-rating-quiet-focus-ring-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-rating-quiet-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-rating-quiet-icon-count: 5;
+  --spectrum-rating-quiet-icon-spacing: var(--spectrum-global-dimension-size-75);
+  --spectrum-rating-quiet-icon-width: 24px;
+  --spectrum-rating-quiet-icon-padding-y: var(--spectrum-global-dimension-size-85);
+  --spectrum-rating-quiet-indicator-width: 16px;
+  --spectrum-rating-quiet-indicator-height: var(--spectrum-global-dimension-size-25);
+  --spectrum-rating-quiet-indicator-border-radius: var(--spectrum-alias-border-radius-small);
+  --spectrum-rating-quiet-indicator-offset: var(--spectrum-alias-border-size-thick);
+  --spectrum-rating-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
+}

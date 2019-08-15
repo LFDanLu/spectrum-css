@@ -1,0 +1,28 @@
+:root {
+  --spectrum-actionbutton-quiet-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-actionbutton-quiet-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-actionbutton-quiet-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-actionbutton-quiet-background-color: var(--spectrum-global-color-gray-200);
+  --spectrum-actionbutton-quiet-border-color: var(--spectrum-global-color-gray-200);
+  --spectrum-actionbutton-quiet-hold-icon-color: var(--spectrum-alias-icon-color-selected-focus);
+  --spectrum-actionbutton-quiet-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-actionbutton-quiet-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-actionbutton-quiet-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-actionbutton-quiet-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-actionbutton-quiet-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-actionbutton-quiet-text-transform: none;
+  --spectrum-actionbutton-quiet-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-actionbutton-quiet-icon-size: var(--spectrum-alias-workflow-icon-size);
+  --spectrum-actionbutton-quiet-text-baseline: var(--spectrum-global-dimension-size-150);
+  --spectrum-actionbutton-quiet-height: var(--spectrum-alias-single-line-height);
+  --spectrum-actionbutton-quiet-min-width: var(--spectrum-global-dimension-size-400);
+  --spectrum-actionbutton-quiet-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-actionbutton-quiet-text-padding-x: var(--spectrum-global-dimension-size-150);
+  --spectrum-actionbutton-quiet-icon-padding-x: var(--spectrum-global-dimension-size-85);
+  --spectrum-actionbutton-quiet-icon-padding-y: var(--spectrum-global-dimension-size-85);
+  --spectrum-actionbutton-quiet-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-actionbutton-quiet-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
+  --spectrum-actionbutton-quiet-hold-icon-size: var(--spectrum-global-dimension-size-65);
+  --spectrum-actionbutton-quiet-touch-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-actionbutton-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
+}

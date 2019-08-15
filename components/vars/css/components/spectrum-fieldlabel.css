@@ -1,0 +1,19 @@
+:root {
+  --spectrum-fieldlabel-side-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-fieldlabel-side-asterisk-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-fieldlabel-side-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-fieldlabel-side-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-fieldlabel-side-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-fieldlabel-side-text-font-weight: var(--spectrum-global-font-weight-regular);
+  --spectrum-fieldlabel-side-text-line-height: var(--spectrum-global-font-line-height-small);
+  --spectrum-fieldlabel-side-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-fieldlabel-side-text-transform: none;
+  --spectrum-fieldlabel-side-icon-size: var(--spectrum-alias-workflow-icon-size);
+  --spectrum-fieldlabel-side-text-size: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-fieldlabel-side-asterisk-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-fieldlabel-side-asterisk-gap: var(--spectrum-global-dimension-size-25);
+  --spectrum-fieldlabel-side-asterisk-margin-y: 0px;
+  --spectrum-fieldlabel-side-padding-top: var(--spectrum-global-dimension-size-100);
+  --spectrum-fieldlabel-side-padding-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-fieldlabel-side-icon-margin-y: var(--spectrum-global-dimension-size-85);
+}

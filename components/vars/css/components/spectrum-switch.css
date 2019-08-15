@@ -1,0 +1,24 @@
+:root {
+  --spectrum-switch-quiet-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-switch-quiet-handle-border-color: var(--spectrum-global-color-gray-400);
+  --spectrum-switch-quiet-handle-background-color: var(--spectrum-global-color-gray-75);
+  --spectrum-switch-quiet-handle-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-switch-quiet-track-color: var(--spectrum-global-color-gray-400);
+  --spectrum-switch-quiet-text-gap: var(--spectrum-global-dimension-size-125);
+  --spectrum-switch-quiet-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-switch-quiet-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-switch-quiet-text-font-weight: var(--spectrum-global-font-weight-regular);
+  --spectrum-switch-quiet-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-switch-quiet-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-switch-quiet-text-transform: none;
+  --spectrum-switch-quiet-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-switch-quiet-track-width: 26px;
+  --spectrum-switch-quiet-handle-size: var(--spectrum-global-dimension-size-175);
+  --spectrum-switch-quiet-track-height: var(--spectrum-global-dimension-size-175);
+  --spectrum-switch-quiet-handle-border-radius: 7px;
+  --spectrum-switch-quiet-height: var(--spectrum-global-dimension-size-400);
+  --spectrum-switch-quiet-text-baseline: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-switch-quiet-cursor-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-switch-quiet-touch-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-switch-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
+}

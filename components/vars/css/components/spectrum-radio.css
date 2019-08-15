@@ -1,0 +1,23 @@
+:root {
+  --spectrum-radio-quiet-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-radio-quiet-circle-border-color: var(--spectrum-global-color-gray-400);
+  --spectrum-radio-quiet-circle-background-color: var(--spectrum-global-color-gray-75);
+  --spectrum-radio-quiet-circle-dot-color: var(--spectrum-global-color-gray-75);
+  --spectrum-radio-quiet-circle-border-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-radio-quiet-text-gap: var(--spectrum-global-dimension-size-125);
+  --spectrum-radio-quiet-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-radio-quiet-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-radio-quiet-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-radio-quiet-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-radio-quiet-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-radio-quiet-text-transform: none;
+  --spectrum-radio-quiet-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-radio-quiet-circle-dot-size: var(--spectrum-global-dimension-size-50);
+  --spectrum-radio-quiet-circle-diameter: var(--spectrum-global-dimension-size-175);
+  --spectrum-radio-quiet-height: var(--spectrum-global-dimension-size-400);
+  --spectrum-radio-quiet-margin-bottom: 0px;
+  --spectrum-radio-quiet-text-baseline: var(--spectrum-global-dimension-size-150);
+  --spectrum-radio-quiet-cursor-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-radio-quiet-touch-hit-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-radio-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
+}

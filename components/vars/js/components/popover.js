@@ -1,0 +1,16 @@
+const staticAliases = require('../staticAliases.js');
+const medium = require('../medium.js');
+const popover = exports;
+exports["border-size"] = staticAliases["border-size-thin"];
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["shadow-blur"] = medium["dimensionAliases"].["dropshadow-blur"];
+exports["shadow-offset-y"] = medium["dimensionAliases"].["dropshadow-offset-y"];
+exports["padding-x"] = "0px";
+exports["padding-y"] = medium["size-50"];
+exports["tip-width"] = medium["size-250"];
+exports["tip-height"] = medium["size-125"];
+exports["shadow-y-offset"] = medium["size-10"];
+exports["source-gap"] = medium["size-75"];
+exports["min-width"] = medium["size-400"];
+exports["min-height"] = medium["size-400"];
+exports["elevation"] = "2dp";

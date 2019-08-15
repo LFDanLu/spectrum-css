@@ -1,0 +1,11 @@
+:root {
+  --spectrum-barloader-small-over-background-text-color: var(--spectrum-global-color-static-white);
+  --spectrum-barloader-small-over-background-track-color: var(--spectrum-alias-track-color-over-background);
+  --spectrum-barloader-small-over-background-track-fill-color: var(--spectrum-alias-background-color-transparent);
+  --spectrum-barloader-small-over-background-width: var(--spectrum-global-dimension-size-2400);
+  --spectrum-barloader-small-over-background-label-gap-x: var(--spectrum-global-dimension-size-150);
+  --spectrum-barloader-small-over-background-height: var(--spectrum-global-dimension-size-50);
+  --spectrum-barloader-small-over-background-border-radius: var(--spectrum-global-dimension-size-25);
+  --spectrum-barloader-small-over-background-fill-border-radius: 0;
+  --spectrum-barloader-small-over-background-label-gap-y: var(--spectrum-global-dimension-size-115);
+}

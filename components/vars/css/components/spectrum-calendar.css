@@ -1,0 +1,6 @@
+:root {
+  --spectrum-calendar-button-icon-color: var(--spectrum-global-color-gray-700);
+  --spectrum-calendar-width: 250px;
+  --spectrum-calendar-title-height: var(--spectrum-global-dimension-size-400);
+  --spectrum-calendar-title-text-size: var(--spectrum-global-dimension-font-size-300);
+}

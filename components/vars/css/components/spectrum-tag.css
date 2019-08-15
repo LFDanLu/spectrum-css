@@ -1,0 +1,19 @@
+:root {
+  --spectrum-tag-deletable-background-color: var(--spectrum-global-color-gray-200);
+  --spectrum-tag-deletable-border-color: var(--spectrum-global-color-red-700);
+  --spectrum-tag-deletable-text-color: var(--spectrum-global-color-gray-700);
+  --spectrum-tag-deletable-icon-color: var(--spectrum-global-color-red-700);
+  --spectrum-tag-deletable-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-tag-deletable-text-size: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-tag-deletable-text-font-weight: var(--spectrum-global-font-weight-regular);
+  --spectrum-tag-deletable-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-tag-deletable-text-baseline: var(--spectrum-global-dimension-size-100);
+  --spectrum-tag-deletable-height: var(--spectrum-global-dimension-size-300);
+  --spectrum-tag-deletable-icon-height: var(--spectrum-global-dimension-size-100);
+  --spectrum-tag-deletable-icon-width: var(--spectrum-global-dimension-size-100);
+  --spectrum-tag-deletable-border-radius: var(--spectrum-alias-border-radius-regular);
+  --spectrum-tag-deletable-padding-x: var(--spectrum-global-dimension-size-125);
+  --spectrum-tag-deletable-avatar-padding-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-tag-deletable-icon-padding-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-tag-deletable-icon-size: var(--spectrum-global-dimension-size-100);
+}

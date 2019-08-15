@@ -1,0 +1,31 @@
+:root {
+  --spectrum-tabs-vertical-text-color: var(--spectrum-alias-text-color-disabled);
+  --spectrum-tabs-vertical-icon-color: var(--spectrum-alias-icon-color-disabled);
+  --spectrum-tabs-vertical-selection-indicator-color: var(--spectrum-global-color-gray-900);
+  --spectrum-tabs-vertical-focus-ring-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-tabs-vertical-rule-color: var(--spectrum-global-color-gray-200);
+  --spectrum-tabs-vertical-text-font-family: var(--spectrum-alias-body-text-font-family);
+  --spectrum-tabs-vertical-text-font-style: var(--spectrum-global-font-style-regular);
+  --spectrum-tabs-vertical-text-font-weight: var(--spectrum-alias-body-text-font-weight);
+  --spectrum-tabs-vertical-text-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-tabs-vertical-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
+  --spectrum-tabs-vertical-text-transform: none;
+  --spectrum-tabs-vertical-text-size: var(--spectrum-alias-font-size-default);
+  --spectrum-tabs-vertical-icon-size: var(--spectrum-alias-workflow-icon-size);
+  --spectrum-tabs-vertical-baseline: var(--spectrum-global-dimension-size-225);
+  --spectrum-tabs-vertical-height: var(--spectrum-global-dimension-size-600);
+  --spectrum-tabs-vertical-item-height: var(--spectrum-global-dimension-size-550);
+  --spectrum-tabs-vertical-icon-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-tabs-vertical-rule-border-radius: var(--spectrum-global-dimension-size-10);
+  --spectrum-tabs-vertical-focus-ring-height: var(--spectrum-alias-single-line-height);
+  --spectrum-tabs-vertical-focus-ring-size: var(--spectrum-alias-border-size-thick);
+  --spectrum-tabs-vertical-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
+  --spectrum-tabs-vertical-focus-ring-border-radius: 5px;
+  --spectrum-tabs-vertical-padding-x: var(--spectrum-global-dimension-size-0);
+  --spectrum-tabs-vertical-item-gap: var(--spectrum-global-dimension-size-50);
+  --spectrum-tabs-vertical-item-margin-left: var(--spectrum-global-dimension-size-150);
+  --spectrum-tabs-vertical-rule-width: var(--spectrum-alias-border-size-thick);
+  --spectrum-tabs-vertical-margin-left: 0px;
+  --spectrum-tabs-vertical-margin-right: 0px;
+  --spectrum-tabs-vertical-focus-area-gap: var(--spectrum-global-dimension-size-200);
+}
