@@ -67,7 +67,7 @@ function Search(el) {
   }.bind(this));
 
   document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
       this.input.classList.add('focus-ring');
       this.input.setSelectionRange(0, this.input.value.length);
       setTimeout(this.input.focus.bind(this.input), 100);
