@@ -66,6 +66,37 @@ function copySources() {
     .pipe(gulp.dest('dist/'));
 }
 
+const insert = require('gulp-insert');
+
+function concatAll() {
+  return gulp.src([
+    'css/*.css',
+    'css/components/*.css'
+  ])
+    .pipe(replace(/:root {/, function(match) {
+      return `/* ${path.basename(this.file.path)} */`;
+    }))
+    .pipe(replace(/}/, ''))
+    .pipe(concat('index.css'))
+    .pipe(insert.prepend(':root {'))
+    .pipe(insert.append('}\n'))
+    .pipe(gulp.dest('dist/'));
+}
+
+function concatComponents() {
+  return gulp.src([
+    'css/components/*.css'
+  ])
+    .pipe(replace(/:root {/, function(match) {
+      return `/* ${path.basename(this.file.path)} */`;
+    }))
+    .pipe(replace(/}/, ''))
+    .pipe(concat('index.css'))
+    .pipe(insert.prepend(':root {'))
+    .pipe(insert.append('}\n'))
+    .pipe(gulp.dest('dist/components/'));
+}
+
 function copyMetadata() {
   return gulp.src('css/spectrum-metadata.json')
     .pipe(gulp.dest('dist/'));
@@ -74,9 +105,15 @@ function copyMetadata() {
 let build = gulp.series(
   clean,
   prepareBuild,
-  concatGlobals,
-  copyMetadata,
-  copySources
+  gulp.parallel(
+    copyMetadata,
+    concatGlobals,
+    copySources
+  ),
+  gulp.parallel(
+    concatAll,
+    concatComponents
+  )
 );
 
 exports.clean = clean;

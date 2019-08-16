@@ -189,41 +189,52 @@ function generateDNAJS() {
 
       for (let elementName in scale) {
         let element = scale[elementName];
+
+        let allVariables = {};
+        let colorVariables = [];
+        let dimensionVariables = [];
         for (let variantName in element) {
           let variant = element[variantName];
-          let allVariables = {};
 
           if (variant.states) {
-            let colorVariables = [];
             for (let stateName in variant.states) {
               let state = variant.states[stateName];
               for (let key in state) {
                 let value = state[key];
-                allVariables[key] = value;
+                let varName = `${variant.varBaseName}`;
+                varName += `-${key}`;
+                if (stateName !== 'default') {
+                  varName += `-${stateName}`;
+                }
+                if (allVariables[varName]) {
+                  throw new Error(`${varName} already defined for ${variantName}!`);
+                }
+                allVariables[varName] = value;
                 colorVariables[key] = value;
               }
             }
           }
 
           if (variant.dimensions) {
-            let dimensionVariables = [];
             for (let key in variant.dimensions) {
               let value = variant.dimensions[key];
-              allVariables[key] = value;
+              allVariables[`${variant.varBaseName}-${key}`] = value;
               dimensionVariables[key] = value;
             }
-
-            generateJSFile([
-              dimensionVariables
-            ], elementName, 'js/components');
           }
-
-          allVariables.varBaseName = variant.varBaseName;
-
-          generateCSSFile([
-            allVariables
-          ], elementName, 'css/components');
         }
+
+        generateJSFile([
+          dimensionVariables
+        ], `${elementName}-dimensions`, 'js/components');
+
+        generateJSFile([
+          colorVariables
+        ], `${elementName}-color`, 'js/components');
+
+        generateCSSFile([
+          allVariables
+        ], elementName, 'css/components');
       }
 
       cb();

@@ -1,5 +1,7 @@
 :root {
-  --spectrum-dragbar-handle-background-color: var(--spectrum-global-color-gray-800);
+  --spectrum-dragbar-handle-background-color: var(--spectrum-global-color-gray-300);
+  --spectrum-dragbar-handle-background-color-hover: var(--spectrum-global-color-gray-400);
+  --spectrum-dragbar-handle-background-color-down: var(--spectrum-global-color-gray-800);
   --spectrum-dragbar-handle-width: var(--spectrum-global-dimension-size-25);
   --spectrum-dragbar-gripper-width: var(--spectrum-global-dimension-size-50);
   --spectrum-dragbar-gripper-height: var(--spectrum-global-dimension-size-200);

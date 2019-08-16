@@ -30,7 +30,7 @@ let scales = [
   'large'
 ];
 
-function getVars(css) {
+function getVarsFromCSS(css) {
   let variableList = [];
   let root = postcss.parse(css);
 
@@ -39,7 +39,7 @@ function getVars(css) {
       let matches = decl.value.match(/var\(.*?\)/g);
       if (matches) {
         matches.forEach(function(match) {
-          let varName = match.replace(/var\((--[\w\-]+),?\s*(.*)\)/, '$1').trim();
+          let varName = match.replace(/var\((--[\w\-]+),?.*?\)/, '$1').trim();
           if (variableList.indexOf(varName) === -1) {
             variableList.push(varName);
           }
@@ -109,18 +109,19 @@ function getClassNames(contents, pkgName) {
   return classNames;
 }
 
-async function getVariables(colorStop) {
+async function getAllDNAVariables() {
   const varDir = path.join(process.cwd(), 'node_modules', '@spectrum-css', 'vars');
-  let css = await fsp.readFile(path.join(varDir, 'css', `spectrum-${colorStop}.css`));
+  let css = await fsp.readFile(path.join(varDir, 'dist', 'index.css'));
   let vars = getVarValues(css);
-  return { colorStop: colorStop, vars: vars };
+  console.log(`Found ${Object.keys(vars).length} total variables`);
+  return vars;
 }
 
-function getVariableDeclarations(classNames, modifier, vars) {
+function getVariableDeclarations(classNames, vars) {
   let varNames = Object.keys(vars);
   if (varNames.length) {
     return `
-${classNames.map((className) => `.spectrum--${modifier} ${className}`).join(',\n')} {
+${classNames.map((className) => `${className}`).join(',\n')} {
 ${varNames.map((varName) => `  ${varName}: ${vars[varName]};`).join('\n')}
 }
 `;
@@ -139,33 +140,27 @@ function bakeVars() {
     let classNames = getClassNames(file.contents, pkgName);
 
     // Find all custom properties used in the component
-    let variableList = getVars(file.contents);
+    let variableList = getVarsFromCSS(file.contents);
 
     // For each color stop and scale, filter the variables for those matching the component
-    let vars = await Promise.all(colorStops.concat(scales).map(getVariables));
-    vars.forEach((varSet) => {
-      let {colorStop, vars} = varSet;
+    let vars = await getAllDNAVariables();
 
-      let usedVars = {};
-      for (let varName in vars) {
-        if (variableList.indexOf(varName) !== -1) {
-          if (varName.indexOf('spectrum-global') !== -1) {
-            logger.warn(`${pkg.name} directly uses global variable ${varName}`);
-          }
-          usedVars[varName] = vars[varName];
-        }
+    let usedVars = {};
+    variableList.forEach(varName => {
+      if (varName.indexOf('spectrum-global') !== -1) {
+        logger.warn(`${pkg.name} directly uses global variable ${varName}`);
       }
-
-      let contents = getVariableDeclarations(classNames, colorStop, usedVars);
-      let newFile = file.clone({contents: false});
-      newFile.path = path.join(file.base, `spectrum-${colorStop}.css`);
-      newFile.contents = Buffer.from(contents);
-      this.push(newFile);
+      usedVars[varName] = vars[varName];
     });
 
-    cb(null);
+    let contents = getVariableDeclarations(classNames, usedVars);
+    let newFile = file.clone({contents: false});
+    newFile.path = path.join(file.base, `vars.css`);
+    newFile.contents = Buffer.from(contents);
+
+    cb(null, newFile);
   }))
-  .pipe(gulp.dest('dist/vars/'));
+  .pipe(gulp.dest('dist/'));
 }
 
 exports.bakeVars = bakeVars;

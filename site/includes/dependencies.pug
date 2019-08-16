@@ -14,6 +14,7 @@ link(rel='stylesheet', type='text/css', href='../components/vars/spectrum-medium
 link(rel='stylesheet', type='text/css', href='../components/vars/spectrum-large.css')
 
 each dep in dependencyOrder.filter((dep) => dep != 'vars' )
+  link(rel='stylesheet', type='text/css', href='../components/' + dep + '/vars.css', data-dependency=dep)
   link(rel='stylesheet', type='text/css', href='../components/' + dep + '/index-vars.css', data-dependency=dep)
 
 link(rel='stylesheet', type='text/css', href='css/site.css')

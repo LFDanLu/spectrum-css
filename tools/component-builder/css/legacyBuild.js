@@ -38,7 +38,8 @@ const commonsDir = `${process.cwd()}/../commons/`;
 function buildMedium() {
   return gulp.src('index.css')
     .pipe(insert.prepend(`@import "${varDir}css/spectrum-global.css";
-@import "${varDir}css/spectrum-medium.css";`))
+@import "${varDir}css/spectrum-medium.css";
+@import "${varDir}dist/components/index.css";`))
     .pipe(postcss(processors.getProcessors(false, false)))
     .pipe(gulp.dest('dist/'));
 }
@@ -49,7 +50,8 @@ function buildMedium() {
 function buildLarge() {
   return gulp.src('index.css')
     .pipe(insert.prepend(`@import "${varDir}css/spectrum-global.css";
-@import "${varDir}css/spectrum-large.css";`))
+@import "${varDir}css/spectrum-large.css";
+@import "${varDir}dist/components/index.css";`))
     .pipe(postcss(processors.getProcessors(false, false)))
     .pipe(rename(function(path) {
       path.basename += '-lg';
@@ -66,7 +68,8 @@ function buildSkinFiles(colorStop, globs, prependString, appendString, dest) {
     allowEmpty: true // Allow missing skin.css
   })
     .pipe(insert.prepend(`@import "${varDir}css/spectrum-global.css";
-@import '${varDir}css/spectrum-${colorStop}.css';
+@import '${varDir}css/spectrum-${colorStop}.css
+@import "${varDir}dist/components/index.css";';
 ${prependString}\n`))
     .pipe(insert.append(appendString))
     .pipe(postcss(legacyProcessors))
@@ -97,7 +100,8 @@ function buildMultiStops() {
       allowEmpty: true // Allow missing skin.css
     })
     .pipe(insert.prepend(`@import "${varDir}css/spectrum-global.css";
-@import '${varDir}css/spectrum-${colorStop}.css';`))
+@import '${varDir}css/spectrum-${colorStop}.css';
+@import "${varDir}dist/components/index.css";`))
       .pipe(postcss(legacyProcessors))
       .pipe(postcss([
         mutateselectors((selector) => {
@@ -126,7 +130,8 @@ function buildDiff() {
   return gulp.src('index.css')
     // Use large variables
     .pipe(insert.prepend(`@import "${varDir}css/spectrum-global.css";
-@import "${varDir}css/spectrum-large.css";`))
+@import "${varDir}css/spectrum-large.css";
+@import "${varDir}dist/components/index.css";`))
     .pipe(postcss(varsProcessors))
     // Process again, but wrapped
     .pipe(insert.prepend('.spectrum--large {\n'))

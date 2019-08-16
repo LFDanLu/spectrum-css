@@ -18,10 +18,14 @@ const processors = require('./processors').processors;
 const legacyBuild = require('./legacyBuild');
 const vars = require('./vars');
 
+// Read in all variables used
+// Read in all vars from recent DNA
+// Include definitions if they refer to a variable, static if not
+
 function buildIndexVars() {
   return gulp.src([
     'index.css',
-    'skin.css'
+    'skin.css',
   ], {
     allowEmpty: true // Allow missing skin.css
   })

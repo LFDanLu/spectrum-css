@@ -1,9 +1,19 @@
 :root {
-  --spectrum-miller-column-ui-icon-color: var(--spectrum-alias-icon-color-hover);
+  --spectrum-miller-column-ui-icon-color: var(--spectrum-global-color-gray-600);
   --spectrum-miller-column-text-color: var(--spectrum-global-color-gray-800);
-  --spectrum-miller-column-thumbnail-background-color: var(--spectrum-global-color-gray-50);
-  --spectrum-miller-column-item-background-color: rgba(38,128,235,0.2);
-  --spectrum-miller-column-item-text-color: var(--spectrum-global-color-gray-50);
+  --spectrum-miller-column-thumbnail-background-color: var(--spectrum-global-color-gray-300);
+  --spectrum-miller-column-item-background-color-hover: var(--spectrum-global-color-gray-200);
+  --spectrum-miller-column-ui-icon-color-hover: var(--spectrum-global-color-gray-700);
+  --spectrum-miller-column-item-background-color-down: var(--spectrum-global-color-gray-300);
+  --spectrum-miller-column-ui-icon-color-down: var(--spectrum-alias-icon-color);
+  --spectrum-miller-column-item-text-color-down: var(--spectrum-global-color-gray-50);
+  --spectrum-miller-column-item-text-color-key-focus: var(--spectrum-alias-focus-color);
+  --spectrum-miller-column-item-background-color-selected: rgba(38,128,235,0.1);
+  --spectrum-miller-column-item-text-color-selected: var(--spectrum-global-color-gray-50);
+  --spectrum-miller-column-thumbnail-background-color-selected: var(--spectrum-global-color-gray-50);
+  --spectrum-miller-column-ui-icon-color-selected: var(--spectrum-alias-icon-color);
+  --spectrum-miller-column-item-background-color-selected-hover: rgba(38,128,235,0.2);
+  --spectrum-miller-column-ui-icon-color-selected-hover: var(--spectrum-alias-icon-color-hover);
   --spectrum-miller-column-item-height: var(--spectrum-global-dimension-size-500);
   --spectrum-miller-column-ui-icon-width: var(--spectrum-global-dimension-size-75);
   --spectrum-miller-column-ui-icon-height: var(--spectrum-global-dimension-size-125);
