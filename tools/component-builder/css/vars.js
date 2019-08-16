@@ -113,7 +113,6 @@ async function getAllDNAVariables() {
   const varDir = path.join(process.cwd(), 'node_modules', '@spectrum-css', 'vars');
   let css = await fsp.readFile(path.join(varDir, 'dist', 'index.css'));
   let vars = getVarValues(css);
-  console.log(`Found ${Object.keys(vars).length} total variables`);
   return vars;
 }
 

@@ -17,7 +17,7 @@ const replace = require('gulp-replace');
 const Balthazar = require('@spectrum/balthazar');
 
 function generateDNACSS() {
-  const outputPath = path.resolve('css');
+  const outputPath = path.resolve('css/resolved/');
   const CSS_OUTPUT_TYPE = Balthazar.OUTPUT_TYPES.css;
   // the api for convert is destination, type, path-to-json
   // default path to json will look for node_modules/@spectrum/spectrum-dna locally
@@ -27,13 +27,13 @@ function generateDNACSS() {
 
 function postProcessDNACSS() {
   return gulp.src([
-    'css/spectrum-*.css',
-    '!css/spectrum-medium.css',
-    '!css/spectrum-large.css'
+    'resolve/css/spectrum-*.css',
+    '!resolve/css/spectrum-medium.css',
+    '!resolve/css/spectrum-large.css'
   ])
     // replace anything with a value of 'transparent' with an actual transparent color
     .pipe(replace(/(.*?:) transparent;\n/g, '$1 rgba(0, 0, 0, 0);\n'))
-    .pipe(gulp.dest('css/'));
+    .pipe(gulp.dest('css/resolved/'));
 }
 
 exports.updateDNACSS = gulp.series(
