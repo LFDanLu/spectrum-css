@@ -150,7 +150,12 @@ function bakeVars() {
       if (varName.indexOf('spectrum-global') !== -1) {
         logger.warn(`${pkg.name} directly uses global variable ${varName}`);
       }
-      usedVars[varName] = vars[varName];
+      if (!vars[varName]) {
+        logger.warn(`${pkg.name} uses undefined variable ${varName}`);
+      }
+      else {
+        usedVars[varName] = vars[varName];
+      }
     });
 
     let contents = getVariableDeclarations(classNames, usedVars);
