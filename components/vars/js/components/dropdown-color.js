@@ -1,0 +1,10 @@
+const lightest = require('../lightest.js');
+const staticAliases = require('../staticAliases.js');
+const dropdown-color = exports;
+exports["placeholder-text-color"] = lightest["gray-900"];
+exports["text-color"] = lightest["colorAliases"].["text-color-hover"];
+exports["icon-color"] = lightest["colorAliases"].["icon-color-focus"];
+exports["background-color"] = lightest["gray-200"];
+exports["border-color"] = lightest["red-500"];
+exports["border-size"] = staticAliases["border-size-thick"];
+exports["validation-icon-color"] = lightest["red-600"];

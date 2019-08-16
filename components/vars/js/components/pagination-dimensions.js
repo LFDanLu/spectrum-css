@@ -1,0 +1,12 @@
+const medium = require('../medium.js');
+const pagination-dimensions = exports;
+exports["textfield-width"] = medium["size-600"];
+exports["counter-height"] = medium["size-400"];
+exports["counter-margin-left"] = medium["size-65"];
+exports["direction-button-text-size"] = medium["dimensionAliases"].["pill-button-text-size"];
+exports["page-button-width"] = medium["size-400"];
+exports["page-button-line-height"] = "26px";
+exports["page-button-margin-horizontal"] = medium["size-65"];
+exports["page-button-border-size"] = medium["size-25"];
+exports["icon-width"] = medium["size-75"];
+exports["icon-height"] = medium["size-125"];

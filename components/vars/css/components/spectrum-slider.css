@@ -38,8 +38,8 @@
   --spectrum-slider-handle-gap: var(--spectrum-alias-border-size-thicker);
   --spectrum-slider-label-text-alignment: left;
   --spectrum-slider-label-min-width: var(--spectrum-global-dimension-size-600);
-  --spectrum-slider-animation-duration: var(--spectrum-animationGlobals-duration-100);
-  --spectrum-slider-animation-ease: var(--spectrum-animationGlobals-ease-in-out);
+  --spectrum-slider-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-slider-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-slider-handle-width: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-handle-height: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-handle-border-radius: var(--spectrum-alias-border-radius-medium);
@@ -80,8 +80,8 @@
   --spectrum-slider-editable-handle-gap: var(--spectrum-alias-border-size-thicker);
   --spectrum-slider-editable-label-text-alignment: left;
   --spectrum-slider-editable-label-min-width: var(--spectrum-global-dimension-size-600);
-  --spectrum-slider-editable-animation-duration: var(--spectrum-animationGlobals-duration-100);
-  --spectrum-slider-editable-animation-ease: var(--spectrum-animationGlobals-ease-in-out);
+  --spectrum-slider-editable-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-slider-editable-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-slider-editable-handle-width: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-editable-handle-height: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-editable-handle-border-radius: var(--spectrum-alias-border-radius-medium);
@@ -123,8 +123,8 @@
   --spectrum-slider-fill-handle-gap: var(--spectrum-alias-border-size-thicker);
   --spectrum-slider-fill-label-text-alignment: left;
   --spectrum-slider-fill-label-min-width: var(--spectrum-global-dimension-size-600);
-  --spectrum-slider-fill-animation-duration: var(--spectrum-animationGlobals-duration-100);
-  --spectrum-slider-fill-animation-ease: var(--spectrum-animationGlobals-ease-in-out);
+  --spectrum-slider-fill-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-slider-fill-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-slider-fill-handle-width: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-fill-handle-height: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-fill-handle-border-radius: var(--spectrum-alias-border-radius-medium);

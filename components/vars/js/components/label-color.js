@@ -1,0 +1,13 @@
+const colorGlobals = require('../colorGlobals.js');
+const lightest = require('../lightest.js');
+const label-color = exports;
+exports["gray-background-color"] = colorGlobals["static-gray-700"];
+exports["green-background-color"] = colorGlobals["static-green-600"];
+exports["blue-background-color"] = colorGlobals["static-blue"];
+exports["red-background-color"] = colorGlobals["static-red-600"];
+exports["seafoam-background-color"] = lightest["seafoam-400"];
+exports["fuchsia-background-color"] = lightest["fuchsia-400"];
+exports["orange-background-color"] = colorGlobals["static-orange-600"];
+exports["yellow-background-color"] = lightest["yellow-400"];
+exports["text-color"] = colorGlobals["static-white"];
+exports["background-color"] = lightest["gray-200"];

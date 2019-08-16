@@ -1,0 +1,10 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const medium = require('../medium.js');
+const loader-dimensions = exports;
+exports["width"] = dimensionGlobals["size-200"];
+exports["label-gap-x"] = medium["size-150"];
+exports["height"] = dimensionGlobals["size-200"];
+exports["border-radius"] = dimensionGlobals["size-25"];
+exports["fill-border-radius"] = "0";
+exports["label-gap-y"] = medium["size-115"];
+exports["border-size"] = dimensionGlobals["size-25"];

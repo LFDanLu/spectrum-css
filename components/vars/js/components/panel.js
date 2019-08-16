@@ -1,7 +1,7 @@
 const dimensionGlobals = require('../dimensionGlobals.js');
 const medium = require('../medium.js');
 const fontGlobals = require('../fontGlobals.js');
-const panel = exports;
+const lightest = require('../lightest.js');
 exports["border-size"] = dimensionGlobals["size-10"];
 exports["padding-x"] = medium["size-300"];
 exports["padding-y"] = "0";
@@ -10,3 +10,6 @@ exports["header-height"] = medium["size-600"];
 exports["header-text-size"] = medium["font-size-100"];
 exports["header-text-font-weight"] = fontGlobals["weight-bold"];
 exports["content-padding-bottom"] = medium["size-300"];
+exports["border-color"] = lightest["appframe-border-color"];
+exports["background-color"] = lightest["gray-100"];
+exports["header-text-color"] = lightest["gray-800"];

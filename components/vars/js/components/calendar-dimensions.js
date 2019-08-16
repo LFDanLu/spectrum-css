@@ -1,0 +1,12 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const medium = require('../medium.js');
+const fontGlobals = require('../fontGlobals.js');
+const calendar-dimensions = exports;
+exports["width"] = "250px";
+exports["height"] = dimensionGlobals["size-400"];
+exports["padding"] = "4px";
+exports["text-size"] = medium["dimensionAliases"].["font-size-default"];
+exports["title-text-size"] = medium["font-size-300"];
+exports["title-text-font-weight"] = fontGlobals["weight-medium"];
+exports["today-text-font-weight"] = fontGlobals["weight-bold"];
+exports["title-height"] = dimensionGlobals["size-400"];

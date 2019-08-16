@@ -9,6 +9,7 @@
   --spectrum-heading-1-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-1-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-1-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-2-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-2-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -19,6 +20,7 @@
   --spectrum-heading-2-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-2-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-2-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-3-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-3-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-3-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -29,6 +31,7 @@
   --spectrum-heading-3-text-size: var(--spectrum-alias-heading3-text-size);
   --spectrum-heading-3-margin-top: var(--spectrum-alias-heading3-margin-top);
   --spectrum-heading-3-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-3-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-4-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-4-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-4-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -39,6 +42,7 @@
   --spectrum-heading-4-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-4-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-4-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-4-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-5-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-5-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-5-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -49,6 +53,7 @@
   --spectrum-heading-5-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-5-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-5-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-5-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-6-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-6-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-6-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -59,6 +64,7 @@
   --spectrum-heading-6-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-6-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-6-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-6-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-1-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-1-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -69,6 +75,7 @@
   --spectrum-heading-article-1-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-article-1-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-article-1-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-article-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-1-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-1-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-article-1-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -79,6 +86,7 @@
   --spectrum-heading-article-1-emphasis-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-article-1-emphasis-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-article-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-article-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-1-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-1-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -89,6 +97,7 @@
   --spectrum-heading-article-1-strong-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-article-1-strong-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-article-1-strong-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-article-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-2-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-2-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -99,6 +108,7 @@
   --spectrum-heading-article-2-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-article-2-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-article-2-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-article-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-2-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-2-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-article-2-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -109,6 +119,7 @@
   --spectrum-heading-article-2-emphasis-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-article-2-emphasis-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-article-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-article-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-2-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-2-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -119,6 +130,7 @@
   --spectrum-heading-article-2-strong-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-article-2-strong-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-article-2-strong-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-article-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-3-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-3-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-3-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -129,6 +141,7 @@
   --spectrum-heading-article-3-text-size: var(--spectrum-alias-heading3-text-size);
   --spectrum-heading-article-3-margin-top: var(--spectrum-alias-heading3-margin-top);
   --spectrum-heading-article-3-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-article-3-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-3-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-3-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-article-3-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -139,6 +152,7 @@
   --spectrum-heading-article-3-emphasis-text-size: var(--spectrum-alias-heading3-text-size);
   --spectrum-heading-article-3-emphasis-margin-top: var(--spectrum-alias-heading3-margin-top);
   --spectrum-heading-article-3-emphasis-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-article-3-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-3-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-3-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-3-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -149,6 +163,7 @@
   --spectrum-heading-article-3-strong-text-size: var(--spectrum-alias-heading3-text-size);
   --spectrum-heading-article-3-strong-margin-top: var(--spectrum-alias-heading3-margin-top);
   --spectrum-heading-article-3-strong-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-article-3-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-4-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-4-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-4-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -159,6 +174,7 @@
   --spectrum-heading-article-4-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-article-4-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-article-4-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-article-4-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-4-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-4-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-article-4-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -169,6 +185,7 @@
   --spectrum-heading-article-4-emphasis-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-article-4-emphasis-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-article-4-emphasis-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-article-4-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-4-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-4-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-4-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -179,6 +196,7 @@
   --spectrum-heading-article-4-strong-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-article-4-strong-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-article-4-strong-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-article-4-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-5-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-5-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-5-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -189,6 +207,7 @@
   --spectrum-heading-article-5-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-article-5-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-article-5-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-article-5-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-5-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-5-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-article-5-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -199,6 +218,7 @@
   --spectrum-heading-article-5-emphasis-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-article-5-emphasis-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-article-5-emphasis-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-article-5-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-5-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-5-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-5-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -209,6 +229,7 @@
   --spectrum-heading-article-5-strong-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-article-5-strong-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-article-5-strong-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-article-5-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-6-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-6-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-6-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -219,6 +240,7 @@
   --spectrum-heading-article-6-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-article-6-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-article-6-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-article-6-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-6-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-6-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-article-6-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -229,6 +251,7 @@
   --spectrum-heading-article-6-emphasis-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-article-6-emphasis-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-article-6-emphasis-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-article-6-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-article-6-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-article-6-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-article-6-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -239,6 +262,7 @@
   --spectrum-heading-article-6-strong-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-article-6-strong-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-article-6-strong-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-article-6-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-article-1-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-quiet-article-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-article-1-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-quiet);
@@ -249,6 +273,7 @@
   --spectrum-heading-quiet-article-1-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-quiet-article-1-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-quiet-article-1-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-quiet-article-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-article-1-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-quiet-article-1-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-quiet-article-1-emphasis-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-quiet);
@@ -259,6 +284,7 @@
   --spectrum-heading-quiet-article-1-emphasis-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-quiet-article-1-emphasis-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-quiet-article-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-quiet-article-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-article-1-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-quiet-article-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-article-1-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -269,6 +295,7 @@
   --spectrum-heading-quiet-article-1-strong-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-quiet-article-1-strong-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-quiet-article-1-strong-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-quiet-article-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-article-2-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-quiet-article-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-article-2-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-quiet);
@@ -279,6 +306,7 @@
   --spectrum-heading-quiet-article-2-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-quiet-article-2-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-quiet-article-2-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-quiet-article-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-article-2-emphasis-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-quiet-article-2-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-quiet-article-2-emphasis-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-quiet);
@@ -289,6 +317,7 @@
   --spectrum-heading-quiet-article-2-emphasis-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-quiet-article-2-emphasis-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-quiet-article-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-quiet-article-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-article-2-strong-text-font-family: var(--spectrum-alias-article-text-font-family);
   --spectrum-heading-quiet-article-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-article-2-strong-text-font-weight: var(--spectrum-alias-article-heading-text-font-weight-strong);
@@ -299,6 +328,7 @@
   --spectrum-heading-quiet-article-2-strong-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-quiet-article-2-strong-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-quiet-article-2-strong-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-quiet-article-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-base-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-base-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-base-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -306,6 +336,7 @@
   --spectrum-heading-base-text-letter-spacing: var(--spectrum-global-font-letter-spacing-none);
   --spectrum-heading-base-text-transform: none;
   --spectrum-heading-base-margin-bottom-multiplier: var(--spectrum-alias-heading-margin-bottom);
+  --spectrum-heading-base-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-1-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-1-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-1-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -316,6 +347,7 @@
   --spectrum-heading-1-emphasis-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-1-emphasis-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-1-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-1-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular-strong);
@@ -326,6 +358,7 @@
   --spectrum-heading-1-strong-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-1-strong-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-1-strong-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-2-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-2-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-2-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -336,6 +369,7 @@
   --spectrum-heading-2-emphasis-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-2-emphasis-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-2-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-2-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular-strong);
@@ -346,6 +380,7 @@
   --spectrum-heading-2-strong-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-2-strong-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-2-strong-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-3-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-3-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-3-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -356,6 +391,7 @@
   --spectrum-heading-3-emphasis-text-size: var(--spectrum-alias-heading3-text-size);
   --spectrum-heading-3-emphasis-margin-top: var(--spectrum-alias-heading3-margin-top);
   --spectrum-heading-3-emphasis-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-3-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-3-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-3-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-3-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular-strong);
@@ -366,6 +402,7 @@
   --spectrum-heading-3-strong-text-size: var(--spectrum-alias-heading3-text-size);
   --spectrum-heading-3-strong-margin-top: var(--spectrum-alias-heading3-margin-top);
   --spectrum-heading-3-strong-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-3-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-4-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-4-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-4-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -376,6 +413,7 @@
   --spectrum-heading-4-emphasis-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-4-emphasis-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-4-emphasis-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-4-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-4-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-4-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-4-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular-strong);
@@ -386,6 +424,7 @@
   --spectrum-heading-4-strong-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-4-strong-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-4-strong-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-4-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-5-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-5-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-5-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -396,6 +435,7 @@
   --spectrum-heading-5-emphasis-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-5-emphasis-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-5-emphasis-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-5-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-5-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-5-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-5-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular-strong);
@@ -406,6 +446,7 @@
   --spectrum-heading-5-strong-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-5-strong-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-5-strong-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-5-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-6-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-6-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-6-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -416,6 +457,7 @@
   --spectrum-heading-6-emphasis-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-6-emphasis-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-6-emphasis-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-6-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-6-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-6-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-6-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular-strong);
@@ -426,6 +468,7 @@
   --spectrum-heading-6-strong-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-6-strong-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-6-strong-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-6-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-1-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-quiet-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-1-text-font-weight: var(--spectrum-alias-heading-text-font-weight-quiet);
@@ -436,6 +479,7 @@
   --spectrum-heading-quiet-1-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-quiet-1-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-quiet-1-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-quiet-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-1-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-quiet-1-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-quiet-1-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-quiet);
@@ -446,6 +490,7 @@
   --spectrum-heading-quiet-1-emphasis-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-quiet-1-emphasis-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-quiet-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-quiet-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-1-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-quiet-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-1-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-quiet-strong);
@@ -456,6 +501,7 @@
   --spectrum-heading-quiet-1-strong-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-quiet-1-strong-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-quiet-1-strong-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-quiet-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-2-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-quiet-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-2-text-font-weight: var(--spectrum-alias-heading-text-font-weight-quiet);
@@ -466,6 +512,7 @@
   --spectrum-heading-quiet-2-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-quiet-2-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-quiet-2-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-quiet-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-2-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-quiet-2-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-quiet-2-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-quiet);
@@ -476,6 +523,7 @@
   --spectrum-heading-quiet-2-emphasis-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-quiet-2-emphasis-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-quiet-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-quiet-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-2-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-quiet-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-2-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-quiet-strong);
@@ -486,6 +534,7 @@
   --spectrum-heading-quiet-2-strong-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-quiet-2-strong-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-quiet-2-strong-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-quiet-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-1-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-strong-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-1-text-font-weight: var(--spectrum-alias-heading-text-font-weight-strong);
@@ -496,6 +545,7 @@
   --spectrum-heading-strong-1-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-strong-1-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-strong-1-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-strong-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-1-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-strong-1-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-strong-1-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-strong);
@@ -506,6 +556,7 @@
   --spectrum-heading-strong-1-emphasis-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-strong-1-emphasis-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-strong-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-strong-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-1-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-strong-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-1-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-strong-strong);
@@ -516,6 +567,7 @@
   --spectrum-heading-strong-1-strong-text-size: var(--spectrum-alias-heading1-text-size);
   --spectrum-heading-strong-1-strong-margin-top: var(--spectrum-alias-heading1-margin-top);
   --spectrum-heading-strong-1-strong-margin-bottom: var(--spectrum-global-dimension-size-115);
+  --spectrum-heading-strong-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-2-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-strong-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-2-text-font-weight: var(--spectrum-alias-heading-text-font-weight-strong);
@@ -526,6 +578,7 @@
   --spectrum-heading-strong-2-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-strong-2-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-strong-2-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-strong-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-2-emphasis-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-strong-2-emphasis-text-font-style: var(--spectrum-global-font-style-italic);
   --spectrum-heading-strong-2-emphasis-text-font-weight: var(--spectrum-alias-heading-text-font-weight-strong);
@@ -536,6 +589,7 @@
   --spectrum-heading-strong-2-emphasis-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-strong-2-emphasis-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-strong-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-strong-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-2-strong-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-strong-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-2-strong-text-font-weight: var(--spectrum-alias-heading-text-font-weight-strong-strong);
@@ -546,6 +600,7 @@
   --spectrum-heading-strong-2-strong-text-size: var(--spectrum-alias-heading2-text-size);
   --spectrum-heading-strong-2-strong-margin-top: var(--spectrum-alias-heading2-margin-top);
   --spectrum-heading-strong-2-strong-margin-bottom: var(--spectrum-global-dimension-size-85);
+  --spectrum-heading-strong-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-1-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-1-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular);
@@ -556,6 +611,7 @@
   --spectrum-heading-han-1-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-han-1-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-han-1-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-han-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-1-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-1-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-1-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-emphasis);
@@ -566,6 +622,7 @@
   --spectrum-heading-han-1-emphasis-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-han-1-emphasis-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-han-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-han-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-1-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-1-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-strong);
@@ -576,6 +633,7 @@
   --spectrum-heading-han-1-strong-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-han-1-strong-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-han-1-strong-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-han-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-2-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-2-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular);
@@ -586,6 +644,7 @@
   --spectrum-heading-han-2-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-han-2-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-han-2-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-han-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-2-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-2-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-2-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-emphasis);
@@ -596,6 +655,7 @@
   --spectrum-heading-han-2-emphasis-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-han-2-emphasis-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-han-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-han-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-2-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-2-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-strong);
@@ -606,6 +666,7 @@
   --spectrum-heading-han-2-strong-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-han-2-strong-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-han-2-strong-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-han-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-3-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-3-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-3-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular);
@@ -616,6 +677,7 @@
   --spectrum-heading-han-3-text-size: var(--spectrum-alias-heading3-han-text-size);
   --spectrum-heading-han-3-margin-top: var(--spectrum-alias-heading3-han-margin-top);
   --spectrum-heading-han-3-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-han-3-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-3-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-3-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-3-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-emphasis);
@@ -626,6 +688,7 @@
   --spectrum-heading-han-3-emphasis-text-size: var(--spectrum-alias-heading3-han-text-size);
   --spectrum-heading-han-3-emphasis-margin-top: var(--spectrum-alias-heading3-han-margin-top);
   --spectrum-heading-han-3-emphasis-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-han-3-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-3-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-3-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-3-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-strong);
@@ -636,6 +699,7 @@
   --spectrum-heading-han-3-strong-text-size: var(--spectrum-alias-heading3-han-text-size);
   --spectrum-heading-han-3-strong-margin-top: var(--spectrum-alias-heading3-han-margin-top);
   --spectrum-heading-han-3-strong-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-han-3-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-4-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-4-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-4-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular);
@@ -646,6 +710,7 @@
   --spectrum-heading-han-4-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-han-4-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-han-4-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-han-4-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-4-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-4-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-4-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-emphasis);
@@ -656,6 +721,7 @@
   --spectrum-heading-han-4-emphasis-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-han-4-emphasis-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-han-4-emphasis-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-han-4-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-4-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-4-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-4-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-strong);
@@ -666,6 +732,7 @@
   --spectrum-heading-han-4-strong-text-size: var(--spectrum-alias-heading4-text-size);
   --spectrum-heading-han-4-strong-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-han-4-strong-margin-bottom: var(--spectrum-global-dimension-size-65);
+  --spectrum-heading-han-4-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-5-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-5-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-5-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular);
@@ -676,6 +743,7 @@
   --spectrum-heading-han-5-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-han-5-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-han-5-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-han-5-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-5-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-5-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-5-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-emphasis);
@@ -686,6 +754,7 @@
   --spectrum-heading-han-5-emphasis-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-han-5-emphasis-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-han-5-emphasis-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-han-5-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-5-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-5-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-5-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-strong);
@@ -696,6 +765,7 @@
   --spectrum-heading-han-5-strong-text-size: var(--spectrum-alias-heading5-text-size);
   --spectrum-heading-han-5-strong-margin-top: var(--spectrum-alias-heading5-margin-top);
   --spectrum-heading-han-5-strong-margin-bottom: var(--spectrum-global-dimension-size-50);
+  --spectrum-heading-han-5-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-6-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-6-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-6-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular);
@@ -706,6 +776,7 @@
   --spectrum-heading-han-6-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-han-6-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-han-6-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-han-6-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-6-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-6-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-6-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-emphasis);
@@ -716,6 +787,7 @@
   --spectrum-heading-han-6-emphasis-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-han-6-emphasis-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-han-6-emphasis-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-han-6-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-han-6-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-han-6-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-han-6-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-regular-strong);
@@ -726,6 +798,7 @@
   --spectrum-heading-han-6-strong-text-size: var(--spectrum-alias-heading6-text-size);
   --spectrum-heading-han-6-strong-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-han-6-strong-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-han-6-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-han-1-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-quiet-han-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-han-1-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-quiet);
@@ -736,6 +809,7 @@
   --spectrum-heading-quiet-han-1-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-quiet-han-1-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-quiet-han-1-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-quiet-han-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-han-1-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-quiet-han-1-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-han-1-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-quiet-emphasis);
@@ -746,6 +820,7 @@
   --spectrum-heading-quiet-han-1-emphasis-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-quiet-han-1-emphasis-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-quiet-han-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-quiet-han-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-han-1-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-quiet-han-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-han-1-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-quiet-strong);
@@ -756,6 +831,7 @@
   --spectrum-heading-quiet-han-1-strong-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-quiet-han-1-strong-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-quiet-han-1-strong-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-quiet-han-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-han-2-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-quiet-han-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-han-2-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-quiet);
@@ -766,6 +842,7 @@
   --spectrum-heading-quiet-han-2-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-quiet-han-2-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-quiet-han-2-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-quiet-han-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-han-2-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-quiet-han-2-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-han-2-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-quiet-emphasis);
@@ -776,6 +853,7 @@
   --spectrum-heading-quiet-han-2-emphasis-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-quiet-han-2-emphasis-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-quiet-han-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-quiet-han-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-quiet-han-2-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-quiet-han-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-quiet-han-2-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-quiet-strong);
@@ -786,6 +864,7 @@
   --spectrum-heading-quiet-han-2-strong-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-quiet-han-2-strong-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-quiet-han-2-strong-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-quiet-han-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-han-1-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-strong-han-1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-han-1-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong);
@@ -796,6 +875,7 @@
   --spectrum-heading-strong-han-1-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-strong-han-1-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-strong-han-1-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-strong-han-1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-han-1-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-strong-han-1-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-han-1-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong-emphasis);
@@ -806,6 +886,7 @@
   --spectrum-heading-strong-han-1-emphasis-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-strong-han-1-emphasis-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-strong-han-1-emphasis-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-strong-han-1-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-han-1-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-strong-han-1-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-han-1-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong-strong);
@@ -816,6 +897,7 @@
   --spectrum-heading-strong-han-1-strong-text-size: var(--spectrum-alias-heading1-han-text-size);
   --spectrum-heading-strong-han-1-strong-margin-top: var(--spectrum-alias-heading1-han-margin-top);
   --spectrum-heading-strong-han-1-strong-margin-bottom: var(--spectrum-global-dimension-size-100);
+  --spectrum-heading-strong-han-1-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-han-2-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-strong-han-2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-han-2-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong);
@@ -826,6 +908,7 @@
   --spectrum-heading-strong-han-2-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-strong-han-2-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-strong-han-2-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-strong-han-2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-han-2-emphasis-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-strong-han-2-emphasis-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-han-2-emphasis-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong-emphasis);
@@ -836,6 +919,7 @@
   --spectrum-heading-strong-han-2-emphasis-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-strong-han-2-emphasis-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-strong-han-2-emphasis-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-strong-han-2-emphasis-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-strong-han-2-strong-text-font-family: var(--spectrum-alias-font-family-zh);
   --spectrum-heading-strong-han-2-strong-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-strong-han-2-strong-text-font-weight: var(--spectrum-alias-han-heading-text-font-weight-strong-strong);
@@ -846,12 +930,15 @@
   --spectrum-heading-strong-han-2-strong-text-size: var(--spectrum-alias-heading2-han-text-size);
   --spectrum-heading-strong-han-2-strong-margin-top: var(--spectrum-alias-heading2-han-margin-top);
   --spectrum-heading-strong-han-2-strong-margin-bottom: var(--spectrum-global-dimension-size-75);
+  --spectrum-heading-strong-han-2-strong-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-display-text-font-weight: var(--spectrum-global-font-weight-light);
   --spectrum-heading-display-text-size: var(--spectrum-global-dimension-font-size-1000);
   --spectrum-heading-display-text-line-height: var(--spectrum-alias-heading-text-line-height);
+  --spectrum-heading-display-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-page-title-text-font-weight: var(--spectrum-global-font-weight-light);
   --spectrum-heading-page-title-text-size: var(--spectrum-global-dimension-font-size-700);
   --spectrum-heading-page-title-text-line-height: var(--spectrum-alias-heading-text-line-height);
+  --spectrum-heading-page-title-text-color: var(--spectrum-global-color-gray-700);
   --spectrum-heading-subtitle1-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-subtitle1-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-subtitle1-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -863,6 +950,7 @@
   --spectrum-heading-subtitle1-margin-top: var(--spectrum-alias-heading4-margin-top);
   --spectrum-heading-subtitle1-margin-bottom: var(--spectrum-global-dimension-size-65);
   --spectrum-heading-subtitle1-font-line-height: var(--spectrum-alias-body-text-line-height);
+  --spectrum-heading-subtitle1-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-subtitle2-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-subtitle2-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-subtitle2-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -874,6 +962,7 @@
   --spectrum-heading-subtitle2-margin-top: var(--spectrum-alias-heading6-margin-top);
   --spectrum-heading-subtitle2-margin-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-heading-subtitle2-font-line-height: var(--spectrum-global-font-line-height-medium);
+  --spectrum-heading-subtitle2-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-heading-subtitle3-text-font-family: var(--spectrum-alias-body-text-font-family);
   --spectrum-heading-subtitle3-text-font-style: var(--spectrum-global-font-style-regular);
   --spectrum-heading-subtitle3-text-font-weight: var(--spectrum-alias-heading-text-font-weight-regular);
@@ -885,4 +974,5 @@
   --spectrum-heading-subtitle3-text-size: var(--spectrum-global-dimension-font-size-50);
   --spectrum-heading-subtitle3-margin-top: var(--spectrum-global-dimension-font-size-75);
   --spectrum-heading-subtitle3-margin-bottom: var(--spectrum-global-dimension-size-40);
+  --spectrum-heading-subtitle3-text-color: var(--spectrum-global-color-gray-700);
 }

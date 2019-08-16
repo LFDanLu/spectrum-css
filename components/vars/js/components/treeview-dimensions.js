@@ -1,0 +1,13 @@
+const medium = require('../medium.js');
+const dimensionGlobals = require('../dimensionGlobals.js');
+const treeview-dimensions = exports;
+exports["width"] = "304px";
+exports["item-height"] = medium["size-450"];
+exports["padding-x"] = "6px";
+exports["item-border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["item-border-size"] = dimensionGlobals["size-25"];
+exports["item-padding-y"] = dimensionGlobals["size-100"];
+exports["item-margin-y"] = dimensionGlobals["size-100"];
+exports["item-padding-x"] = "30px";
+exports["item-indent"] = medium["size-350"];
+exports["item-icon-gap"] = medium["size-100"];

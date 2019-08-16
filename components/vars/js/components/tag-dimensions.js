@@ -1,0 +1,17 @@
+const medium = require('../medium.js');
+const fontGlobals = require('../fontGlobals.js');
+const staticAliases = require('../staticAliases.js');
+const tag-dimensions = exports;
+exports["text-size"] = medium["font-size-75"];
+exports["text-font-weight"] = fontGlobals["weight-regular"];
+exports["text-font-style"] = fontGlobals["style-regular"];
+exports["text-baseline"] = medium["size-100"];
+exports["height"] = medium["size-300"];
+exports["icon-height"] = medium["size-100"];
+exports["icon-width"] = medium["size-100"];
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["border-size"] = staticAliases["border-size-thin"];
+exports["padding-x"] = medium["size-125"];
+exports["avatar-padding-x"] = medium["size-100"];
+exports["icon-padding-x"] = medium["size-100"];
+exports["icon-size"] = medium["size-100"];

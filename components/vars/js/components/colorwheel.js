@@ -1,6 +1,16 @@
+const lightest = require('../lightest.js');
 const staticAliases = require('../staticAliases.js');
 const medium = require('../medium.js');
-const colorwheel = exports;
+exports["border-color"] = "rgba(50,50,50,0.1)";
+exports["fill-color"] = "none";
+exports["border-color-hover"] = "rgba(50,50,50,0.1)";
+exports["fill-color-hover"] = "none";
+exports["border-color-down"] = "rgba(50,50,50,0.1)";
+exports["fill-color-down"] = "none";
+exports["border-color-key-focus"] = "rgba(50,50,50,0.1)";
+exports["fill-color-key-focus"] = "none";
+exports["border-color-disabled"] = lightest["gray-300"];
+exports["fill-color-disabled"] = lightest["gray-300"];
 exports["border-size"] = staticAliases["border-size-thin"];
 exports["default-size"] = medium["size-2400"];
 exports["track-width"] = medium["size-300"];

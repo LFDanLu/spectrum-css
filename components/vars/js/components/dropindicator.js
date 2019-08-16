@@ -1,6 +1,9 @@
 const staticAliases = require('../staticAliases.js');
 const dimensionGlobals = require('../dimensionGlobals.js');
-const dropindicator = exports;
+const lightest = require('../lightest.js');
 exports["border-size"] = staticAliases["border-size-thick"];
 exports["circle-border-size"] = staticAliases["border-size-thick"];
 exports["circle-size"] = dimensionGlobals["size-150"];
+exports["border-color"] = lightest["blue-400"];
+exports["circle-border-color"] = lightest["blue-400"];
+exports["circle-border-fill"] = lightest["background-color-transparent"];

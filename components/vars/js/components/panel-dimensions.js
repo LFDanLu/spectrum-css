@@ -1,0 +1,12 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const medium = require('../medium.js');
+const fontGlobals = require('../fontGlobals.js');
+const panel-dimensions = exports;
+exports["border-size"] = dimensionGlobals["size-10"];
+exports["padding-x"] = medium["size-300"];
+exports["padding-y"] = "0";
+exports["header-gap-x"] = medium["size-150"];
+exports["header-height"] = medium["size-600"];
+exports["header-text-size"] = medium["font-size-100"];
+exports["header-text-font-weight"] = fontGlobals["weight-bold"];
+exports["content-padding-bottom"] = medium["size-300"];

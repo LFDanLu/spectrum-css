@@ -194,6 +194,7 @@
   --spectrum-checkbox-touch-hit-x: var(--spectrum-global-dimension-size-100);
   --spectrum-checkbox-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-checkbox-text-baseline: var(--spectrum-global-dimension-size-150);
+  --spectrum-checkbox-checkmark-color: var(--spectrum-global-color-gray-75);
   --spectrum-checkbox-quiet-text-color: var(--spectrum-alias-text-color);
   --spectrum-checkbox-quiet-box-border-size: var(--spectrum-alias-border-size-thick);
   --spectrum-checkbox-quiet-box-border-radius: var(--spectrum-alias-border-radius-small);
@@ -389,4 +390,5 @@
   --spectrum-checkbox-quiet-touch-hit-x: var(--spectrum-global-dimension-size-100);
   --spectrum-checkbox-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-checkbox-quiet-text-baseline: var(--spectrum-global-dimension-size-150);
+  --spectrum-checkbox-quiet-checkmark-color: var(--spectrum-global-color-gray-75);
 }

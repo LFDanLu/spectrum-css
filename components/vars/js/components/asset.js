@@ -1,6 +1,9 @@
 const dimensionGlobals = require('../dimensionGlobals.js');
 const medium = require('../medium.js');
-const asset = exports;
+const lightest = require('../lightest.js');
 exports["icon-max-width"] = dimensionGlobals["size-1000"];
 exports["icon-min-width"] = medium["size-600"];
 exports["icon-margin"] = medium["size-250"];
+exports["folder-background-color"] = lightest["gray-300"];
+exports["file-background-color"] = lightest["gray-50"];
+exports["icon-outline-color"] = lightest["gray-500"];

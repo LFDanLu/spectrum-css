@@ -1,0 +1,10 @@
+const lightest = require('../lightest.js');
+const staticAliases = require('../staticAliases.js');
+const medium = require('../medium.js');
+const radio-color = exports;
+exports["text-color"] = lightest["colorAliases"].["text-color-disabled"];
+exports["circle-border-color"] = lightest["gray-400"];
+exports["circle-background-color"] = lightest["gray-75"];
+exports["circle-dot-color"] = lightest["gray-75"];
+exports["circle-border-size"] = staticAliases["border-size-thick"];
+exports["text-gap"] = medium["size-125"];

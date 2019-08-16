@@ -1,0 +1,1 @@
+const subheading-color = exports;

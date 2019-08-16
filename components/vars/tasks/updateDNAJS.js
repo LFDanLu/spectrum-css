@@ -16,13 +16,14 @@ function generateDNAJSON() {
 }
 
 function stripReference(value) {
-  return value.replace(/(colorStopData|colorTokens|scaleData|dimensionTokens)\./g, '');
+  return value.replace(/(colorStopData|colorTokens|scaleData|dimensionTokens|colorAliases|dimensionAliases)\./g, '');
 }
 
 function getJSVariableReference(value) {
   let reference = stripReference(value);
   let parts = reference.split('.');
-  return parts.shift() + parts.map(JSON.stringify).map(value => `[${value}]`).join('.');
+  let finalReference = parts.shift() + parts.map(JSON.stringify).map(value => `[${value}]`).join('');
+  return finalReference;
 }
 
 function getExport(key, value) {
@@ -46,6 +47,7 @@ function getCSSVariableReference(value) {
   value = value.replace(/colorGlobals\./, 'global-color.');
   value = value.replace(/dimensionGlobals\./, 'global-dimension.');
   value = value.replace(/fontGlobals\./, 'global-font.');
+  value = value.replace(/animationGlobals\./, 'global-animation.');
   value = value.replace(/staticAliases\./, 'alias.');
 
   let parts = value.split('.');
@@ -91,7 +93,6 @@ function generateDNAJS() {
         vinylFile.path = path.join(file.base, folder || '', `${name}.${extension}`);
         vinylFile.contents = Buffer.from(contents);
         this.push(vinylFile);
-        dnaModules.push(name);
       };
 
       let generateCSSFile = (sections, fileName, folder) => {
@@ -115,8 +116,16 @@ function generateDNAJS() {
       };
 
       let generateJSFile = (sections, fileName, folder) => {
-        let basePath = folder ? '../'.repeat(folder.split('/').length - 1) : './';
-        let contents = `const ${fileName} = exports;\n`;
+        let folderParts = folder.split('/');
+        let folderCount = folderParts.length;
+        let basePath = folderCount > 1 ? '../'.repeat(folderCount - 1) : './';
+        let contents = '';
+
+        // We have issues with switch, so only allow self refs for base vars
+        if (folderCount === 1) {
+          contents += `const ${fileName} = exports;\n`;
+        }
+
         let dependencies = {};
 
         sections.forEach(section => {
@@ -143,6 +152,7 @@ function generateDNAJS() {
         }
 
         pushFile(requires + contents, fileName, 'js', folder);
+        dnaModules.push(path.join(folderParts.slice(1).join('/'), fileName));
       };
 
       let generateFiles = (sections, fileName) => {
@@ -191,6 +201,7 @@ function generateDNAJS() {
         let element = scale[elementName];
 
         let allVariables = {};
+        let jsVariables = {};
         let colorVariables = [];
         let dimensionVariables = [];
         for (let variantName in element) {
@@ -201,15 +212,15 @@ function generateDNAJS() {
               let state = variant.states[stateName];
               for (let key in state) {
                 let value = state[key];
-                let varName = `${variant.varBaseName}`;
-                varName += `-${key}`;
+                let varName = key;
                 if (stateName !== 'default') {
                   varName += `-${stateName}`;
                 }
                 if (allVariables[varName]) {
                   throw new Error(`${varName} already defined for ${variantName}!`);
                 }
-                allVariables[varName] = value;
+                allVariables[`${variant.varBaseName}-${varName}`] = value;
+                jsVariables[varName] = value;
                 colorVariables[key] = value;
               }
             }
@@ -217,20 +228,38 @@ function generateDNAJS() {
 
           if (variant.dimensions) {
             for (let key in variant.dimensions) {
-              let value = variant.dimensions[key];
-              allVariables[`${variant.varBaseName}-${key}`] = value;
-              dimensionVariables[key] = value;
+              let varName = key;
+              let value = variant.dimensions[varName];
+              allVariables[`${variant.varBaseName}-${varName}`] = value;
+              jsVariables[varName] = value;
+              dimensionVariables[varName] = value;
+            }
+          }
+
+          if (variant.animation) {
+            for (let key in variant.animation) {
+              let varName = key;
+              let value = variant.animation[varName];
+              allVariables[`${variant.varBaseName}-${varName}`] = value;
+              jsVariables[varName] = value;
+              dimensionVariables[varName] = value;
+            }
+          }
+
+          if (variant.colors) {
+            for (let key in variant.colors) {
+              let varName = key;
+              let value = variant.colors[varName];
+              allVariables[`${variant.varBaseName}-${varName}`] = value;
+              jsVariables[varName] = value;
+              colorVariables[varName] = value;
             }
           }
         }
 
         generateJSFile([
-          dimensionVariables
-        ], `${elementName}-dimensions`, 'js/components');
-
-        generateJSFile([
-          colorVariables
-        ], `${elementName}-color`, 'js/components');
+          jsVariables
+        ], elementName, 'js/components');
 
         generateCSSFile([
           allVariables
@@ -244,7 +273,7 @@ function generateDNAJS() {
 
 async function generateDNAJSIndex() {
   await fsp.writeFile('js/index.js',
-`${dnaModules.map(module => `exports[${JSON.stringify(module.replace(/^spectrum-(.*?)\.js/, '$1'))}] = require("./${module}.js");`).join('\n')}
+`${dnaModules.map(module => `exports[${JSON.stringify(module.replace(/.*?\/(.*?)/, '$1'))}] = require("./${module}.js");`).join('\n')}
 `);
 }
 

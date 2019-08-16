@@ -1,6 +1,15 @@
+const colorGlobals = require('../colorGlobals.js');
+const lightest = require('../lightest.js');
 const medium = require('../medium.js');
 const dimensionGlobals = require('../dimensionGlobals.js');
-const circleloader = exports;
+const animationGlobals = require('../animationGlobals.js');
+exports["text-color"] = colorGlobals["static-white"];
+exports["track-color"] = lightest["track-color-over-background"];
+exports["track-fill-color"] = colorGlobals["static-white"];
+exports["track-color-disabled"] = lightest["track-color-over-background"];
+exports["track-fill-color-disabled"] = lightest["background-color-transparent"];
 exports["height"] = medium["size-200"];
 exports["width"] = medium["size-200"];
 exports["border-size"] = dimensionGlobals["size-25"];
+exports["spin-animation-duration"] = animationGlobals["duration-2000"];
+exports["spin-animation-ease"] = animationGlobals["ease-in-out"];

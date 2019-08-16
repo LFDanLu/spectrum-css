@@ -1,0 +1,1 @@
+const assetlist-dimensions = exports;

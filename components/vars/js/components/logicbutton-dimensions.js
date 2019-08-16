@@ -1,0 +1,10 @@
+const staticAliases = require('../staticAliases.js');
+const medium = require('../medium.js');
+const fontGlobals = require('../fontGlobals.js');
+const logicbutton-dimensions = exports;
+exports["border-size"] = staticAliases["border-size-thick"];
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["text-size"] = medium["dimensionAliases"].["font-size-default"];
+exports["text-font-weight"] = fontGlobals["weight-bold"];
+exports["height"] = "24px";
+exports["padding-x"] = medium["size-100"];

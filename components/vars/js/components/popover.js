@@ -1,10 +1,13 @@
+const lightest = require('../lightest.js');
 const staticAliases = require('../staticAliases.js');
 const medium = require('../medium.js');
-const popover = exports;
+exports["background-color"] = lightest["gray-50"];
+exports["border-color"] = lightest["border-color-dark"];
+exports["shadow-color"] = lightest["dropshadow-color"];
 exports["border-size"] = staticAliases["border-size-thin"];
-exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
-exports["shadow-blur"] = medium["dimensionAliases"].["dropshadow-blur"];
-exports["shadow-offset-y"] = medium["dimensionAliases"].["dropshadow-offset-y"];
+exports["border-radius"] = medium["border-radius-regular"];
+exports["shadow-blur"] = medium["dropshadow-blur"];
+exports["shadow-offset-y"] = medium["dropshadow-offset-y"];
 exports["padding-x"] = "0px";
 exports["padding-y"] = medium["size-50"];
 exports["tip-width"] = medium["size-250"];

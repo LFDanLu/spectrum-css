@@ -1,0 +1,17 @@
+const medium = require('../medium.js');
+const staticAliases = require('../staticAliases.js');
+const dimensionGlobals = require('../dimensionGlobals.js');
+const rating-dimensions = exports;
+exports["height"] = medium["dimensionAliases"].["single-line-height"];
+exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
+exports["focus-ring-size"] = staticAliases["border-size-thick"];
+exports["border-size"] = staticAliases["border-size-thick"];
+exports["icon-count"] = "5";
+exports["icon-spacing"] = medium["size-75"];
+exports["icon-width"] = "24px";
+exports["icon-padding-y"] = medium["size-85"];
+exports["indicator-width"] = "16px";
+exports["indicator-height"] = medium["size-25"];
+exports["indicator-border-radius"] = medium["dimensionAliases"].["border-radius-small"];
+exports["indicator-offset"] = staticAliases["border-size-thick"];
+exports["touch-hit-y"] = dimensionGlobals["size-100"];

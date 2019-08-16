@@ -1,0 +1,13 @@
+const medium = require('../medium.js');
+const dimensionGlobals = require('../dimensionGlobals.js');
+const animationGlobals = require('../animationGlobals.js');
+const barloader-dimensions = exports;
+exports["width"] = medium["size-2400"];
+exports["label-gap-x"] = medium["size-150"];
+exports["height"] = medium["size-50"];
+exports["border-radius"] = dimensionGlobals["size-25"];
+exports["fill-border-radius"] = "0";
+exports["label-gap-y"] = medium["size-115"];
+exports["fill-width"] = medium["size-1700"];
+exports["animation-ease"] = animationGlobals["ease-in-out"];
+exports["duration"] = animationGlobals["duration-2000"];

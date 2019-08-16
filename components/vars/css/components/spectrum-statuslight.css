@@ -12,6 +12,14 @@
   --spectrum-statuslight-height: var(--spectrum-alias-single-line-height);
   --spectrum-statuslight-text-gap: var(--spectrum-global-dimension-size-150);
   --spectrum-statuslight-dot-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-statuslight-dot-color-label-celery: var(--spectrum-global-color-celery-400);
+  --spectrum-statuslight-dot-color-label-chartreuse: var(--spectrum-global-color-chartreuse-400);
+  --spectrum-statuslight-dot-color-label-yellow: var(--spectrum-global-color-yellow-400);
+  --spectrum-statuslight-dot-color-label-magenta: var(--spectrum-global-color-magenta-400);
+  --spectrum-statuslight-dot-color-label-fuchsia: var(--spectrum-global-color-fuchsia-400);
+  --spectrum-statuslight-dot-color-label-purple: var(--spectrum-global-color-purple-400);
+  --spectrum-statuslight-dot-color-label-indigo: var(--spectrum-global-color-indigo-400);
+  --spectrum-statuslight-dot-color-label-seafoam: var(--spectrum-global-color-seafoam-400);
   --spectrum-statuslight-info-text-color: var(--spectrum-alias-text-color);
   --spectrum-statuslight-info-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-statuslight-info-dot-color-disabled: var(--spectrum-global-color-gray-400);
@@ -25,6 +33,7 @@
   --spectrum-statuslight-info-height: var(--spectrum-alias-single-line-height);
   --spectrum-statuslight-info-text-gap: var(--spectrum-global-dimension-size-150);
   --spectrum-statuslight-info-dot-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-statuslight-info-dot-color: var(--spectrum-global-color-blue-400);
   --spectrum-statuslight-negative-text-color: var(--spectrum-alias-text-color);
   --spectrum-statuslight-negative-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-statuslight-negative-dot-color-disabled: var(--spectrum-global-color-gray-400);
@@ -38,6 +47,7 @@
   --spectrum-statuslight-negative-height: var(--spectrum-alias-single-line-height);
   --spectrum-statuslight-negative-text-gap: var(--spectrum-global-dimension-size-150);
   --spectrum-statuslight-negative-dot-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-statuslight-negative-dot-color: var(--spectrum-global-color-red-400);
   --spectrum-statuslight-neutral-text-color: var(--spectrum-global-color-gray-700);
   --spectrum-statuslight-neutral-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-statuslight-neutral-dot-color-disabled: var(--spectrum-global-color-gray-400);
@@ -51,6 +61,7 @@
   --spectrum-statuslight-neutral-height: var(--spectrum-alias-single-line-height);
   --spectrum-statuslight-neutral-text-gap: var(--spectrum-global-dimension-size-150);
   --spectrum-statuslight-neutral-dot-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-statuslight-neutral-dot-color: var(--spectrum-global-color-gray-500);
   --spectrum-statuslight-notice-text-color: var(--spectrum-alias-text-color);
   --spectrum-statuslight-notice-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-statuslight-notice-dot-color-disabled: var(--spectrum-global-color-gray-400);
@@ -64,6 +75,7 @@
   --spectrum-statuslight-notice-height: var(--spectrum-alias-single-line-height);
   --spectrum-statuslight-notice-text-gap: var(--spectrum-global-dimension-size-150);
   --spectrum-statuslight-notice-dot-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-statuslight-notice-dot-color: var(--spectrum-global-color-orange-400);
   --spectrum-statuslight-positive-text-color: var(--spectrum-alias-text-color);
   --spectrum-statuslight-positive-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-statuslight-positive-dot-color-disabled: var(--spectrum-global-color-gray-400);
@@ -77,4 +89,5 @@
   --spectrum-statuslight-positive-height: var(--spectrum-alias-single-line-height);
   --spectrum-statuslight-positive-text-gap: var(--spectrum-global-dimension-size-150);
   --spectrum-statuslight-positive-dot-size: var(--spectrum-global-dimension-size-100);
+  --spectrum-statuslight-positive-dot-color: var(--spectrum-global-color-green-400);
 }

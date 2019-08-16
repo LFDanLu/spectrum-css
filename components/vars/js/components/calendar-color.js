@@ -1,0 +1,13 @@
+const lightest = require('../lightest.js');
+const fontGlobals = require('../fontGlobals.js');
+const calendar-color = exports;
+exports["text-color"] = lightest["gray-500"];
+exports["background-color"] = "transparent";
+exports["today-text-color"] = lightest["gray-500"];
+exports["today-border-color"] = lightest["gray-400"];
+exports["title-text-color"] = lightest["gray-700"];
+exports["text-font-weight"] = fontGlobals["weight-bold"];
+exports["today-background-color"] = lightest["colorAliases"].["highlight-selected-hover"];
+exports["border-color"] = lightest["colorAliases"].["focus-color"];
+exports["border-size"] = "2px";
+exports["button-icon-color"] = lightest["gray-700"];

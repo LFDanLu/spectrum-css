@@ -1,0 +1,1 @@
+const illustratedmessage-dimensions = exports;

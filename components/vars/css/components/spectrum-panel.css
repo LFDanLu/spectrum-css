@@ -7,4 +7,7 @@
   --spectrum-panel-header-text-size: var(--spectrum-global-dimension-font-size-100);
   --spectrum-panel-header-text-font-weight: var(--spectrum-global-font-weight-bold);
   --spectrum-panel-content-padding-bottom: var(--spectrum-global-dimension-size-300);
+  --spectrum-panel-border-color: var(--spectrum-alias-appframe-border-color);
+  --spectrum-panel-background-color: var(--spectrum-global-color-gray-100);
+  --spectrum-panel-header-text-color: var(--spectrum-global-color-gray-800);
 }

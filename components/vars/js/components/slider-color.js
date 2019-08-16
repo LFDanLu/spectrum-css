@@ -1,0 +1,16 @@
+const lightest = require('../lightest.js');
+const medium = require('../medium.js');
+const slider-color = exports;
+exports["handle-outset-border-color"] = lightest["colorAliases"].["border-color-translucent-dark"];
+exports["handle-inset-border-color"] = lightest["colorAliases"].["border-color-translucent-dark"];
+exports["handle-border-color"] = lightest["gray-400"];
+exports["handle-color"] = lightest["colorAliases"].["border-color-transparent"];
+exports["track-background-color-gradient-start"] = lightest["blue-400"];
+exports["track-background-color-gradient-end"] = lightest["blue-700"];
+exports["track-border-color"] = lightest["colorAliases"].["border-color-translucent-dark"];
+exports["track-color"] = lightest["gray-200"];
+exports["handle-background-color"] = lightest["colorAliases"].["background-color-transparent"];
+exports["handle-border-size"] = medium["size-100"];
+exports["radial-reaction-color"] = lightest["colorAliases"].["radial-reaction-color-default"];
+exports["track-buffer-color"] = lightest["colorAliases"].["track-color-default"];
+exports["mark-color"] = lightest["colorAliases"].["track-color-default"];

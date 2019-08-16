@@ -1,0 +1,12 @@
+const staticAliases = require('../staticAliases.js');
+const fontGlobals = require('../fontGlobals.js');
+const medium = require('../medium.js');
+const label-dimensions = exports;
+exports["text-font-family"] = staticAliases["body-text-font-family"];
+exports["text-font-style"] = fontGlobals["style-regular"];
+exports["text-font-weight"] = fontGlobals["weight-regular"];
+exports["text-line-height"] = medium["dimensionAliases"].["line-height-large"];
+exports["text-letter-spacing"] = fontGlobals["letter-spacing-none"];
+exports["text-transform"] = "none";
+exports["text-size"] = medium["font-size-200"];
+exports["margin-bottom"] = medium["size-150"];

@@ -1,0 +1,11 @@
+const lightest = require('../lightest.js');
+const dimensionGlobals = require('../dimensionGlobals.js');
+const select-color = exports;
+exports["icon-color"] = lightest["colorAliases"].["icon-color-disabled"];
+exports["option-background-color"] = lightest["colorAliases"].["background-color-hover-overlay"];
+exports["option-text-color"] = lightest["colorAliases"].["text-color-selected"];
+exports["option-icon-color"] = lightest["colorAliases"].["icon-color-selected"];
+exports["divider-color"] = lightest["colorAliases"].["border-color-extralight"];
+exports["option-border-color"] = lightest["blue-400"];
+exports["border-size"] = dimensionGlobals["size-25"];
+exports["option-border-size"] = dimensionGlobals["size-25"];

@@ -1,0 +1,9 @@
+const lightest = require('../lightest.js');
+const staticAliases = require('../staticAliases.js');
+const cyclebutton-color = exports;
+exports["text-color"] = lightest["colorAliases"].["text-color-disabled"];
+exports["icon-color"] = lightest["colorAliases"].["icon-color-disabled"];
+exports["border-size"] = staticAliases["border-size-thin"];
+exports["background-color"] = lightest["colorAliases"].["background-color-transparent"];
+exports["border-color"] = lightest["colorAliases"].["border-color-transparent"];
+exports["hold-icon-color"] = lightest["colorAliases"].["icon-color-disabled"];

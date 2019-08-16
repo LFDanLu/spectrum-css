@@ -1,0 +1,1 @@
+const taggroup-color = exports;

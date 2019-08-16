@@ -46,6 +46,8 @@
   --spectrum-tabs-compact-margin-left: -8px;
   --spectrum-tabs-compact-margin-right: -8px;
   --spectrum-tabs-compact-focus-area-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-tabs-compact-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-compact-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-tabs-compact-vertical-text-color: var(--spectrum-alias-label-text-color);
   --spectrum-tabs-compact-vertical-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tabs-compact-vertical-selection-indicator-color: var(--spectrum-global-color-gray-900);
@@ -94,6 +96,8 @@
   --spectrum-tabs-compact-vertical-margin-left: 0px;
   --spectrum-tabs-compact-vertical-margin-right: 0px;
   --spectrum-tabs-compact-vertical-focus-area-gap: var(--spectrum-global-dimension-size-200);
+  --spectrum-tabs-compact-vertical-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-compact-vertical-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-tabs-text-color: var(--spectrum-alias-label-text-color);
   --spectrum-tabs-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tabs-selection-indicator-color: var(--spectrum-global-color-gray-900);
@@ -141,6 +145,8 @@
   --spectrum-tabs-margin-left: -8px;
   --spectrum-tabs-margin-right: -8px;
   --spectrum-tabs-focus-area-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-tabs-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-tabs-quiet-text-color: var(--spectrum-alias-label-text-color);
   --spectrum-tabs-quiet-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tabs-quiet-selection-indicator-color: var(--spectrum-global-color-gray-900);
@@ -188,6 +194,8 @@
   --spectrum-tabs-quiet-margin-left: -8px;
   --spectrum-tabs-quiet-margin-right: -8px;
   --spectrum-tabs-quiet-focus-area-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-tabs-quiet-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-quiet-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-tabs-quiet-compact-text-color: var(--spectrum-alias-label-text-color);
   --spectrum-tabs-quiet-compact-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tabs-quiet-compact-selection-indicator-color: var(--spectrum-global-color-gray-900);
@@ -235,6 +243,8 @@
   --spectrum-tabs-quiet-compact-margin-left: -8px;
   --spectrum-tabs-quiet-compact-margin-right: -8px;
   --spectrum-tabs-quiet-compact-focus-area-gap: var(--spectrum-global-dimension-size-100);
+  --spectrum-tabs-quiet-compact-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-quiet-compact-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-tabs-quiet-vertical-text-color: var(--spectrum-alias-label-text-color);
   --spectrum-tabs-quiet-vertical-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tabs-quiet-vertical-selection-indicator-color: var(--spectrum-global-color-gray-900);
@@ -283,6 +293,8 @@
   --spectrum-tabs-quiet-vertical-margin-left: 0px;
   --spectrum-tabs-quiet-vertical-margin-right: 0px;
   --spectrum-tabs-quiet-vertical-focus-area-gap: var(--spectrum-global-dimension-size-200);
+  --spectrum-tabs-quiet-vertical-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-quiet-vertical-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
   --spectrum-tabs-vertical-text-color: var(--spectrum-alias-label-text-color);
   --spectrum-tabs-vertical-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tabs-vertical-selection-indicator-color: var(--spectrum-global-color-gray-900);
@@ -331,4 +343,6 @@
   --spectrum-tabs-vertical-margin-left: 0px;
   --spectrum-tabs-vertical-margin-right: 0px;
   --spectrum-tabs-vertical-focus-area-gap: var(--spectrum-global-dimension-size-200);
+  --spectrum-tabs-vertical-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
+  --spectrum-tabs-vertical-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
 }

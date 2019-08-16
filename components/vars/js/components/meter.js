@@ -1,6 +1,14 @@
+const lightest = require('../lightest.js');
 const medium = require('../medium.js');
 const dimensionGlobals = require('../dimensionGlobals.js');
-const meter = exports;
+exports["text-color"] = lightest["text-color"];
+exports["track-color"] = lightest["track-color-default"];
+exports["track-fill-color"] = lightest["blue-500"];
+exports["track-color-positive"] = lightest["green-400"];
+exports["track-color-warning"] = lightest["orange-400"];
+exports["track-color-critical"] = lightest["red-400"];
+exports["track-color-disabled"] = lightest["track-color-disabled"];
+exports["track-fill-color-disabled"] = lightest["track-color-disabled"];
 exports["width"] = medium["size-2400"];
 exports["label-gap-x"] = medium["size-150"];
 exports["height"] = medium["size-50"];

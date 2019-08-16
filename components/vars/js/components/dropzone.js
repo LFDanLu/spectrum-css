@@ -1,8 +1,14 @@
+const lightest = require('../lightest.js');
 const medium = require('../medium.js');
 const staticAliases = require('../staticAliases.js');
-const dropzone = exports;
+exports["border-color"] = lightest["gray-300"];
+exports["background-color"] = lightest["gray-100"];
+exports["icon-color"] = lightest["gray-500"];
+exports["border-color-selected-hover"] = lightest["blue-400"];
+exports["background-color-selected-hover"] = lightest["highlight-selected"];
+exports["icon-color-selected-hover"] = lightest["blue-500"];
 exports["padding"] = medium["size-900"];
 exports["border-width"] = staticAliases["border-size-thick"];
-exports["border-radius"] = medium["dimensionAliases"].["border-radius-regular"];
-exports["content-text-size"] = medium["dimensionAliases"].["font-size-default"];
+exports["border-radius"] = medium["border-radius-regular"];
+exports["content-text-size"] = medium["font-size-default"];
 exports["icon-margin-y"] = medium["size-175"];

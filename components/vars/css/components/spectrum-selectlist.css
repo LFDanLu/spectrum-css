@@ -50,6 +50,8 @@
   --spectrum-selectlist-option-icon-margin-top: var(--spectrum-global-dimension-size-65);
   --spectrum-selectlist-option-height: var(--spectrum-global-dimension-size-400);
   --spectrum-selectlist-option-baseline: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-selectlist-option-focus-indicator-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-selectlist-background-color: var(--spectrum-alias-background-color-transparent);
   --spectrum-selectlist-thumbnail-option-background-color: var(--spectrum-alias-background-color-transparent);
   --spectrum-selectlist-thumbnail-option-text-color: var(--spectrum-alias-text-color);
   --spectrum-selectlist-thumbnail-option-icon-color: var(--spectrum-alias-icon-color-selected);
@@ -98,6 +100,9 @@
   --spectrum-selectlist-thumbnail-image-width: var(--spectrum-global-dimension-size-500);
   --spectrum-selectlist-thumbnail-image-border-radius: var(--spectrum-alias-border-radius-small);
   --spectrum-selectlist-thumbnail-image-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-selectlist-thumbnail-image-border-color: var(--spectrum-alias-border-color-translucent-dark);
+  --spectrum-selectlist-thumbnail-option-focus-indicator-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-selectlist-thumbnail-background-color: var(--spectrum-alias-background-color-transparent);
   --spectrum-selectlist-thumbnail-small-option-background-color: var(--spectrum-alias-background-color-transparent);
   --spectrum-selectlist-thumbnail-small-option-text-color: var(--spectrum-alias-text-color);
   --spectrum-selectlist-thumbnail-small-option-icon-color: var(--spectrum-alias-icon-color-selected);
@@ -146,4 +151,7 @@
   --spectrum-selectlist-thumbnail-small-image-width: var(--spectrum-global-dimension-size-225);
   --spectrum-selectlist-thumbnail-small-image-border-radius: var(--spectrum-alias-border-radius-small);
   --spectrum-selectlist-thumbnail-small-image-border-size: var(--spectrum-alias-border-size-thin);
+  --spectrum-selectlist-thumbnail-small-image-border-color: var(--spectrum-alias-border-color-translucent-dark);
+  --spectrum-selectlist-thumbnail-small-option-focus-indicator-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-selectlist-thumbnail-small-background-color: var(--spectrum-alias-background-color-transparent);
 }

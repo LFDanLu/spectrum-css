@@ -1,0 +1,10 @@
+const dimensionGlobals = require('../dimensionGlobals.js');
+const lightest = require('../lightest.js');
+const breadcrumb-color = exports;
+exports["item-border-size"] = dimensionGlobals["size-0"];
+exports["item-border-color"] = lightest["colorAliases"].["border-color-transparent"];
+exports["item-background-color"] = lightest["colorAliases"].["background-color-transparent"];
+exports["item-text-color"] = lightest["colorAliases"].["text-color-disabled"];
+exports["item-underline-color"] = lightest["colorAliases"].["border-color-transparent"];
+exports["ui-icon-color"] = lightest["gray-500"];
+exports["text-color"] = lightest["colorAliases"].["text-color-hover"];

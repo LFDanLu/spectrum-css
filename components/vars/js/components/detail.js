@@ -1,7 +1,7 @@
 const staticAliases = require('../staticAliases.js');
 const fontGlobals = require('../fontGlobals.js');
 const medium = require('../medium.js');
-const detail = exports;
+const lightest = require('../lightest.js');
 exports["text-font-family"] = staticAliases["font-family-zh"];
 exports["text-font-style"] = fontGlobals["style-regular"];
 exports["text-font-weight"] = staticAliases["han-detail-text-font-weight-strong"];
@@ -12,3 +12,4 @@ exports["margin-top"] = "0px";
 exports["margin-bottom-multiplier"] = staticAliases["body-margin-bottom"];
 exports["text-size"] = medium["font-size-50"];
 exports["margin-bottom"] = medium["size-100"];
+exports["text-color"] = lightest["text-color"];

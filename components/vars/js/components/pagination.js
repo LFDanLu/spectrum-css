@@ -1,9 +1,14 @@
+const lightest = require('../lightest.js');
+const colorGlobals = require('../colorGlobals.js');
 const medium = require('../medium.js');
-const pagination = exports;
+exports["page-button-background-color-hover"] = lightest["background-color-hover-overlay"];
+exports["page-button-border-color-key-focus"] = lightest["focus-color"];
+exports["page-button-background-color-down"] = lightest["gray-800"];
+exports["page-button-text-color-down"] = colorGlobals["static-white"];
 exports["textfield-width"] = medium["size-600"];
 exports["counter-height"] = medium["size-400"];
 exports["counter-margin-left"] = medium["size-65"];
-exports["direction-button-text-size"] = medium["dimensionAliases"].["pill-button-text-size"];
+exports["direction-button-text-size"] = medium["pill-button-text-size"];
 exports["page-button-width"] = medium["size-400"];
 exports["page-button-line-height"] = "26px";
 exports["page-button-margin-horizontal"] = medium["size-65"];

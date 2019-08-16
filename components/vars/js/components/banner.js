@@ -1,9 +1,12 @@
+const colorGlobals = require('../colorGlobals.js');
 const dimensionGlobals = require('../dimensionGlobals.js');
 const medium = require('../medium.js');
 const staticAliases = require('../staticAliases.js');
-const banner = exports;
+const lightest = require('../lightest.js');
+exports["text-color"] = colorGlobals["static-white"];
 exports["border-radius"] = dimensionGlobals["size-100"];
 exports["padding-y"] = dimensionGlobals["size-50"];
 exports["padding-x"] = dimensionGlobals["size-100"];
 exports["text-size"] = medium["font-size-75"];
 exports["text-line-height"] = staticAliases["heading-text-line-height"];
+exports["background-color"] = lightest["orange-500"];

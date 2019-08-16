@@ -1,0 +1,1 @@
+const buttongroup-color = exports;

@@ -50,4 +50,6 @@
   --spectrum-selectlist-option-icon-margin-top: var(--spectrum-global-dimension-size-65);
   --spectrum-selectlist-option-height: var(--spectrum-global-dimension-size-400);
   --spectrum-selectlist-option-baseline: var(--spectrum-global-dimension-font-size-75);
+  --spectrum-selectlist-option-focus-indicator-color: var(--spectrum-alias-border-color-focus);
+  --spectrum-selectlist-background-color: var(--spectrum-alias-background-color-transparent);
 }

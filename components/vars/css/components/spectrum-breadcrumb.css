@@ -56,6 +56,8 @@
   --spectrum-breadcrumb-compact-button-touch-hit-x: var(--spectrum-global-dimension-size-50);
   --spectrum-breadcrumb-compact-item-text-size: var(--spectrum-global-dimension-font-size-100);
   --spectrum-breadcrumb-compact-title-text-size: var(--spectrum-global-dimension-font-size-100);
+  --spectrum-breadcrumb-compact-separator-icon-color: var(--spectrum-alias-icon-color);
+  --spectrum-breadcrumb-compact-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-item-border-size: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-item-border-color: var(--spectrum-alias-border-color-transparent);
   --spectrum-breadcrumb-item-background-color: var(--spectrum-alias-background-color-transparent);
@@ -125,6 +127,8 @@
   --spectrum-breadcrumb-text-font-weight: var(--spectrum-alias-body-text-font-weight);
   --spectrum-breadcrumb-item-text-size: var(--spectrum-global-dimension-font-size-200);
   --spectrum-breadcrumb-title-text-size: var(--spectrum-global-dimension-font-size-200);
+  --spectrum-breadcrumb-separator-icon-color: var(--spectrum-alias-icon-color);
+  --spectrum-breadcrumb-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-multiline-item-border-size: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-multiline-item-border-color: var(--spectrum-alias-border-color-transparent);
   --spectrum-breadcrumb-multiline-item-background-color: var(--spectrum-alias-background-color-transparent);
@@ -182,6 +186,8 @@
   --spectrum-breadcrumb-multiline-button-touch-hit-x: var(--spectrum-global-dimension-size-50);
   --spectrum-breadcrumb-multiline-item-text-size: var(--spectrum-global-dimension-font-size-75);
   --spectrum-breadcrumb-multiline-title-text-size: var(--spectrum-global-dimension-font-size-300);
+  --spectrum-breadcrumb-multiline-separator-icon-color: var(--spectrum-alias-icon-color);
+  --spectrum-breadcrumb-multiline-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-title-margin: 0.3em 0;
   --spectrum-breadcrumb-title-active-text-size: 28px;
   --spectrum-breadcrumb-title-active-text-font-weight: 300;

@@ -1,5 +1,4 @@
 const medium = require('../medium.js');
-const combobox = exports;
 exports["textfield-border-top-right-radius"] = "0";
 exports["textfield-border-bottom-right-radius"] = "0";
 exports["fieldbutton-border-top-left-radius"] = "0";

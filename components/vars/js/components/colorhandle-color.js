@@ -1,0 +1,17 @@
+const lightest = require('../lightest.js');
+const medium = require('../medium.js');
+const dimensionGlobals = require('../dimensionGlobals.js');
+const colorGlobals = require('../colorGlobals.js');
+const colorhandle-color = exports;
+exports["inner-border-color"] = lightest["gray-400"];
+exports["outer-border-color"] = "rgba(50,50,50,0.1)";
+exports["fill-color"] = lightest["gray-300"];
+exports["cursor-hit-width"] = medium["size-400"];
+exports["cursor-hit-height"] = medium["size-400"];
+exports["cursor-hit-border-radius"] = dimensionGlobals["percent-50"];
+exports["touch-hit-width"] = dimensionGlobals["size-600"];
+exports["touch-hit-height"] = dimensionGlobals["size-600"];
+exports["touch-hit-border-radius"] = dimensionGlobals["percent-50"];
+exports["loupe-inner-border-color"] = colorGlobals["static-white"];
+exports["loupe-outer-border-color"] = "rgba(50,50,50,0.1)";
+exports["loupe-shadow-color"] = lightest["colorAliases"].["dropshadow-color"];

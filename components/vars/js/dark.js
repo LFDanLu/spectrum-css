@@ -1,4 +1,4 @@
-const colorGlobals = require('colorGlobals.js');
+const colorGlobals = require('./colorGlobals.js');
 const dark = exports;
 exports["celery-400"] = "rgb(68, 181, 86)";
 exports["celery-500"] = "rgb(75, 195, 95)";
