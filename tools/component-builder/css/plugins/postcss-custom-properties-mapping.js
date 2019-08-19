@@ -35,7 +35,7 @@ async function fetchVars() {
   );
 
   // Read in all variables so we have the value they resolve to
-  allVars = await varUtils.getAllDNAVariables();
+  allVars = await varUtils.getAllComponentVars();
 
   return true;
 }

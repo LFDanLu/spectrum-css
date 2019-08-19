@@ -39,12 +39,4 @@
   --spectrum-colorslider-vertical-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-colorslider-vertical-colorhandle-cursor-hit-width: var(--spectrum-global-dimension-size-300);
   --spectrum-colorslider-vertical-colorhandle-cursor-hit-height: var(--spectrum-global-dimension-size-200);
-  --spectrum-colorslider-border-color: rgba(239,239,239,0.1);
-  --spectrum-colorslider-border-color-hover: rgba(239,239,239,0.1);
-  --spectrum-colorslider-border-color-down: rgba(239,239,239,0.1);
-  --spectrum-colorslider-border-color-key-focus: rgba(239,239,239,0.1);
-  --spectrum-colorslider-vertical-border-color: rgba(239,239,239,0.1);
-  --spectrum-colorslider-vertical-border-color-hover: rgba(239,239,239,0.1);
-  --spectrum-colorslider-vertical-border-color-down: rgba(239,239,239,0.1);
-  --spectrum-colorslider-vertical-border-color-key-focus: rgba(239,239,239,0.1);
 }

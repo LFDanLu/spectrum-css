@@ -48,7 +48,7 @@ function getUsedVars() {
 
 const varDir = path.join(dirs.components, 'vars', 'dist');
 const componentCSSDir = path.join(varDir, 'components', 'index.css');
-exports.buildUnique = function() {
+function buildUnique() {
   return new Promise(async (resolve, reject) => {
     // Read in all variables from components
     let variableList = await getUsedVars();
@@ -82,4 +82,16 @@ exports.buildUnique = function() {
       .on('finish', resolve)
       .on('error', reject);
   });
-};
+}
+
+function copyVars() {
+  return gulp.src(path.join(varDir, 'spectrum-*.css'))
+    .pipe(gulp.dest('dist/vars/'))
+}
+
+exports.buildUnique = buildUnique;
+
+exports.copyVars = gulp.parallel(
+  buildUnique,
+  copyVars
+);

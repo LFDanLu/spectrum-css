@@ -60,7 +60,6 @@ exports["rule"] = require("./components/rule.js");
 exports["scrollbar"] = require("./components/scrollbar.js");
 exports["search"] = require("./components/search.js");
 exports["searchwithin"] = require("./components/searchwithin.js");
-exports["select"] = require("./components/select.js");
 exports["selectlist"] = require("./components/selectlist.js");
 exports["sidenav"] = require("./components/sidenav.js");
 exports["slider"] = require("./components/slider.js");

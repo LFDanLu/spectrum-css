@@ -11,8 +11,4 @@
   --spectrum-colorwheel-colorarea-margin: var(--spectrum-global-dimension-size-150);
   --spectrum-colorwheel-cursor-hit-outer: var(--spectrum-global-dimension-size-0);
   --spectrum-colorwheel-cursor-hit-inner: var(--spectrum-global-dimension-size-0);
-  --spectrum-colorwheel-border-color: rgba(239,239,239,0.1);
-  --spectrum-colorwheel-border-color-hover: rgba(239,239,239,0.1);
-  --spectrum-colorwheel-border-color-down: rgba(239,239,239,0.1);
-  --spectrum-colorwheel-border-color-key-focus: rgba(239,239,239,0.1);
 }

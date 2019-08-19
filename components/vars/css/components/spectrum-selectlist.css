@@ -40,7 +40,6 @@
   --spectrum-selectlist-option-icon-height: var(--spectrum-global-dimension-size-150);
   --spectrum-selectlist-option-icon-width: var(--spectrum-global-dimension-size-150);
   --spectrum-selectlist-icon-gap: var(--spectrum-global-dimension-size-100);
-  --spectrum-selectlist-option-icon-size: var(--spectrum-global-dimension-size-200);
   --spectrum-selectlist-option-icon-gap: var(--spectrum-global-dimension-size-100);
   --spectrum-selectlist-option-text-font-weight: var(--spectrum-global-font-weight-regular);
   --spectrum-selectlist-option-text-font-style: var(--spectrum-global-font-style-regular);
@@ -48,9 +47,6 @@
   --spectrum-selectlist-padding-left: var(--spectrum-global-dimension-size-150);
   --spectrum-selectlist-padding-right: var(--spectrum-global-dimension-size-450);
   --spectrum-selectlist-option-icon-padding-x: var(--spectrum-global-dimension-size-150);
-  --spectrum-selectlist-option-icon-padding-y: var(--spectrum-global-dimension-size-200);
-  --spectrum-selectlist-option-icon-margin-top: var(--spectrum-global-dimension-size-50);
-  --spectrum-selectlist-option-height: var(--spectrum-global-dimension-size-600);
   --spectrum-selectlist-option-baseline: var(--spectrum-global-dimension-font-size-75);
   --spectrum-selectlist-thumbnail-option-background-color: var(--spectrum-alias-background-color-transparent);
   --spectrum-selectlist-thumbnail-option-text-color: var(--spectrum-alias-text-color);

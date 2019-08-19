@@ -24,6 +24,4 @@
   --spectrum-miller-column-item-border-radius: var(--spectrum-global-dimension-size-50);
   --spectrum-miller-column-item-padding-left: var(--spectrum-global-dimension-size-200);
   --spectrum-miller-column-item-padding-right: var(--spectrum-global-dimension-size-200);
-  --spectrum-miller-column-item-background-color-selected: rgba(38,128,235,0.1);
-  --spectrum-miller-column-item-background-color-selected-hover: rgba(38,128,235,0.2);
 }

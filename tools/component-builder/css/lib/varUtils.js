@@ -10,7 +10,10 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
+const gulp = require('gulp');
 const postcss = require('postcss');
+const concat = require('gulp-concat');
+const through = require('through2');
 const fsp = require('fs').promises;
 const logger = require('gulplog');
 const path = require('path');
@@ -129,6 +132,26 @@ ${varNames.map((varName) => `  ${varName}: ${vars[varName]};`).join('\n')}
   return '';
 }
 
+function getAllComponentVars() {
+  return new Promise((resolve, reject) => {
+    let variableList;
+    let componentsGlob = path.join(varDir, 'css', 'components', '*.css');
+
+    gulp.src(componentsGlob)
+      .pipe(concat('everything.css'))
+      .pipe(through.obj(function getAllVars(file, enc, cb) {
+        variableList = getVarValues(file.contents.toString());
+
+        cb(null, file);
+      }))
+      .on('finish', () => {
+        resolve(variableList);
+      })
+      .on('error', reject);
+  });
+}
+
+exports.getAllComponentVars = getAllComponentVars;
 exports.getVarsFromCSS = getVarsFromCSS;
 exports.getVarValues = getVarValues;
 exports.getClassNames = getClassNames;

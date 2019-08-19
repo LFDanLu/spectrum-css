@@ -11,8 +11,4 @@
   --spectrum-colorarea-cursor-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-colorarea-touch-hit-x: var(--spectrum-global-dimension-size-100);
   --spectrum-colorarea-touch-hit-y: var(--spectrum-global-dimension-size-100);
-  --spectrum-colorarea-border-color: rgba(239,239,239,0.1);
-  --spectrum-colorarea-border-color-hover: rgba(239,239,239,0.1);
-  --spectrum-colorarea-border-color-down: rgba(239,239,239,0.1);
-  --spectrum-colorarea-border-color-key-focus: rgba(239,239,239,0.1);
 }

@@ -36,28 +36,33 @@ function getExport(key, value) {
 }
 
 function getCSSVariableReference(value) {
-  // Strip the stop information
-  value = value.replace(/colorStopData\..*?\.colorTokens\./, 'global-color.');
-  value = value.replace(/colorStopData\..*?\.colorAliases\./, 'alias.');
-  // Strip the scale information
-  value = value.replace(/scaleData\..*?\.dimensionTokens\./, 'global-dimension.');
-  value = value.replace(/scaleData\..*?\.dimensionAliases\./, 'alias.');
-  // Sub in proper names for globals
-  value = value.replace(/colorGlobals\./, 'global-color.');
-  value = value.replace(/dimensionGlobals\./, 'global-dimension.');
-  value = value.replace(/fontGlobals\./, 'global-font.');
-  value = value.replace(/animationGlobals\./, 'global-animation.');
-  value = value.replace(/staticAliases\./, 'alias.');
+  if (value[0] === '$') {
+    value = value.substr(1);
 
-  let parts = value.split('.');
-  return '--spectrum-' + parts.join('-');
+    // Strip the stop information
+    value = value.replace(/colorStopData\..*?\.colorTokens\./, 'global-color.');
+    value = value.replace(/colorStopData\..*?\.colorAliases\./, 'alias.');
+    // Strip the scale information
+    value = value.replace(/scaleData\..*?\.dimensionTokens\./, 'global-dimension.');
+    value = value.replace(/scaleData\..*?\.dimensionAliases\./, 'alias.');
+    // Sub in proper names for globals
+    value = value.replace(/colorGlobals\./, 'global-color.');
+    value = value.replace(/dimensionGlobals\./, 'global-dimension.');
+    value = value.replace(/fontGlobals\./, 'global-font.');
+    value = value.replace(/animationGlobals\./, 'global-animation.');
+    value = value.replace(/staticAliases\./, 'alias.');
+
+    let parts = value.split('.');
+    return '--spectrum-' + parts.join('-');
+  }
+  return value;
 }
 
 function getCSSVar(prefix, key, value) {
   key = prefix ? `${prefix}-${key}` : key;
   key = `--spectrum-${key}`;
   if (value[0] === '$') {
-    let reference = getCSSVariableReference(value.substr(1));
+    let reference = getCSSVariableReference(value);
     return `  ${key}: var(${reference});\n`;
   }
   else {
@@ -184,7 +189,10 @@ function generateDNAFiles() {
         return dnaData.colorStopData[stopName].colorTokens.status !== 'Deprecated';
       });
       let scales = Object.keys(dnaData.scaleData);
-      let elements = Object.keys(dnaData.elements[stops[0]][scales[0]]);
+      let elements = Object.keys(dnaData.elements[stops[0]][scales[0]]).filter(elementName => {
+        // Ok this is gross, but we have to skip this bad boy because it duplicates tokens from selectlist!
+        return elementName !== 'select';
+      });
 
       // Anything that doesn't consistently reference the same variable or value bewteen stops/scales
       let elementColorOverrides = initializeObject(stops);
@@ -202,13 +210,14 @@ function generateDNAFiles() {
       let colorVariables = {};
       let dimensionVariables = {};
       let cssFilesGenerated = {};
+      let overriddenTokens = {};
       for (let stopName of stops) {
         let stop = dnaData.elements[stopName];
 
         for (let scaleName of scales) {
           let scale = stop[scaleName];
 
-          for (let elementName in scale) {
+          for (let elementName of elements) {
             let element = scale[elementName];
 
             for (let variantName in element) {
@@ -223,6 +232,7 @@ function generateDNAFiles() {
               if (variant.states) {
                 for (let stateName in variant.states) {
                   let state = variant.states[stateName];
+
                   for (let key in state) {
                     let value = state[key];
                     let varName = key;
@@ -232,12 +242,13 @@ function generateDNAFiles() {
                     let fullName = `${variant.varBaseName}-${varName}`;
                     let cssVariableName = getCSSVariableReference(value);
                     if (colorVariables[fullName] && colorVariables[fullName].cssVariableName !== cssVariableName) {
-                      // logger.debug(`Found override for ${cssVariableName} (${colorVariables[cssVariableName]} vs ${value})`);
+                      // logger.debug(`Found override for ${fullName} (${colorVariables[fullName].cssVariableName} vs ${cssVariableName})`);
                       elementColorOverrides[colorVariables[fullName].name][fullName] = colorVariables[fullName].value;
                       elementColorOverrides[stopName][fullName] = value;
+                      overriddenTokens[fullName] = true;
                       delete elementVariables[elementName][fullName];
                     }
-                    else {
+                    else if (!overriddenTokens[fullName]) {
                       elementVariables[elementName][fullName] = value;
                     }
                     colorVariables[fullName] = { name: stopName, value: value, cssVariableName: cssVariableName };
@@ -253,12 +264,13 @@ function generateDNAFiles() {
                   let fullName = `${variant.varBaseName}-${varName}`;
                   let cssVariableName = getCSSVariableReference(value);
                   if (colorVariables[fullName] && colorVariables[fullName].cssVariableName !== cssVariableName) {
-                    // logger.debug(`Found override for ${cssVariableName} (${colorVariables[cssVariableName]} vs ${value})`);
+                    // logger.debug(`Found override for ${fullName} (${colorVariables[fullName].cssVariableName} vs ${cssVariableName})`);
                     elementColorOverrides[colorVariables[fullName].name][fullName] = colorVariables[fullName].value;
                     elementColorOverrides[stopName][fullName] = value;
+                    overriddenTokens[fullName] = true;
                     delete elementVariables[elementName][fullName];
                   }
-                  else {
+                  else if (!overriddenTokens[fullName]) {
                     elementVariables[elementName][fullName] = value;
                   }
                   colorVariables[fullName] = { name: stopName, value: value, cssVariableName: cssVariableName };
@@ -273,12 +285,13 @@ function generateDNAFiles() {
                   let fullName = `${variant.varBaseName}-${varName}`;
                   let cssVariableName = getCSSVariableReference(value);
                   if (dimensionVariables[fullName] && dimensionVariables[fullName].cssVariableName !== cssVariableName) {
-                    // logger.debug(`Found override for ${cssVariableName} (${dimensionVariables[cssVariableName]} vs ${value})`);
+                    // logger.debug(`Found override for ${fullName} (${dimensionVariables[fullName].cssVariableName} vs ${cssVariableName})`);
                     elementDimensionOverrides[dimensionVariables[fullName].name][fullName] = dimensionVariables[fullName].value;
                     elementDimensionOverrides[scaleName][fullName] = value;
+                    overriddenTokens[fullName] = true;
                     delete elementVariables[elementName][fullName];
                   }
-                  else {
+                  else if (!overriddenTokens[fullName]) {
                     elementVariables[elementName][fullName] = value;
                   }
                   dimensionVariables[fullName] = { name: scaleName, value: value, cssVariableName: cssVariableName };
@@ -293,12 +306,13 @@ function generateDNAFiles() {
                   let fullName = `${variant.varBaseName}-${varName}`;
                   let cssVariableName = getCSSVariableReference(value);
                   if (dimensionVariables[fullName] && dimensionVariables[fullName].cssVariableName !== cssVariableName) {
-                    // logger.debug(`Found override for ${cssVariableName} (${dimensionVariables[cssVariableName]} vs ${value})`);
+                    // logger.debug(`Found override for ${fullName} (${dimensionVariables[fullName].cssVariableName} vs ${cssVariableName})`);
                     elementDimensionOverrides[dimensionVariables[fullName].name][fullName] = dimensionVariables[fullName].value;
                     elementDimensionOverrides[scaleName][fullName] = value;
+                    overriddenTokens[fullName] = true;
                     delete elementVariables[elementName][fullName];
                   }
-                  else {
+                  else if (!overriddenTokens[fullName]) {
                     elementVariables[elementName][fullName] = value;
                   }
                   dimensionVariables[fullName] = { name: scaleName, value: value, cssVariableName: cssVariableName };

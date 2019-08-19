@@ -143,7 +143,7 @@ function buildIfTopLevel() {
 let build = gulp.series(
   clean,
   buildIfTopLevel(),
-  vars.buildUnique
+  vars.copyVars
 );
 
 let buildLite = gulp.series(
@@ -178,6 +178,8 @@ else {
     dev.watch
   );
 }
+
+exports.copyVars = vars.copyVars;
 
 exports.prePack = gulp.series(
   build,

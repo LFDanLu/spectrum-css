@@ -45,7 +45,7 @@ function bakeVars() {
     let variableList = varUtils.getVarsFromCSS(file.contents);
 
     // For each color stop and scale, filter the variables for those matching the component
-    let vars = await varUtils.getAllDNAVariables();
+    let vars = await varUtils.getAllComponentVars();
 
     let usedVars = {};
     variableList.forEach(varName => {
