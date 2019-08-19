@@ -39,7 +39,6 @@ function getUsedVars() {
 
         cb(null, file);
       }))
-      .pipe(gulp.dest('dist/'))
       .on('finish', () => {
         resolve(variableList);
       })
