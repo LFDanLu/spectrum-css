@@ -1,1 +1,0 @@
-const panel-color = exports;

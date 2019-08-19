@@ -1,1 +1,0 @@
-const illustratedmessage-color = exports;

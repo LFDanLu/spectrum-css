@@ -39,12 +39,9 @@
   --spectrum-tabs-compact-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-compact-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-compact-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-compact-focus-ring-border-radius: 5px;
   --spectrum-tabs-compact-padding-x: 0px;
   --spectrum-tabs-compact-item-gap: var(--spectrum-global-dimension-size-300);
   --spectrum-tabs-compact-rule-height: var(--spectrum-alias-border-size-thick);
-  --spectrum-tabs-compact-margin-left: -8px;
-  --spectrum-tabs-compact-margin-right: -8px;
   --spectrum-tabs-compact-focus-area-gap: var(--spectrum-global-dimension-size-100);
   --spectrum-tabs-compact-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
   --spectrum-tabs-compact-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
@@ -88,7 +85,6 @@
   --spectrum-tabs-compact-vertical-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-compact-vertical-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-compact-vertical-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-compact-vertical-focus-ring-border-radius: 5px;
   --spectrum-tabs-compact-vertical-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-tabs-compact-vertical-item-gap: var(--spectrum-global-dimension-size-50);
   --spectrum-tabs-compact-vertical-item-margin-left: var(--spectrum-global-dimension-size-150);
@@ -130,7 +126,6 @@
   --spectrum-tabs-text-transform: none;
   --spectrum-tabs-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-tabs-icon-size: var(--spectrum-alias-workflow-icon-size);
-  --spectrum-tabs-baseline: var(--spectrum-global-dimension-size-225);
   --spectrum-tabs-height: var(--spectrum-global-dimension-size-600);
   --spectrum-tabs-item-height: var(--spectrum-global-dimension-size-600);
   --spectrum-tabs-icon-gap: var(--spectrum-global-dimension-size-100);
@@ -138,12 +133,9 @@
   --spectrum-tabs-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-focus-ring-border-radius: 5px;
   --spectrum-tabs-padding-x: 0px;
   --spectrum-tabs-item-gap: var(--spectrum-global-dimension-size-300);
   --spectrum-tabs-rule-height: var(--spectrum-alias-border-size-thick);
-  --spectrum-tabs-margin-left: -8px;
-  --spectrum-tabs-margin-right: -8px;
   --spectrum-tabs-focus-area-gap: var(--spectrum-global-dimension-size-100);
   --spectrum-tabs-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
   --spectrum-tabs-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
@@ -179,7 +171,6 @@
   --spectrum-tabs-quiet-text-transform: none;
   --spectrum-tabs-quiet-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-tabs-quiet-icon-size: var(--spectrum-alias-workflow-icon-size);
-  --spectrum-tabs-quiet-baseline: var(--spectrum-global-dimension-size-225);
   --spectrum-tabs-quiet-height: var(--spectrum-global-dimension-size-600);
   --spectrum-tabs-quiet-item-height: var(--spectrum-global-dimension-size-600);
   --spectrum-tabs-quiet-icon-gap: var(--spectrum-global-dimension-size-100);
@@ -187,12 +178,9 @@
   --spectrum-tabs-quiet-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-quiet-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-quiet-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-quiet-focus-ring-border-radius: 5px;
   --spectrum-tabs-quiet-padding-x: 0px;
   --spectrum-tabs-quiet-item-gap: var(--spectrum-global-dimension-size-300);
   --spectrum-tabs-quiet-rule-height: var(--spectrum-alias-border-size-thick);
-  --spectrum-tabs-quiet-margin-left: -8px;
-  --spectrum-tabs-quiet-margin-right: -8px;
   --spectrum-tabs-quiet-focus-area-gap: var(--spectrum-global-dimension-size-100);
   --spectrum-tabs-quiet-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
   --spectrum-tabs-quiet-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
@@ -236,12 +224,9 @@
   --spectrum-tabs-quiet-compact-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-quiet-compact-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-quiet-compact-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-quiet-compact-focus-ring-border-radius: 5px;
   --spectrum-tabs-quiet-compact-padding-x: 0px;
   --spectrum-tabs-quiet-compact-item-gap: var(--spectrum-global-dimension-size-300);
   --spectrum-tabs-quiet-compact-rule-height: var(--spectrum-alias-border-size-thick);
-  --spectrum-tabs-quiet-compact-margin-left: -8px;
-  --spectrum-tabs-quiet-compact-margin-right: -8px;
   --spectrum-tabs-quiet-compact-focus-area-gap: var(--spectrum-global-dimension-size-100);
   --spectrum-tabs-quiet-compact-selection-indicator-animation-duration: var(--spectrum-global-animation-duration-100);
   --spectrum-tabs-quiet-compact-selection-indicator-animation-ease: var(--spectrum-global-animation-ease-in-out);
@@ -277,7 +262,6 @@
   --spectrum-tabs-quiet-vertical-text-transform: none;
   --spectrum-tabs-quiet-vertical-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-tabs-quiet-vertical-icon-size: var(--spectrum-alias-workflow-icon-size);
-  --spectrum-tabs-quiet-vertical-baseline: var(--spectrum-global-dimension-size-225);
   --spectrum-tabs-quiet-vertical-height: var(--spectrum-global-dimension-size-600);
   --spectrum-tabs-quiet-vertical-item-height: var(--spectrum-global-dimension-size-550);
   --spectrum-tabs-quiet-vertical-icon-gap: var(--spectrum-global-dimension-size-100);
@@ -285,7 +269,6 @@
   --spectrum-tabs-quiet-vertical-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-quiet-vertical-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-quiet-vertical-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-quiet-vertical-focus-ring-border-radius: 5px;
   --spectrum-tabs-quiet-vertical-padding-x: var(--spectrum-global-dimension-size-0);
   --spectrum-tabs-quiet-vertical-item-gap: var(--spectrum-global-dimension-size-50);
   --spectrum-tabs-quiet-vertical-item-margin-left: var(--spectrum-global-dimension-size-150);
@@ -327,7 +310,6 @@
   --spectrum-tabs-vertical-text-transform: none;
   --spectrum-tabs-vertical-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-tabs-vertical-icon-size: var(--spectrum-alias-workflow-icon-size);
-  --spectrum-tabs-vertical-baseline: var(--spectrum-global-dimension-size-225);
   --spectrum-tabs-vertical-height: var(--spectrum-global-dimension-size-600);
   --spectrum-tabs-vertical-item-height: var(--spectrum-global-dimension-size-550);
   --spectrum-tabs-vertical-icon-gap: var(--spectrum-global-dimension-size-100);
@@ -335,7 +317,6 @@
   --spectrum-tabs-vertical-focus-ring-height: var(--spectrum-alias-single-line-height);
   --spectrum-tabs-vertical-focus-ring-size: var(--spectrum-alias-border-size-thick);
   --spectrum-tabs-vertical-focus-ring-padding-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tabs-vertical-focus-ring-border-radius: 5px;
   --spectrum-tabs-vertical-padding-x: var(--spectrum-global-dimension-size-0);
   --spectrum-tabs-vertical-item-gap: var(--spectrum-global-dimension-size-50);
   --spectrum-tabs-vertical-item-margin-left: var(--spectrum-global-dimension-size-150);

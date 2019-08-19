@@ -1,1 +1,0 @@
-const row-dimensions = exports;

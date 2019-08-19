@@ -1,1 +1,0 @@
-const display-color = exports;

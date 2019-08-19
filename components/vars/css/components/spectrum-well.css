@@ -1,5 +1,5 @@
 :root {
-  --spectrum-well-background-color: rgba(80,80,80,0.02);
-  --spectrum-well-border-color: rgba(50,50,50,0.05);
   --spectrum-well-label-text-color: var(--spectrum-global-color-gray-900);
+  --spectrum-well-background-color: rgba(200,200,200,0.02);
+  --spectrum-well-border-color: rgba(239,239,239,0.05);
 }

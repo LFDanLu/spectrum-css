@@ -1,2 +1,2 @@
-const lightest = require('../lightest.js');
-exports["background-color"] = lightest["gray-75"];
+const darkest = require('../darkest.js');
+exports["background-color"] = darkest["gray-75"];

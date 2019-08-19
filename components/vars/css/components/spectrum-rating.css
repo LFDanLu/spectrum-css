@@ -24,13 +24,10 @@
   --spectrum-rating-border-size: var(--spectrum-alias-border-size-thick);
   --spectrum-rating-icon-count: 5;
   --spectrum-rating-icon-spacing: var(--spectrum-global-dimension-size-75);
-  --spectrum-rating-icon-width: 24px;
   --spectrum-rating-icon-padding-y: var(--spectrum-global-dimension-size-85);
-  --spectrum-rating-indicator-width: 16px;
   --spectrum-rating-indicator-height: var(--spectrum-global-dimension-size-25);
   --spectrum-rating-indicator-border-radius: var(--spectrum-alias-border-radius-small);
   --spectrum-rating-indicator-offset: var(--spectrum-alias-border-size-thick);
-  --spectrum-rating-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-rating-quiet-border-color: var(--spectrum-alias-border-color-transparent);
   --spectrum-rating-quiet-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-rating-quiet-focus-ring-color: var(--spectrum-alias-focus-color);
@@ -56,11 +53,8 @@
   --spectrum-rating-quiet-border-size: var(--spectrum-alias-border-size-thick);
   --spectrum-rating-quiet-icon-count: 5;
   --spectrum-rating-quiet-icon-spacing: var(--spectrum-global-dimension-size-75);
-  --spectrum-rating-quiet-icon-width: 24px;
   --spectrum-rating-quiet-icon-padding-y: var(--spectrum-global-dimension-size-85);
-  --spectrum-rating-quiet-indicator-width: 16px;
   --spectrum-rating-quiet-indicator-height: var(--spectrum-global-dimension-size-25);
   --spectrum-rating-quiet-indicator-border-radius: var(--spectrum-alias-border-radius-small);
   --spectrum-rating-quiet-indicator-offset: var(--spectrum-alias-border-size-thick);
-  --spectrum-rating-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
 }

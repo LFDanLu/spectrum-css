@@ -1,1 +1,0 @@
-const searchwithin-color = exports;

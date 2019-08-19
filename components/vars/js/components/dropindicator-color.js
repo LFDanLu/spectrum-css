@@ -1,1 +1,0 @@
-const dropindicator-color = exports;

@@ -78,8 +78,6 @@
   --spectrum-actionbutton-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-actionbutton-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-actionbutton-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-actionbutton-emphasized-text-color: var(--spectrum-alias-text-color);
   --spectrum-actionbutton-emphasized-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-actionbutton-emphasized-border-size: var(--spectrum-alias-border-size-thin);
@@ -159,8 +157,6 @@
   --spectrum-actionbutton-emphasized-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-emphasized-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-emphasized-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-actionbutton-emphasized-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-actionbutton-emphasized-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-actionbutton-quiet-text-color: var(--spectrum-alias-text-color);
   --spectrum-actionbutton-quiet-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-actionbutton-quiet-border-size: var(--spectrum-alias-border-size-thin);
@@ -239,8 +235,6 @@
   --spectrum-actionbutton-quiet-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-quiet-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-quiet-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-actionbutton-quiet-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-actionbutton-quiet-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-actionbutton-quiet-emphasized-text-color: var(--spectrum-alias-text-color);
   --spectrum-actionbutton-quiet-emphasized-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-actionbutton-quiet-emphasized-border-size: var(--spectrum-alias-border-size-thin);
@@ -319,6 +313,4 @@
   --spectrum-actionbutton-quiet-emphasized-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-quiet-emphasized-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-actionbutton-quiet-emphasized-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-actionbutton-quiet-emphasized-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-actionbutton-quiet-emphasized-touch-hit-y: var(--spectrum-global-dimension-size-100);
 }

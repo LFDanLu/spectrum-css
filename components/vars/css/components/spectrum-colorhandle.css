@@ -51,5 +51,4 @@
   --spectrum-colorhandle-loupe-outer-border-size: var(--spectrum-global-dimension-size-10);
   --spectrum-colorhandle-loupe-shadow-offset-y: var(--spectrum-global-dimension-size-10);
   --spectrum-colorhandle-loupe-shadow-blur: var(--spectrum-global-dimension-size-50);
-  --spectrum-colorhandle-loupe-margin: var(--spectrum-global-dimension-size-125);
 }

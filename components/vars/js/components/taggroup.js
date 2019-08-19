@@ -1,3 +1,3 @@
-const medium = require('../medium.js');
-exports["tag-gap-x"] = medium["size-100"];
-exports["tag-gap-y"] = medium["size-100"];
+const large = require('../large.js');
+exports["tag-gap-x"] = large["size-100"];
+exports["tag-gap-y"] = large["size-100"];

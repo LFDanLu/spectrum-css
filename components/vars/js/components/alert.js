@@ -1,11 +1,11 @@
-const lightest = require('../lightest.js');
+const darkest = require('../darkest.js');
 const dimensionGlobals = require('../dimensionGlobals.js');
-exports["background-color"] = lightest["gray-50"];
-exports["title-text-color"] = lightest["gray-900"];
-exports["text-color"] = lightest["gray-700"];
-exports["border-color"] = lightest["orange-400"];
+exports["background-color"] = darkest["gray-50"];
+exports["title-text-color"] = darkest["gray-900"];
+exports["text-color"] = darkest["gray-700"];
+exports["border-color"] = darkest["orange-400"];
 exports["padding-x"] = dimensionGlobals["size-250"];
 exports["padding-y"] = dimensionGlobals["size-250"];
 exports["min-width"] = dimensionGlobals["size-4600"];
 exports["content-margin-top"] = dimensionGlobals["size-100"];
-exports["icon-color"] = lightest["orange-600"];
+exports["icon-color"] = darkest["orange-600"];

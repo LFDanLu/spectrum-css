@@ -48,6 +48,4 @@
   --spectrum-cyclebutton-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-cyclebutton-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-cyclebutton-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-cyclebutton-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-cyclebutton-touch-hit-y: var(--spectrum-global-dimension-size-100);
 }

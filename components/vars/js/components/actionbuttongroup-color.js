@@ -1,1 +1,0 @@
-const actionbuttongroup-color = exports;

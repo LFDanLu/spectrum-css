@@ -1,3 +1,3 @@
-const medium = require('../medium.js');
+const large = require('../large.js');
 exports["padding-x"] = "0px";
-exports["padding-y"] = medium["size-50"];
+exports["padding-y"] = large["size-50"];

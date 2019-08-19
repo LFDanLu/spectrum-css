@@ -29,6 +29,8 @@
   --spectrum-breadcrumb-compact-item-background-color-disabled: var(--spectrum-alias-background-color-transparent);
   --spectrum-breadcrumb-compact-item-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-breadcrumb-compact-item-underline-color-disabled: var(--spectrum-alias-border-color-transparent);
+  --spectrum-breadcrumb-compact-separator-icon-color: var(--spectrum-alias-icon-color);
+  --spectrum-breadcrumb-compact-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-compact-margin-top: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-compact-margin-bottom: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-compact-list-height: var(--spectrum-global-dimension-size-400);
@@ -43,7 +45,6 @@
   --spectrum-breadcrumb-compact-item-margin-left: var(--spectrum-global-dimension-size-10);
   --spectrum-breadcrumb-compact-item-margin-right: var(--spectrum-global-dimension-size-10);
   --spectrum-breadcrumb-compact-item-border-radius: var(--spectrum-alias-border-radius-regular);
-  --spectrum-breadcrumb-compact-item-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-compact-item-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-compact-title-margin-top: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-compact-title-margin-left: var(--spectrum-global-dimension-size-0);
@@ -52,12 +53,9 @@
   --spectrum-breadcrumb-compact-title-text-font-weight: var(--spectrum-alias-body-text-font-weight-strong);
   --spectrum-breadcrumb-compact-title-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-compact-button-gap: var(--spectrum-global-dimension-size-10);
-  --spectrum-breadcrumb-compact-button-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-compact-button-touch-hit-x: var(--spectrum-global-dimension-size-50);
   --spectrum-breadcrumb-compact-item-text-size: var(--spectrum-global-dimension-font-size-100);
   --spectrum-breadcrumb-compact-title-text-size: var(--spectrum-global-dimension-font-size-100);
-  --spectrum-breadcrumb-compact-separator-icon-color: var(--spectrum-alias-icon-color);
-  --spectrum-breadcrumb-compact-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-item-border-size: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-item-border-color: var(--spectrum-alias-border-color-transparent);
   --spectrum-breadcrumb-item-background-color: var(--spectrum-alias-background-color-transparent);
@@ -93,6 +91,8 @@
   --spectrum-breadcrumb-item-background-color-disabled: var(--spectrum-alias-background-color-transparent);
   --spectrum-breadcrumb-item-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-breadcrumb-item-underline-color-disabled: var(--spectrum-alias-border-color-transparent);
+  --spectrum-breadcrumb-separator-icon-color: var(--spectrum-alias-icon-color);
+  --spectrum-breadcrumb-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-margin-top: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-margin-bottom: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-list-height: var(--spectrum-global-dimension-size-400);
@@ -107,7 +107,6 @@
   --spectrum-breadcrumb-item-margin-left: var(--spectrum-global-dimension-size-10);
   --spectrum-breadcrumb-item-margin-right: var(--spectrum-global-dimension-size-10);
   --spectrum-breadcrumb-item-border-radius: var(--spectrum-alias-border-radius-regular);
-  --spectrum-breadcrumb-item-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-item-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-title-margin-top: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-title-margin-left: var(--spectrum-global-dimension-size-0);
@@ -116,7 +115,6 @@
   --spectrum-breadcrumb-title-text-font-weight: var(--spectrum-alias-body-text-font-weight-strong);
   --spectrum-breadcrumb-title-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-button-gap: var(--spectrum-global-dimension-size-10);
-  --spectrum-breadcrumb-button-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-button-touch-hit-x: var(--spectrum-global-dimension-size-50);
   --spectrum-breadcrumb-height: 32px;
   --spectrum-breadcrumb-ui-icon-width: var(--spectrum-global-dimension-size-75);
@@ -127,8 +125,6 @@
   --spectrum-breadcrumb-text-font-weight: var(--spectrum-alias-body-text-font-weight);
   --spectrum-breadcrumb-item-text-size: var(--spectrum-global-dimension-font-size-200);
   --spectrum-breadcrumb-title-text-size: var(--spectrum-global-dimension-font-size-200);
-  --spectrum-breadcrumb-separator-icon-color: var(--spectrum-alias-icon-color);
-  --spectrum-breadcrumb-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-multiline-item-border-size: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-multiline-item-border-color: var(--spectrum-alias-border-color-transparent);
   --spectrum-breadcrumb-multiline-item-background-color: var(--spectrum-alias-background-color-transparent);
@@ -159,6 +155,8 @@
   --spectrum-breadcrumb-multiline-item-background-color-disabled: var(--spectrum-alias-background-color-transparent);
   --spectrum-breadcrumb-multiline-item-text-color-disabled: var(--spectrum-alias-text-color-disabled);
   --spectrum-breadcrumb-multiline-item-underline-color-disabled: var(--spectrum-alias-border-color-transparent);
+  --spectrum-breadcrumb-multiline-separator-icon-color: var(--spectrum-alias-icon-color);
+  --spectrum-breadcrumb-multiline-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-multiline-margin-top: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-multiline-margin-bottom: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-multiline-list-height: var(--spectrum-global-dimension-size-400);
@@ -173,7 +171,6 @@
   --spectrum-breadcrumb-multiline-item-margin-left: var(--spectrum-global-dimension-size-10);
   --spectrum-breadcrumb-multiline-item-margin-right: var(--spectrum-global-dimension-size-10);
   --spectrum-breadcrumb-multiline-item-border-radius: var(--spectrum-alias-border-radius-regular);
-  --spectrum-breadcrumb-multiline-item-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-multiline-item-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-multiline-title-margin-top: var(--spectrum-global-dimension-size-0);
   --spectrum-breadcrumb-multiline-title-margin-left: var(--spectrum-global-dimension-size-0);
@@ -182,12 +179,9 @@
   --spectrum-breadcrumb-multiline-title-text-font-weight: var(--spectrum-alias-body-text-font-weight-strong);
   --spectrum-breadcrumb-multiline-title-padding-x: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-multiline-button-gap: var(--spectrum-global-dimension-size-10);
-  --spectrum-breadcrumb-multiline-button-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-breadcrumb-multiline-button-touch-hit-x: var(--spectrum-global-dimension-size-50);
   --spectrum-breadcrumb-multiline-item-text-size: var(--spectrum-global-dimension-font-size-75);
   --spectrum-breadcrumb-multiline-title-text-size: var(--spectrum-global-dimension-font-size-300);
-  --spectrum-breadcrumb-multiline-separator-icon-color: var(--spectrum-alias-icon-color);
-  --spectrum-breadcrumb-multiline-title-text-color: var(--spectrum-alias-heading-text-color);
   --spectrum-breadcrumb-title-margin: 0.3em 0;
   --spectrum-breadcrumb-title-active-text-size: 28px;
   --spectrum-breadcrumb-title-active-text-font-weight: 300;

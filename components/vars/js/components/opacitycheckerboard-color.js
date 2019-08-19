@@ -1,1 +1,0 @@
-const opacitycheckerboard-color = exports;

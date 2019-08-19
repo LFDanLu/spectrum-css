@@ -1,1 +1,0 @@
-const drag-dimensions = exports;

@@ -1,1 +1,0 @@
-const assetlist-color = exports;

@@ -1,6 +1,6 @@
-const medium = require('../medium.js');
 const colorGlobals = require('../colorGlobals.js');
-exports["box-height"] = medium["size-100"];
-exports["box-width"] = medium["size-100"];
+const large = require('../large.js');
 exports["box-color-light"] = colorGlobals["static-white"];
 exports["box-color-gray"] = colorGlobals["static-gray-400"];
+exports["box-height"] = large["size-100"];
+exports["box-width"] = large["size-100"];

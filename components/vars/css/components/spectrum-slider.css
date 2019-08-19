@@ -52,9 +52,6 @@
   --spectrum-slider-track-cursor-hit-y: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-hot-text-cursor-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-slider-track-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-slider-track-touch-hit-y: var(--spectrum-global-dimension-size-100);
-  --spectrum-slider-handle-touch-hit-x: var(--spectrum-global-dimension-size-200);
-  --spectrum-slider-handle-touch-hit-y: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-radial-reaction-size: var(--spectrum-alias-radial-reaction-size-default);
   --spectrum-slider-editable-handle-border-color: var(--spectrum-global-color-gray-700);
   --spectrum-slider-editable-handle-background-color: var(--spectrum-alias-background-color-transparent);
@@ -94,9 +91,6 @@
   --spectrum-slider-editable-track-cursor-hit-y: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-editable-hot-text-cursor-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-slider-editable-track-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-slider-editable-track-touch-hit-y: var(--spectrum-global-dimension-size-100);
-  --spectrum-slider-editable-handle-touch-hit-x: var(--spectrum-global-dimension-size-200);
-  --spectrum-slider-editable-handle-touch-hit-y: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-editable-radial-reaction-size: var(--spectrum-alias-radial-reaction-size-default);
   --spectrum-slider-editable-textfield-min-width: var(--spectrum-global-dimension-size-600);
   --spectrum-slider-fill-handle-border-color: var(--spectrum-global-color-gray-700);
@@ -137,9 +131,6 @@
   --spectrum-slider-fill-track-cursor-hit-y: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-fill-hot-text-cursor-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-slider-fill-track-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-slider-fill-track-touch-hit-y: var(--spectrum-global-dimension-size-100);
-  --spectrum-slider-fill-handle-touch-hit-x: var(--spectrum-global-dimension-size-200);
-  --spectrum-slider-fill-handle-touch-hit-y: var(--spectrum-global-dimension-size-200);
   --spectrum-slider-fill-radial-reaction-size: var(--spectrum-alias-radial-reaction-size-default);
   --spectrum-slider-player-track-buffer-color: var(--spectrum-global-color-gray-500);
   --spectrum-slider-player-track-buffer-color-disabled: var(--spectrum-alias-track-color-default);

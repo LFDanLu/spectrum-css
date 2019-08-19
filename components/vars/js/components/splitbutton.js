@@ -1,2 +1,2 @@
-const medium = require('../medium.js');
-exports["icon-width"] = medium["size-125"];
+const large = require('../large.js');
+exports["icon-width"] = large["size-125"];

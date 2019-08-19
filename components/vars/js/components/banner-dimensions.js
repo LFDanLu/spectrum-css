@@ -1,9 +1,0 @@
-const dimensionGlobals = require('../dimensionGlobals.js');
-const medium = require('../medium.js');
-const staticAliases = require('../staticAliases.js');
-const banner-dimensions = exports;
-exports["border-radius"] = dimensionGlobals["size-100"];
-exports["padding-y"] = dimensionGlobals["size-50"];
-exports["padding-x"] = dimensionGlobals["size-100"];
-exports["text-size"] = medium["font-size-75"];
-exports["text-line-height"] = staticAliases["heading-text-line-height"];

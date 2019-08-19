@@ -69,8 +69,6 @@
   --spectrum-tool-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-tool-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-tool-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-tool-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tool-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-tool-high-emphasis-text-color: var(--spectrum-alias-text-color);
   --spectrum-tool-high-emphasis-icon-color: var(--spectrum-alias-icon-color);
   --spectrum-tool-high-emphasis-border-size: var(--spectrum-alias-border-size-thin);
@@ -142,6 +140,4 @@
   --spectrum-tool-high-emphasis-hold-icon-padding-bottom: var(--spectrum-global-dimension-size-40);
   --spectrum-tool-high-emphasis-hold-icon-padding-right: var(--spectrum-global-dimension-size-40);
   --spectrum-tool-high-emphasis-hold-icon-size: var(--spectrum-global-dimension-size-65);
-  --spectrum-tool-high-emphasis-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-tool-high-emphasis-touch-hit-y: var(--spectrum-global-dimension-size-100);
 }

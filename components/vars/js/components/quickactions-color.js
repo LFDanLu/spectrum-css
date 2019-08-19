@@ -1,1 +1,0 @@
-const quickactions-color = exports;

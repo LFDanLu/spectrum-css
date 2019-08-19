@@ -62,7 +62,6 @@
   --spectrum-sidenav-heading-gap-top: var(--spectrum-global-dimension-size-200);
   --spectrum-sidenav-heading-gap-bottom: var(--spectrum-global-dimension-size-50);
   --spectrum-sidenav-item-touch-hit-top: var(--spectrum-global-dimension-size-25);
-  --spectrum-sidenav-item-touch-hit-bottom: var(--spectrum-global-dimension-size-25);
   --spectrum-sidenav-multilevel-item-background-color: var(--spectrum-alias-background-color-transparent);
   --spectrum-sidenav-multilevel-item-text-color: var(--spectrum-alias-text-color);
   --spectrum-sidenav-multilevel-header-text-color: var(--spectrum-global-color-gray-700);
@@ -146,7 +145,6 @@
   --spectrum-sidenav-multilevel-heading-gap-top: var(--spectrum-global-dimension-size-200);
   --spectrum-sidenav-multilevel-heading-gap-bottom: var(--spectrum-global-dimension-size-50);
   --spectrum-sidenav-multilevel-item-touch-hit-top: var(--spectrum-global-dimension-size-25);
-  --spectrum-sidenav-multilevel-item-touch-hit-bottom: var(--spectrum-global-dimension-size-25);
   --spectrum-sidenav-multilevel-main-item-font-weight: var(--spectrum-global-font-weight-bold);
   --spectrum-sidenav-multilevel-item-indentation: var(--spectrum-global-dimension-size-150);
   --spectrum-sidenav-multilevel-item-indentation-level1: var(--spectrum-global-dimension-size-150);

@@ -2,6 +2,7 @@
   --spectrum-toast-background-color: var(--spectrum-global-color-static-gray-700);
   --spectrum-toast-text-color: var(--spectrum-global-color-static-white);
   --spectrum-toast-icon-color: var(--spectrum-global-color-static-white);
+  --spectrum-toast-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-toast-text-font-weight: var(--spectrum-global-font-weight-bold);
   --spectrum-toast-text-line-height: var(--spectrum-alias-body-text-line-height);
@@ -47,11 +48,11 @@
   --spectrum-toast-exit-animation-keyframe-0-offset-y: var(--spectrum-global-dimension-size-200);
   --spectrum-toast-exit-animation-keyframe-100-opacity: 0%;
   --spectrum-toast-exit-animation-keyframe-100-offset-y: var(--spectrum-global-dimension-percent-50);
-  --spectrum-toast-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-error-background-color: var(--spectrum-global-color-static-red-700);
   --spectrum-toast-info-background-color: var(--spectrum-global-color-static-blue-700);
   --spectrum-toast-info-text-color: var(--spectrum-global-color-static-white);
   --spectrum-toast-info-icon-color: var(--spectrum-global-color-static-white);
+  --spectrum-toast-info-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-info-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-toast-info-text-font-weight: var(--spectrum-global-font-weight-bold);
   --spectrum-toast-info-text-line-height: var(--spectrum-alias-body-text-line-height);
@@ -97,10 +98,10 @@
   --spectrum-toast-info-exit-animation-keyframe-0-offset-y: var(--spectrum-global-dimension-size-200);
   --spectrum-toast-info-exit-animation-keyframe-100-opacity: 0%;
   --spectrum-toast-info-exit-animation-keyframe-100-offset-y: var(--spectrum-global-dimension-percent-50);
-  --spectrum-toast-info-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-negative-background-color: var(--spectrum-global-color-static-red-700);
   --spectrum-toast-negative-text-color: var(--spectrum-global-color-static-white);
   --spectrum-toast-negative-icon-color: var(--spectrum-global-color-static-white);
+  --spectrum-toast-negative-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-negative-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-toast-negative-text-font-weight: var(--spectrum-global-font-weight-bold);
   --spectrum-toast-negative-text-line-height: var(--spectrum-alias-body-text-line-height);
@@ -146,10 +147,10 @@
   --spectrum-toast-negative-exit-animation-keyframe-0-offset-y: var(--spectrum-global-dimension-size-200);
   --spectrum-toast-negative-exit-animation-keyframe-100-opacity: 0%;
   --spectrum-toast-negative-exit-animation-keyframe-100-offset-y: var(--spectrum-global-dimension-percent-50);
-  --spectrum-toast-negative-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-positive-background-color: var(--spectrum-global-color-static-green-700);
   --spectrum-toast-positive-text-color: var(--spectrum-global-color-static-white);
   --spectrum-toast-positive-icon-color: var(--spectrum-global-color-static-white);
+  --spectrum-toast-positive-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-positive-text-size: var(--spectrum-alias-font-size-default);
   --spectrum-toast-positive-text-font-weight: var(--spectrum-global-font-weight-bold);
   --spectrum-toast-positive-text-line-height: var(--spectrum-alias-body-text-line-height);
@@ -195,7 +196,6 @@
   --spectrum-toast-positive-exit-animation-keyframe-0-offset-y: var(--spectrum-global-dimension-size-200);
   --spectrum-toast-positive-exit-animation-keyframe-100-opacity: 0%;
   --spectrum-toast-positive-exit-animation-keyframe-100-offset-y: var(--spectrum-global-dimension-percent-50);
-  --spectrum-toast-positive-rule-color: var(--spectrum-alias-track-color-over-background);
   --spectrum-toast-success-background-color: var(--spectrum-global-color-static-green-700);
   --spectrum-toast-warning-background-color: var(--spectrum-global-color-static-orange-700);
 }

@@ -1,1 +1,0 @@
-const asset-color = exports;

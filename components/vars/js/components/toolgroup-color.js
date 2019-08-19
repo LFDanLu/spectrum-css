@@ -1,1 +1,0 @@
-const toolgroup-color = exports;

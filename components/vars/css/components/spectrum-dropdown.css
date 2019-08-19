@@ -78,8 +78,6 @@
   --spectrum-dropdown-popover-offset-y: var(--spectrum-global-dimension-size-75);
   --spectrum-dropdown-flyout-menu-offset-x: 0px;
   --spectrum-dropdown-popover-offset-x: 0px;
-  --spectrum-dropdown-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-dropdown-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-dropdown-flyout-menu-max-height: var(--spectrum-global-dimension-size-2400);
   --spectrum-dropdown-popover-max-height: var(--spectrum-global-dimension-size-2400);
   --spectrum-dropdown-popover-max-width: var(--spectrum-global-dimension-size-2400);
@@ -160,7 +158,6 @@
   --spectrum-dropdown-quiet-affixed-border-size: var(--spectrum-global-dimension-size-10);
   --spectrum-dropdown-quiet-cursor-hit-x: var(--spectrum-alias-single-line-height);
   --spectrum-dropdown-quiet-touch-hit-x: var(--spectrum-alias-single-line-height);
-  --spectrum-dropdown-quiet-touch-hit-y: var(--spectrum-global-dimension-size-400);
   --spectrum-dropdown-quiet-flyout-menu-offset-x: var(--spectrum-global-dimension-size-150);
   --spectrum-dropdown-quiet-popover-offset-x: var(--spectrum-global-dimension-size-150);
   --spectrum-dropdown-quiet-flyout-menu-offset-y: 0px;
@@ -244,8 +241,6 @@
   --spectrum-dropdown-thumbnail-small-width: var(--spectrum-global-dimension-size-3000);
   --spectrum-dropdown-thumbnail-small-popover-offset-y: var(--spectrum-global-dimension-size-75);
   --spectrum-dropdown-thumbnail-small-popover-offset-x: 0px;
-  --spectrum-dropdown-thumbnail-small-touch-hit-x: var(--spectrum-global-dimension-size-100);
-  --spectrum-dropdown-thumbnail-small-touch-hit-y: var(--spectrum-global-dimension-size-100);
   --spectrum-dropdown-thumbnail-small-popover-max-height: var(--spectrum-global-dimension-size-2400);
   --spectrum-dropdown-thumbnail-small-popover-max-width: var(--spectrum-global-dimension-size-2400);
   --spectrum-dropdown-thumbnail-small-image-padding-x: var(--spectrum-global-dimension-size-100);

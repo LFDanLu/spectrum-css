@@ -1,9 +1,9 @@
+const darkest = require('../darkest.js');
 const dimensionGlobals = require('../dimensionGlobals.js');
-const medium = require('../medium.js');
-const lightest = require('../lightest.js');
+const large = require('../large.js');
+exports["folder-background-color"] = darkest["gray-300"];
+exports["file-background-color"] = darkest["gray-50"];
+exports["icon-outline-color"] = darkest["gray-500"];
 exports["icon-max-width"] = dimensionGlobals["size-1000"];
-exports["icon-min-width"] = medium["size-600"];
-exports["icon-margin"] = medium["size-250"];
-exports["folder-background-color"] = lightest["gray-300"];
-exports["file-background-color"] = lightest["gray-50"];
-exports["icon-outline-color"] = lightest["gray-500"];
+exports["icon-min-width"] = large["size-600"];
+exports["icon-margin"] = large["size-250"];

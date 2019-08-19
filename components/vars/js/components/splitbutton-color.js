@@ -1,1 +1,0 @@
-const splitbutton-color = exports;

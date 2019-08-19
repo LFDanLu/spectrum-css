@@ -5,6 +5,15 @@ const ext = require('replace-ext');
 const logger = require('gulplog');
 const through = require('through2');
 
+const del = require('del');
+
+function clean() {
+  return del([
+    'css/*',
+    'js/*'
+  ]);
+}
+
 function stripReference(value) {
   return value.replace(/(colorStopData|colorTokens|scaleData|dimensionTokens|colorAliases|dimensionAliases)\./g, '');
 }
@@ -54,6 +63,10 @@ function getCSSVar(prefix, key, value) {
   else {
     return `  ${key}: ${value};\n`;
   }
+}
+
+function initializeObject(array) {
+  return array.reduce(function(a, v) { a[v] = {}; return a; }, {});
 }
 
 function generateDNAFiles() {
@@ -122,7 +135,7 @@ function generateDNAFiles() {
 
         // We have issues with switch, so only allow self refs for base vars
         if (folderCount === 1) {
-          contents += `const ${fileName} = exports;\n`;
+          contents += `const ${fileName.replace(/-.*/, '')} = exports;\n`;
         }
 
         let dependencies = {};
@@ -166,11 +179,150 @@ function generateDNAFiles() {
       };
       let dnaModules = [];
 
+      // Get the list of stops and scales
+      let stops = Object.keys(dnaData.colorStopData).filter(stopName => {
+        return dnaData.colorStopData[stopName].colorTokens.status !== 'Deprecated';
+      });
+      let scales = Object.keys(dnaData.scaleData);
+      let elements = Object.keys(dnaData.elements[stops[0]][scales[0]]);
+
+      // Anything that doesn't consistently reference the same variable or value bewteen stops/scales
+      let elementColorOverrides = initializeObject(stops);
+      let elementDimensionOverrides = initializeObject(scales);
+
       // Globals
       flatVars.forEach(key => {
         generateJSFile([dnaData[key]], key, 'js/globals');
         generateCSSFile([dnaData[key]], key, 'css/globals');
       });
+
+      // Elements
+      let jsElementVariables = initializeObject(elements);
+      let elementVariables = initializeObject(elements);
+      let colorVariables = {};
+      let dimensionVariables = {};
+      let cssFilesGenerated = {};
+      for (let stopName of stops) {
+        let stop = dnaData.elements[stopName];
+
+        for (let scaleName of scales) {
+          let scale = stop[scaleName];
+
+          for (let elementName in scale) {
+            let element = scale[elementName];
+
+            for (let variantName in element) {
+              let variant = element[variantName];
+
+              let metadataKeyBase = 'spectrum-' + elementName + (variantName === 'default' ? '' : `-${variantName}`);
+              metadata[`${metadataKeyBase}-name`] = variant.name;
+              metadata[`${metadataKeyBase}-description`] = variant.description;
+              metadata[`${metadataKeyBase}-status`] = variant.status;
+              metadata[`${metadataKeyBase}-version`] = variant.version;
+
+              if (variant.states) {
+                for (let stateName in variant.states) {
+                  let state = variant.states[stateName];
+                  for (let key in state) {
+                    let value = state[key];
+                    let varName = key;
+                    if (stateName !== 'default') {
+                      varName += `-${stateName}`;
+                    }
+                    let fullName = `${variant.varBaseName}-${varName}`;
+                    let cssVariableName = getCSSVariableReference(value);
+                    if (colorVariables[fullName] && colorVariables[fullName].cssVariableName !== cssVariableName) {
+                      // logger.debug(`Found override for ${cssVariableName} (${colorVariables[cssVariableName]} vs ${value})`);
+                      elementColorOverrides[colorVariables[fullName].name][fullName] = colorVariables[fullName].value;
+                      elementColorOverrides[stopName][fullName] = value;
+                      delete elementVariables[elementName][fullName];
+                    }
+                    else {
+                      elementVariables[elementName][fullName] = value;
+                    }
+                    colorVariables[fullName] = { name: stopName, value: value, cssVariableName: cssVariableName };
+                    jsElementVariables[elementName][varName] = value;
+                  }
+                }
+              }
+
+              if (variant.colors) {
+                for (let key in variant.colors) {
+                  let value = variant.colors[key];
+                  let varName = key;
+                  let fullName = `${variant.varBaseName}-${varName}`;
+                  let cssVariableName = getCSSVariableReference(value);
+                  if (colorVariables[fullName] && colorVariables[fullName].cssVariableName !== cssVariableName) {
+                    // logger.debug(`Found override for ${cssVariableName} (${colorVariables[cssVariableName]} vs ${value})`);
+                    elementColorOverrides[colorVariables[fullName].name][fullName] = colorVariables[fullName].value;
+                    elementColorOverrides[stopName][fullName] = value;
+                    delete elementVariables[elementName][fullName];
+                  }
+                  else {
+                    elementVariables[elementName][fullName] = value;
+                  }
+                  colorVariables[fullName] = { name: stopName, value: value, cssVariableName: cssVariableName };
+                  jsElementVariables[elementName][varName] = value;
+                }
+              }
+
+              if (variant.dimensions) {
+                for (let key in variant.dimensions) {
+                  let value = variant.dimensions[key];
+                  let varName = key;
+                  let fullName = `${variant.varBaseName}-${varName}`;
+                  let cssVariableName = getCSSVariableReference(value);
+                  if (dimensionVariables[fullName] && dimensionVariables[fullName].cssVariableName !== cssVariableName) {
+                    // logger.debug(`Found override for ${cssVariableName} (${dimensionVariables[cssVariableName]} vs ${value})`);
+                    elementDimensionOverrides[dimensionVariables[fullName].name][fullName] = dimensionVariables[fullName].value;
+                    elementDimensionOverrides[scaleName][fullName] = value;
+                    delete elementVariables[elementName][fullName];
+                  }
+                  else {
+                    elementVariables[elementName][fullName] = value;
+                  }
+                  dimensionVariables[fullName] = { name: scaleName, value: value, cssVariableName: cssVariableName };
+                  jsElementVariables[elementName][varName] = value;
+                }
+              }
+
+              if (variant.animation) {
+                for (let key in variant.animation) {
+                  let value = variant.animation[key];
+                  let varName = key;
+                  let fullName = `${variant.varBaseName}-${varName}`;
+                  let cssVariableName = getCSSVariableReference(value);
+                  if (dimensionVariables[fullName] && dimensionVariables[fullName].cssVariableName !== cssVariableName) {
+                    // logger.debug(`Found override for ${cssVariableName} (${dimensionVariables[cssVariableName]} vs ${value})`);
+                    elementDimensionOverrides[dimensionVariables[fullName].name][fullName] = dimensionVariables[fullName].value;
+                    elementDimensionOverrides[scaleName][fullName] = value;
+                    delete elementVariables[elementName][fullName];
+                  }
+                  else {
+                    elementVariables[elementName][fullName] = value;
+                  }
+                  dimensionVariables[fullName] = { name: scaleName, value: value, cssVariableName: cssVariableName };
+                  jsElementVariables[elementName][varName] = value;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      for (let elementName of elements) {
+        generateCSSFile([
+          elementVariables[elementName]
+        ], elementName, 'css/components');
+        cssFilesGenerated[elementName] = true;
+
+        generateJSFile([
+          jsElementVariables[elementName]
+        ], elementName, 'js/components');
+        generateJSIndexFile(dnaModules, 'js/');
+      }
+
+      pushFile(JSON.stringify(metadata, null, 2), 'spectrum-metadata.json', 'json/');
 
       // Stops
       for (let stopName in dnaData.colorStopData) {
@@ -182,7 +334,8 @@ function generateDNAFiles() {
         generateFiles([
           stop.colorTokens,
           stop.colorAliases,
-          stop.colorSemantics
+          stop.colorSemantics,
+          elementColorOverrides[stopName]
         ], stopName, 'themes');
       }
 
@@ -192,90 +345,9 @@ function generateDNAFiles() {
 
         generateFiles([
           scale.dimensionTokens,
-          scale.dimensionAliases
+          scale.dimensionAliases,
+          elementDimensionOverrides[scaleName]
         ], scaleName, 'scales');
-      }
-
-      // Elements
-      let stop = dnaData.elements[Object.keys(dnaData.elements)[0]];
-      let scale = stop[Object.keys(stop)[0]];
-
-      for (let elementName in scale) {
-        let element = scale[elementName];
-
-        let allVariables = {};
-        let jsVariables = {};
-        let colorVariables = [];
-        let dimensionVariables = [];
-        for (let variantName in element) {
-          let variant = element[variantName];
-
-          let metadataKeyBase = 'spectrum-' + elementName + (variantName === 'default' ? '' : `-${variantName}`);
-          metadata[`${metadataKeyBase}-name`] = variant.name;
-          metadata[`${metadataKeyBase}-description`] = variant.description;
-          metadata[`${metadataKeyBase}-status`] = variant.status;
-          metadata[`${metadataKeyBase}-version`] = variant.version;
-
-          if (variant.states) {
-            for (let stateName in variant.states) {
-              let state = variant.states[stateName];
-              for (let key in state) {
-                let value = state[key];
-                let varName = key;
-                if (stateName !== 'default') {
-                  varName += `-${stateName}`;
-                }
-                if (allVariables[varName]) {
-                  throw new Error(`${varName} already defined for ${variantName}!`);
-                }
-                allVariables[`${variant.varBaseName}-${varName}`] = value;
-                jsVariables[varName] = value;
-                colorVariables[key] = value;
-              }
-            }
-          }
-
-          if (variant.dimensions) {
-            for (let key in variant.dimensions) {
-              let varName = key;
-              let value = variant.dimensions[varName];
-              allVariables[`${variant.varBaseName}-${varName}`] = value;
-              jsVariables[varName] = value;
-              dimensionVariables[varName] = value;
-            }
-          }
-
-          if (variant.animation) {
-            for (let key in variant.animation) {
-              let varName = key;
-              let value = variant.animation[varName];
-              allVariables[`${variant.varBaseName}-${varName}`] = value;
-              jsVariables[varName] = value;
-              dimensionVariables[varName] = value;
-            }
-          }
-
-          if (variant.colors) {
-            for (let key in variant.colors) {
-              let varName = key;
-              let value = variant.colors[varName];
-              allVariables[`${variant.varBaseName}-${varName}`] = value;
-              jsVariables[varName] = value;
-              colorVariables[varName] = value;
-            }
-          }
-        }
-
-        generateJSFile([
-          jsVariables
-        ], elementName, 'js/components');
-
-        generateCSSFile([
-          allVariables
-        ], elementName, 'css/components');
-
-        pushFile(JSON.stringify(metadata, null, 2), 'spectrum-metadata.json', 'json/');
-        generateJSIndexFile(dnaModules, 'js/');
       }
 
       cb();
@@ -284,5 +356,6 @@ function generateDNAFiles() {
 }
 
 exports.updateDNA = gulp.series(
+  clean,
   generateDNAFiles
 );

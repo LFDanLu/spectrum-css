@@ -7,8 +7,6 @@
   --spectrum-tooltip-min-height: var(--spectrum-global-dimension-size-300);
   --spectrum-tooltip-padding-x: var(--spectrum-global-dimension-size-125);
   --spectrum-tooltip-padding-top: var(--spectrum-global-dimension-size-50);
-  --spectrum-tooltip-padding-bottom: 5px;
-  --spectrum-tooltip-content-max-width: 101px;
   --spectrum-tooltip-icon-size: var(--spectrum-global-dimension-size-175);
   --spectrum-tooltip-icon-margin-x: var(--spectrum-global-dimension-size-100);
   --spectrum-tooltip-tip-height: var(--spectrum-global-dimension-size-50);
@@ -38,8 +36,6 @@
   --spectrum-tooltip-info-min-height: var(--spectrum-global-dimension-size-300);
   --spectrum-tooltip-info-padding-x: var(--spectrum-global-dimension-size-125);
   --spectrum-tooltip-info-padding-top: var(--spectrum-global-dimension-size-50);
-  --spectrum-tooltip-info-padding-bottom: 5px;
-  --spectrum-tooltip-info-content-max-width: 101px;
   --spectrum-tooltip-info-icon-size: var(--spectrum-global-dimension-size-175);
   --spectrum-tooltip-info-icon-margin-x: var(--spectrum-global-dimension-size-100);
   --spectrum-tooltip-info-tip-height: var(--spectrum-global-dimension-size-50);
@@ -69,8 +65,6 @@
   --spectrum-tooltip-negative-min-height: var(--spectrum-global-dimension-size-300);
   --spectrum-tooltip-negative-padding-x: var(--spectrum-global-dimension-size-125);
   --spectrum-tooltip-negative-padding-top: var(--spectrum-global-dimension-size-50);
-  --spectrum-tooltip-negative-padding-bottom: 5px;
-  --spectrum-tooltip-negative-content-max-width: 101px;
   --spectrum-tooltip-negative-icon-size: var(--spectrum-global-dimension-size-175);
   --spectrum-tooltip-negative-icon-margin-x: var(--spectrum-global-dimension-size-100);
   --spectrum-tooltip-negative-tip-height: var(--spectrum-global-dimension-size-50);
@@ -100,8 +94,6 @@
   --spectrum-tooltip-positive-min-height: var(--spectrum-global-dimension-size-300);
   --spectrum-tooltip-positive-padding-x: var(--spectrum-global-dimension-size-125);
   --spectrum-tooltip-positive-padding-top: var(--spectrum-global-dimension-size-50);
-  --spectrum-tooltip-positive-padding-bottom: 5px;
-  --spectrum-tooltip-positive-content-max-width: 101px;
   --spectrum-tooltip-positive-icon-size: var(--spectrum-global-dimension-size-175);
   --spectrum-tooltip-positive-icon-margin-x: var(--spectrum-global-dimension-size-100);
   --spectrum-tooltip-positive-tip-height: var(--spectrum-global-dimension-size-50);
