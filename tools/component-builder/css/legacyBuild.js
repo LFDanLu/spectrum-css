@@ -19,7 +19,7 @@ const replace = require('gulp-replace');
 const merge = require('merge-stream');
 
 const processors = require('./processors');
-const mutateselectors = require('./lib/postcss-mutateselectors')
+const mutateselectors = require('./plugins/postcss-mutateselectors')
 const legacyProcessors = processors.legacyProcessors;
 
 var colorStops = [
@@ -32,12 +32,13 @@ var colorStops = [
 const varDir = `${process.cwd()}/node_modules/@spectrum-css/vars/`;
 const commonsDir = `${process.cwd()}/../commons/`;
 
-const baseImports = `@import "${varDir}css/spectrum-global.css";\
-@import "${varDir}css/spectrum-animationGlobals.css";
-@import "${varDir}css/spectrum-dimensionGlobals.css";
-@import "${varDir}css/spectrum-fontGlobals.css";
-@import "${varDir}css/spectrum-colorGlobals.css";
-@import "${varDir}css/spectrum-staticAliases.css";`
+const baseImports = `
+@import "${varDir}css/globals/spectrum-dimensionGlobals.css";
+@import "${varDir}css/globals/spectrum-animationGlobals.css";
+@import "${varDir}css/globals/spectrum-fontGlobals.css";
+@import "${varDir}css/globals/spectrum-colorGlobals.css";
+@import "${varDir}css/globals/spectrum-staticAliases.css";
+`;
 
 /**
   Builds medium files
@@ -45,7 +46,7 @@ const baseImports = `@import "${varDir}css/spectrum-global.css";\
 function buildMedium() {
   return gulp.src('index.css')
     .pipe(insert.prepend(`${baseImports}
-@import "${varDir}css/spectrum-medium.css";
+@import "${varDir}css/scales/spectrum-medium.css";
 @import "${varDir}dist/components/index.css";`))
     .pipe(postcss(processors.getProcessors(false, false)))
     .pipe(gulp.dest('dist/'));
@@ -57,7 +58,7 @@ function buildMedium() {
 function buildLarge() {
   return gulp.src('index.css')
     .pipe(insert.prepend(`${baseImports}
-@import "${varDir}css/spectrum-large.css";
+@import "${varDir}css/scales/spectrum-large.css";
 @import "${varDir}dist/components/index.css";`))
     .pipe(postcss(processors.getProcessors(false, false)))
     .pipe(rename(function(path) {
@@ -75,7 +76,7 @@ function buildSkinFiles(colorStop, globs, prependString, appendString, dest) {
     allowEmpty: true // Allow missing skin.css
   })
     .pipe(insert.prepend(`${baseImports}
-@import "${varDir}css/spectrum-${colorStop}.css";
+@import "${varDir}css/themes/spectrum-${colorStop}.css";
 @import "${varDir}dist/components/index.css";
 ${prependString}\n`))
     .pipe(insert.append(appendString))
@@ -107,7 +108,7 @@ function buildMultiStops() {
       allowEmpty: true // Allow missing skin.css
     })
     .pipe(insert.prepend(`${baseImports}
-@import "${varDir}css/spectrum-${colorStop}.css";
+@import "${varDir}css/themes/spectrum-${colorStop}.css";
 @import "${varDir}dist/components/index.css";`))
       .pipe(postcss(legacyProcessors))
       .pipe(postcss([
@@ -132,12 +133,12 @@ function buildMultiStops() {
 */
 function buildDiff() {
   var varsProcessors = processors.getProcessors(false, false, false);
-  varsProcessors.unshift(require('./lib/postcss-varsonly')());
+  varsProcessors.unshift(require('./plugins/postcss-varsonly')());
 
   return gulp.src('index.css')
     // Use large variables
     .pipe(insert.prepend(`${baseImports}
-@import "${varDir}css/spectrum-large.css";
+@import "${varDir}css/scales/spectrum-large.css";
 @import "${varDir}dist/components/index.css";`))
     .pipe(postcss(varsProcessors))
     // Process again, but wrapped

@@ -1,4 +1,3 @@
-const animationGlobals = exports;
 exports["duration-0"] = "0ms";
 exports["duration-100"] = "130ms";
 exports["duration-200"] = "160ms";

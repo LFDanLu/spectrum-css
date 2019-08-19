@@ -3,6 +3,10 @@
   --spectrum-alias-border-size-thick: 2px;
   --spectrum-alias-border-size-thicker: 4px;
   --spectrum-alias-border-size-thickest: 8px;
+  --spectrum-alias-border-offset-thin: 2px;
+  --spectrum-alias-border-offset-thick: 4px;
+  --spectrum-alias-border-offset-thicker: 8px;
+  --spectrum-alias-border-offset-thickest: 16px;
   --spectrum-alias-grid-baseline: 8px;
   --spectrum-alias-grid-gutter-xsmall: 16px;
   --spectrum-alias-grid-gutter-small: 24px;

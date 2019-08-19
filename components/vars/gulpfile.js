@@ -32,20 +32,14 @@ function prepareBuild(cb) {
 
 
 function concatGlobals() {
-  let globals = [
-    'spectrum-animationGlobals.css',
-    'spectrum-colorGlobals.css',
-    'spectrum-dimensionGlobals.css',
-    'spectrum-fontGlobals.css',
-    'spectrum-global.css',
-    'spectrum-staticAliases.css'
-  ];
-
-  return gulp.src(globals.map(fileName => `css/${fileName}`))
-    .pipe(replace(':root', function (match){
-      return '.spectrum';
+  return gulp.src('css/globals/*.css')
+    .pipe(replace(/:root {/, function(match) {
+      return `  /* ${path.basename(this.file.path)} */`;
     }))
+    .pipe(replace(/}/, ''))
     .pipe(concat('spectrum-global.css'))
+    .pipe(insert.prepend('.spectrum {'))
+    .pipe(insert.append('}\n'))
     .pipe(gulp.dest('dist/'));
 }
 
@@ -53,13 +47,16 @@ function copySources() {
   let classMap = {
     'spectrum-darkest.css': '.spectrum--darkest',
     'spectrum-dark.css': '.spectrum--dark',
-    'spectrum-large.css': '.spectrum--large',
     'spectrum-light.css': '.spectrum--light',
     'spectrum-lightest.css': '.spectrum--lightest',
+    'spectrum-large.css': '.spectrum--large',
     'spectrum-medium.css': '.spectrum--medium'
   };
 
-  return gulp.src(Object.keys(classMap).map(fileName => `css/${fileName}`))
+  return gulp.src([
+      'css/themes/*.css',
+      'css/scales/*.css'
+    ])
     .pipe(replace(':root', function (match){
       return classMap[path.basename(this.file.path)];
     }))
@@ -70,11 +67,13 @@ const insert = require('gulp-insert');
 
 function concatAll() {
   return gulp.src([
-    'css/*.css',
+    'css/globals/*.css',
+    'css/scales/spectrum-medium.css',
+    'css/themes/spectrum-light.css',
     'css/components/*.css'
   ])
     .pipe(replace(/:root {/, function(match) {
-      return `/* ${path.basename(this.file.path)} */`;
+      return `  /* ${path.basename(this.file.path)} */`;
     }))
     .pipe(replace(/}/, ''))
     .pipe(concat('index.css'))
@@ -98,7 +97,7 @@ function concatComponents() {
 }
 
 function copyMetadata() {
-  return gulp.src('css/spectrum-metadata.json')
+  return gulp.src('json/spectrum-metadata.json')
     .pipe(gulp.dest('dist/'));
 }
 

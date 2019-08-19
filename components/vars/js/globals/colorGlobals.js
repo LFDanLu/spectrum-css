@@ -1,4 +1,3 @@
-const colorGlobals = exports;
 exports["static-black"] = "rgb(0, 0, 0)";
 exports["static-white"] = "rgb(255, 255, 255)";
 exports["static-blue"] = "rgb(20, 115, 230)";

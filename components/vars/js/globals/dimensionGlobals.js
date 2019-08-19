@@ -1,4 +1,3 @@
-const dimensionGlobals = exports;
 exports["size-0"] = "0px";
 exports["size-10"] = "1px";
 exports["size-25"] = "2px";

@@ -1,19 +1,9 @@
-const Balthazar = require('@spectrum/balthazar');
 const path = require('path');
 const fsp = require('fs').promises;
 const gulp = require('gulp');
 const ext = require('replace-ext');
 const logger = require('gulplog');
 const through = require('through2');
-
-function generateDNAJSON() {
-  const outputPath = path.resolve('temp/json/');
-  const CSS_OUTPUT_TYPE = Balthazar.OUTPUT_TYPES.json;
-  // the api for convert is destination, type, path-to-json
-  // default path to json will look for node_modules/@spectrum/spectrum-dna locally
-  const dnaPath = path.join(path.dirname(require.resolve('@spectrum/spectrum-dna')), '..');
-  return Balthazar.convertVars(outputPath, CSS_OUTPUT_TYPE, dnaPath);
-}
 
 function stripReference(value) {
   return value.replace(/(colorStopData|colorTokens|scaleData|dimensionTokens|colorAliases|dimensionAliases)\./g, '');
@@ -66,8 +56,7 @@ function getCSSVar(prefix, key, value) {
   }
 }
 
-let dnaModules = [];
-function generateDNAJS() {
+function generateDNAFiles() {
   // Base variables we can just map directly
   let flatVars = [
     'colorGlobals',
@@ -88,9 +77,9 @@ function generateDNAJS() {
   return gulp.src(dnaJSONPath)
     .pipe(through.obj(function translateJSON(file, enc, cb) {
 
-      let pushFile = (contents, name, extension, folder) => {
+      let pushFile = (contents, fileName, folder) => {
         let vinylFile = file.clone({ contents: false });
-        vinylFile.path = path.join(file.base, folder || '', `${name}.${extension}`);
+        vinylFile.path = path.join(file.base, folder || '', fileName);
         vinylFile.contents = Buffer.from(contents);
         this.push(vinylFile);
       };
@@ -112,7 +101,17 @@ function generateDNAJS() {
 
         contents += `}\n`;
 
-        pushFile(contents, 'spectrum-' + fileName, 'css', folder);
+        pushFile(contents, `spectrum-${fileName}.css`, folder);
+      };
+
+      let generateCSSIndexFile = (files, folder) => {
+        let contents = `${files.map(module => `@import ${JSON.stringify(module)};`).join('\n')}`;
+        pushFile(contents, 'index.css', folder);
+      };
+
+      let generateJSIndexFile = (files, folder) => {
+        let contents = `${files.map(module => `exports[${JSON.stringify(module.replace(/.*?\/(.*?)/, '$1'))}] = require("./${module}.js");`).join('\n')}`;
+        pushFile(contents, 'index.js', folder);
       };
 
       let generateJSFile = (sections, fileName, folder) => {
@@ -151,22 +150,26 @@ function generateDNAJS() {
           requires += `const ${dependency} = require('${basePath}${dependency}.js');\n`;
         }
 
-        pushFile(requires + contents, fileName, 'js', folder);
+        pushFile(requires + contents, `${fileName}.js`, folder);
         dnaModules.push(path.join(folderParts.slice(1).join('/'), fileName));
       };
 
-      let generateFiles = (sections, fileName) => {
-        generateCSSFile(sections, fileName, 'css');
-        generateJSFile(sections, fileName, 'js');
+      let generateFiles = (sections, fileName, folder = '') => {
+        generateCSSFile(sections, fileName, `css/${folder}`);
+        generateJSFile(sections, fileName, `js/${folder}`);
       };
 
       let data = JSON.parse(String(file.contents));
       let dnaData = data.dna;
+      let metadata = {
+        'dna-version': dnaData.version
+      };
+      let dnaModules = [];
 
       // Globals
       flatVars.forEach(key => {
-        generateJSFile([dnaData[key]], key, 'js');
-        generateCSSFile([dnaData[key]], key, 'css');
+        generateJSFile([dnaData[key]], key, 'js/globals');
+        generateCSSFile([dnaData[key]], key, 'css/globals');
       });
 
       // Stops
@@ -180,7 +183,7 @@ function generateDNAJS() {
           stop.colorTokens,
           stop.colorAliases,
           stop.colorSemantics
-        ], stopName);
+        ], stopName, 'themes');
       }
 
       // Scales
@@ -190,7 +193,7 @@ function generateDNAJS() {
         generateFiles([
           scale.dimensionTokens,
           scale.dimensionAliases
-        ], scaleName);
+        ], scaleName, 'scales');
       }
 
       // Elements
@@ -206,6 +209,12 @@ function generateDNAJS() {
         let dimensionVariables = [];
         for (let variantName in element) {
           let variant = element[variantName];
+
+          let metadataKeyBase = 'spectrum-' + elementName + (variantName === 'default' ? '' : `-${variantName}`);
+          metadata[`${metadataKeyBase}-name`] = variant.name;
+          metadata[`${metadataKeyBase}-description`] = variant.description;
+          metadata[`${metadataKeyBase}-status`] = variant.status;
+          metadata[`${metadataKeyBase}-version`] = variant.version;
 
           if (variant.states) {
             for (let stateName in variant.states) {
@@ -264,6 +273,9 @@ function generateDNAJS() {
         generateCSSFile([
           allVariables
         ], elementName, 'css/components');
+
+        pushFile(JSON.stringify(metadata, null, 2), 'spectrum-metadata.json', 'json/');
+        generateJSIndexFile(dnaModules, 'js/');
       }
 
       cb();
@@ -271,14 +283,6 @@ function generateDNAJS() {
     .pipe(gulp.dest('./'))
 }
 
-async function generateDNAJSIndex() {
-  await fsp.writeFile('js/index.js',
-`${dnaModules.map(module => `exports[${JSON.stringify(module.replace(/.*?\/(.*?)/, '$1'))}] = require("./${module}.js");`).join('\n')}
-`);
-}
-
-exports.updateDNAJS = gulp.series(
-  generateDNAJSON,
-  generateDNAJS,
-  generateDNAJSIndex
+exports.updateDNA = gulp.series(
+  generateDNAFiles
 );

@@ -1,5 +1,4 @@
-const dimensionGlobals = require('./dimensionGlobals.js');
-const large = exports;
+const dimensionGlobals = require('../dimensionGlobals.js');
 exports["scale-factor"] = "1.25";
 exports["size-0"] = "0px";
 exports["size-10"] = "1px";

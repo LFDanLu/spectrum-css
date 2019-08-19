@@ -1,8 +1,11 @@
-const staticAliases = exports;
 exports["border-size-thin"] = "1px";
 exports["border-size-thick"] = "2px";
 exports["border-size-thicker"] = "4px";
 exports["border-size-thickest"] = "8px";
+exports["border-offset-thin"] = "2px";
+exports["border-offset-thick"] = "4px";
+exports["border-offset-thicker"] = "8px";
+exports["border-offset-thickest"] = "16px";
 exports["grid-baseline"] = "8px";
 exports["grid-gutter-xsmall"] = "16px";
 exports["grid-gutter-small"] = "24px";

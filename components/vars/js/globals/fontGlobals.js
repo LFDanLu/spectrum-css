@@ -1,4 +1,3 @@
-const fontGlobals = exports;
 exports["family-base"] = "adobe-clean, 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Trebuchet MS', 'Lucida Grande', sans-serif";
 exports["family-serif"] = "adobe-clean-serif, 'Source Serif Pro', Georgia, serif";
 exports["family-code"] = "'Source Code Pro', Monaco, monospace";
